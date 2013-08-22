@@ -19,7 +19,7 @@ git remote add origin git@github.com:stevenschobert/dotfiles.git
 git pull origin master
 ```
 
-** If you fork or clone this repo, please change `~/.gitconfig` file so you don't commit as me:***
+** If you fork or clone this repo, please change `~/.gitconfig` file so you don't commit as me:**
 
 ```
 [user]
