@@ -1,0 +1,25 @@
+# OS Cruft
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Bundler
+.bundle
+vendor/bundle
+vendor/bin
+bin/
+
+# App-Specific
+.env
+.powenv
+.rbenv-version
+bin/
+db/*.sqlite3
+log/*.log
+public/assets
+tmp/**/*
