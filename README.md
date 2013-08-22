@@ -19,7 +19,7 @@ git remote add origin git@github.com:stevenschobert/dotfiles.git
 git pull origin master
 ```
 
-** If you fork or clone this repo, please change `~/.gitconfig` file so you don't commit as me:**
+__If you fork or clone this repo, please change `~/.gitconfig` file so you don't commit as me:__
 
 ```
 [user]
@@ -55,4 +55,4 @@ Here's some other things you'll probably want to install for more dev-happiness.
 
 ## Thanks
 
-Thanks to @soffes for putting up [his dotfiles](https://github.com/soffes/dotfiles). I really liked the simplicity of his setup over others, and modeled this repo after his (pretty much copied actually).
+Thanks to [@soffes](https://github.com/soffes) for putting up [his dotfiles](https://github.com/soffes/dotfiles). I really liked the simplicity of his setup over others, and modeled this repo after his (pretty much copied actually).
