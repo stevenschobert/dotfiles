@@ -8,4 +8,5 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Android SDK/NDK
 export ANDROID_SDK_ROOT="/usr/local/lib/android/sdk"
+export ANDROID_HOME="/usr/local/lib/android/sdk"
 export NDK_ROOT="/usr/local/lib/android/ndk"
