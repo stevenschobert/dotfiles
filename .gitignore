@@ -12,13 +12,11 @@ Thumbs.db
 .bundle
 vendor/bundle
 vendor/bin
-bin/
 
 # App-Specific
 .env
 .powenv
 .rbenv-version
-bin/
 db/*.sqlite3
 log/*.log
 public/assets
