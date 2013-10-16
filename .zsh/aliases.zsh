@@ -1,5 +1,7 @@
-# directory
+# File System
 alias o="open ."
+alias showHiddenFiles="defaults write com.apple.Finder AppleShowAllFiles YES && killall Finder"
+alias hideHiddenFiles="defaults write com.apple.Finder AppleShowAllFiles NO && killall Finder"
 
 # bundler
 alias bake="bundle exec rake"
