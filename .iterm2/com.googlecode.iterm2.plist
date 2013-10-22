@@ -728,7 +728,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>282 250 924 485 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>129 103 906 746 0 0 1440 878 </string>
+	<string>98 159 906 666 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-1179 309 857 566 -1440 129 1440 900 </string>
 	<key>New Bookmarks</key>
@@ -1514,7 +1514,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/stevenschobert/iterm2</string>
+	<string>/Users/stevenschobert/.iterm2</string>
 	<key>PromptOnClose</key>
 	<true/>
 	<key>PromptOnQuit</key>
