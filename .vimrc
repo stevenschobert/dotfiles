@@ -17,6 +17,20 @@
   " Solarized color scheme
   Bundle 'altercation/vim-colors-solarized'
 
+  " File/Folder Explorer
+  Bundle 'scrooloose/nerdtree'
+
+  " CoffeeScript syntax highlighting
+  Bundle 'kchmck/vim-coffee-script'
+
+  " JSON Formatting & Editing plugin
+  Bundle 'elzr/vim-json'
+
+  " Fuzzy file open plugin
+  Bundle 'kien/ctrlp.vim'
+
+  " JavaScript Syntax and indent
+  Bundle "pangloss/vim-javascript"
 
 "= Interface ======================================================================================
 
@@ -68,6 +82,18 @@
 
 "= Keys ===========================================================================================
 
+  let mapleader = ','           " set <Leader>
+
+  " File operations (save, close, discard)
+  nmap <Leader>f :w<bar>bd<CR>
+  nmap <Leader>c :bd<CR>
+  nmap <Leader>d :bd!<CR>
+
+  " Quickly turn off highlighted search matches
+  nmap <Leader>h :noh<CR>
+
+  " NERDTree
+  nmap <Leader>n :NERDTreeToggle<CR>
 
 "= Theme ==========================================================================================
 
@@ -81,3 +107,22 @@
   set list listchars=tab:██,trail:∙       " Use "██" for tabs and "∙" for trailing spaces
   set fillchars+=vert:                    " set vertical fillchar to "en space" (it's there, trust
                                           " me) for tab splits
+
+"= Vim-JSON  ======================================================================================
+
+  let g:vim_json_syntax_conceal = 0       " turn off quote-concealing
+
+"= NERDTree =======================================================================================
+
+  let NERDTreeQuitOnOpen = 1              " Hide NERDTree when opening a file
+
+"= Ctrl-p =========================================================================================
+
+  " Don't use caching
+  let g:ctrlp_use_caching = 0
+
+  " Custom ignore paths
+  let g:ctrlp_custom_ignore = {
+    \ 'dir':  'node_modules',
+    \ }
+
