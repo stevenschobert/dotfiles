@@ -32,6 +32,9 @@
   " JavaScript Syntax and indent
   Bundle "pangloss/vim-javascript"
 
+  " Jade syntax and indent
+  Bundle "digitaltoad/vim-jade"
+
 "= Interface ======================================================================================
 
   "- Appearance -----------------------------------------------------------------------------------
