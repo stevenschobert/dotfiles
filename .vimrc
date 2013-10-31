@@ -35,6 +35,9 @@
   " Jade syntax and indent
   Bundle "digitaltoad/vim-jade"
 
+  " Less syntax
+  Bundle "groenewege/vim-less"
+
 "= Interface ======================================================================================
 
   "- Appearance -----------------------------------------------------------------------------------
