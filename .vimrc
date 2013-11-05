@@ -38,6 +38,9 @@
   " Less syntax
   Bundle "groenewege/vim-less"
 
+  " Syntax Checking
+  Bundle "scrooloose/syntastic"
+
 "= Interface ======================================================================================
 
   "- Appearance -----------------------------------------------------------------------------------
