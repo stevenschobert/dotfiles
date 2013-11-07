@@ -41,6 +41,9 @@
   " Syntax Checking
   Bundle "scrooloose/syntastic"
 
+  " Buffer Happiness
+  Bundle "jeetsukumaran/vim-buffergator"
+
 "= Interface ======================================================================================
 
   "- Appearance -----------------------------------------------------------------------------------
@@ -104,6 +107,9 @@
   " NERDTree
   nmap <Leader>n :NERDTreeToggle<CR>
 
+  " Buffergator
+  nmap <Leader>b :BuffergatorToggle<CR>
+
 "= Theme ==========================================================================================
 
   set background=dark
@@ -134,4 +140,8 @@
   let g:ctrlp_custom_ignore = {
     \ 'dir':  'node_modules',
     \ }
+
+"= Buffergator ====================================================================================
+
+  let g:buffergator_suppress_keymaps = 1    " turn off default keymaps
 
