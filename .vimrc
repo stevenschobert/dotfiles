@@ -44,6 +44,9 @@
   " Buffer Happiness
   Bundle "jeetsukumaran/vim-buffergator"
 
+  " Comment-toggling plugin
+  Bundle "scrooloose/nerdcommenter"
+
 "= Interface ======================================================================================
 
   "- Appearance -----------------------------------------------------------------------------------
@@ -99,7 +102,6 @@
 
   " File operations (save, close, discard)
   nmap <Leader>f :w<bar>bd<CR>
-  nmap <Leader>c :bd<CR>
   nmap <Leader>d :bd!<CR>
 
   " Quickly turn off highlighted search matches
