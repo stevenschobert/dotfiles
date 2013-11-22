@@ -47,6 +47,12 @@
   " Comment-toggling plugin
   Bundle "scrooloose/nerdcommenter"
 
+  " Ruby highlighting
+  Bundle "vim-ruby/vim-ruby"
+
+  " Ruby doend block completion
+  Bundle "tpope/vim-endwise"
+
 "= Interface ======================================================================================
 
   "- Appearance -----------------------------------------------------------------------------------
