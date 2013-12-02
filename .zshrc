@@ -8,6 +8,3 @@ source $ZSH/oh-my-zsh.sh
 
 # Load files
 for file (~/.zsh/*.zsh) source $file
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
