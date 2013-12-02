@@ -53,6 +53,9 @@
   " Ruby doend block completion
   Bundle "tpope/vim-endwise"
 
+  " Instant markdown previews in browser
+  Bundle "suan/vim-instant-markdown"
+
 "= Interface ======================================================================================
 
   "- Appearance -----------------------------------------------------------------------------------
@@ -153,4 +156,8 @@
 "= Buffergator ====================================================================================
 
   let g:buffergator_suppress_keymaps = 1    " turn off default keymaps
+
+"= Vim-Instant-Markdown ===========================================================================
+
+  let g:instant_markdown_slow = 1        " dont update as much
 
