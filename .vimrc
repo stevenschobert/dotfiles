@@ -114,7 +114,13 @@
   nmap <Leader>d :bd!<CR>
 
   " Quickly turn off highlighted search matches
-  nmap <Leader>h :noh<CR>
+  nmap <Leader>s :noh<CR>
+
+  " Easy window switching
+  nmap <Leader>h :wincmd<space>h<CR>
+  nmap <Leader>j :wincmd<space>j<CR>
+  nmap <Leader>k :wincmd<space>k<CR>
+  nmap <Leader>l :wincmd<space>l<CR>
 
   " NERDTree
   nmap <Leader>n :NERDTreeToggle<CR>
