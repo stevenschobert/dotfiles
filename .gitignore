@@ -21,3 +21,6 @@ db/*.sqlite3
 log/*.log
 public/assets
 tmp/**/*
+
+# Secure stuff
+.zsh/auth.zsh
