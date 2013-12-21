@@ -107,7 +107,8 @@
 
 "= Keys ===========================================================================================
 
-  let mapleader = ','           " set <Leader>
+  let mapleader = ','                " set <Leader>
+  set backspace=indent,eol,start     " Make backspace behave as expected
 
   " File operations (save, close, discard)
   nmap <Leader>f :w<bar>bd<CR>
