@@ -2,6 +2,13 @@
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:vendor/bundle/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/lib/android/ndk:/usr/local/lib/android/sdk/tools
 
+# Php 5.4 (for use with rack-legacy)
+# http://stuff-things.net/2011/05/16/legacy-development-with-pow/
+# run:  brew tap josegonzalez/homebrew-php
+#       brew tap homebrew/dupes
+#       brew install php54 --with-cgi
+export PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
+
 # Rbenv
 #export RBENV_ROOT=/usr/local/var/rbenv
 export PATH=$PATH:$HOME/.rbenv/bin
