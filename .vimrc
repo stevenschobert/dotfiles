@@ -117,6 +117,9 @@
   " Quickly turn off highlighted search matches
   nmap <Leader>s :noh<CR>
 
+  " Auto-insert matching curly braces
+  inoremap {<CR> {<CR>}<C-o>O
+
   " Easy window switching
   nmap <Leader>h :wincmd<space>h<CR>
   nmap <Leader>j :wincmd<space>j<CR>
