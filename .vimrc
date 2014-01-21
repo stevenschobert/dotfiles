@@ -56,6 +56,9 @@
   " Instant markdown previews in browser
   Bundle "suan/vim-instant-markdown"
 
+  " Status Bar
+  Bundle "bling/vim-airline"
+
 "= Interface ======================================================================================
 
   "- Appearance -----------------------------------------------------------------------------------
@@ -71,6 +74,11 @@
 
     set number                   " display line numbers
     set visualbell               " use visual bell
+
+    set background=dark          " Dark background
+    set laststatus=2             " Fix for statusbar toggling
+    set encoding=utf-8           " Fix special character encoding
+    set t_Co=256                 " MOAR COLOCS
 
   "- Interaction ----------------------------------------------------------------------------------
 
@@ -167,4 +175,10 @@
 "= Vim-Instant-Markdown ===========================================================================
 
   let g:instant_markdown_slow = 1        " dont update as much
+
+"= Vim-Airline ====================================================================================
+
+  let g:airline_powerline_fonts = 1     " use powerline fonts
+  let g:airline_left_sep=''             " turn off arrows causing spacing issues
+  let g:airline_right_sep=''            " turn off arrows causing spacing issues
 
