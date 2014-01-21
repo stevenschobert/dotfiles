@@ -41,9 +41,6 @@
   " Syntax Checking
   Bundle "scrooloose/syntastic"
 
-  " Buffer Happiness
-  Bundle "jeetsukumaran/vim-buffergator"
-
   " Comment-toggling plugin
   Bundle "scrooloose/nerdcommenter"
 
@@ -58,6 +55,9 @@
 
   " Status Bar
   Bundle "bling/vim-airline"
+
+  " Bufferline
+  Bundle "bling/vim-bufferline"
 
 "= Interface ======================================================================================
 
@@ -134,8 +134,9 @@
   " NERDTree
   nmap <Leader>n :NERDTreeToggle<CR>
 
-  " Buffergator
-  nmap <Leader>b :BuffergatorToggle<CR>
+  " Buffer switching
+  nmap ]b :bn<CR>
+  nmap [b :bp<CR>
 
 "= Theme ==========================================================================================
 
