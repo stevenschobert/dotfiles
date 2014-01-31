@@ -17,6 +17,9 @@
   " Solarized color scheme
   Bundle 'altercation/vim-colors-solarized'
 
+  " Pencil color theme for writing
+  Bundle "reedes/vim-colors-pencil"
+
   " File/Folder Explorer
   Bundle 'scrooloose/nerdtree'
 
