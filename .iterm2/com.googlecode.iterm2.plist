@@ -955,7 +955,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>767 549 445 270 0 0 2560 1418 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>361 590 924 485 0 0 2560 1418 </string>
+	<string>323 383 924 485 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>491 684 906 666 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -2242,7 +2242,7 @@
 			<key>Log Directory</key>
 			<string></string>
 			<key>Minimum Contrast</key>
-			<real>0.17307291924953461</real>
+			<real>0.27067708969116211</real>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
