@@ -62,6 +62,9 @@
   " Bufferline
   Bundle "bling/vim-bufferline"
 
+  " Stylus syntax highlighting
+  Bundle "wavded/vim-stylus"
+
 "= Interface ======================================================================================
 
   "- Appearance -----------------------------------------------------------------------------------
