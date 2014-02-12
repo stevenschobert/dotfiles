@@ -20,6 +20,9 @@
   " Pencil color theme for writing
   Bundle "reedes/vim-colors-pencil"
 
+  " Unimpaired
+  Bundle "tpope/vim-unimpaired"
+
   " File/Folder Explorer
   Bundle 'scrooloose/nerdtree'
 
