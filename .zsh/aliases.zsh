@@ -18,3 +18,4 @@ function localsauce { cd /usr/local/lib/saucelabs/sauce-connect && java -jar Sau
 
 # misc
 alias tp="TexturePacker"
+alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
