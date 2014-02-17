@@ -13,6 +13,9 @@ alias buard="bundle exec guard"
 alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias pg_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 
+# spin up a simple web server
+alias simple_server="python -m SimpleHTTPServer"
+
 # saucelabs connect (requires auth, see auth.sample)
 function localsauce { cd /usr/local/lib/saucelabs/sauce-connect && java -jar Sauce-Connect.jar $SAUCE_USERNAME $SAUCE_API_KEY; }
 
