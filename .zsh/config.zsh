@@ -25,6 +25,3 @@ export PATH=$PATH:/usr/local/heroku/bin
 # NVM
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh
 
-# Docker
-# https://github.com/boot2docker/boot2docker
-export DOCKER_HOST=tcp://localhost:4243
