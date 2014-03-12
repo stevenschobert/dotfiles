@@ -68,6 +68,9 @@
   " Stylus syntax highlighting
   Bundle "wavded/vim-stylus"
 
+  " Open visual selection in new buffer
+  Bundle "chrisbra/NrrwRgn"
+
 "= Interface ======================================================================================
 
   "- Appearance -----------------------------------------------------------------------------------
