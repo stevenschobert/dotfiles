@@ -10,6 +10,10 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # Heroku Toolbelt
 export PATH=$PATH:/usr/local/heroku/bin
 
+# Android
+export ANDROID_HOME=/Applications/Android\ Studio.app/sdk/
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform_tools
+
 # NVM
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh
 
