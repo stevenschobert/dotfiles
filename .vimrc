@@ -2,10 +2,11 @@
 
   " use Vim settings, rather than Vi settings
   set nocompatible
+  filetype off
 
   " initialize pathogen and rebuild helptags
   set rtp+=~/.vim/bundle/vundle
-  call vundle#rc()
+  call vundle#begin()
 
 "= Vundle =========================================================================================
 
@@ -73,6 +74,9 @@
 
   " Highlight colors in CSS files
   Bundle "ap/vim-css-color"
+
+  call vundle#end()
+  filetype plugin indent on
 
 "= Interface ======================================================================================
 
