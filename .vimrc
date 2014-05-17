@@ -5,15 +5,15 @@
   filetype off
 
   " initialize pathogen and rebuild helptags
-  set rtp+=~/.vim/bundle/vundle
+  set rtp+=~/.vim/bundle/Vundle.vim
   call vundle#begin()
 
 "= Vundle =========================================================================================
 
   " Vundle is short for 'Vim bundle' and is a Vim plugin manager.
-  " See https://github.com/gmarik/vundle for more information
+  " See https://github.com/gmarik/Vundle.vim for more information
 
-  Bundle 'gmarik/vundle'
+  Plugin 'gmarik/Vundle.vim'
 
   " Solarized color scheme
   Bundle 'altercation/vim-colors-solarized'
