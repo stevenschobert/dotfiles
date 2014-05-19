@@ -69,9 +69,6 @@
   " Stylus syntax highlighting
   Bundle "wavded/vim-stylus"
 
-  " Open visual selection in new buffer
-  Bundle "chrisbra/NrrwRgn"
-
   " Highlight colors in CSS files
   Bundle "ap/vim-css-color"
 
