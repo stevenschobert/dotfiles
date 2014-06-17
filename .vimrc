@@ -72,6 +72,9 @@
   " Highlight colors in CSS files
   Bundle "ap/vim-css-color"
 
+  " Emmet shortcuts (see http://emmet.io)
+  Bundle "mattn/emmet-vim"
+
   call vundle#end()
   filetype plugin indent on
 
