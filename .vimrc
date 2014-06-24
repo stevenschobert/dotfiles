@@ -75,6 +75,9 @@
   " Emmet shortcuts (see http://emmet.io)
   Bundle "mattn/emmet-vim"
 
+  " Jinja2 Syntax
+  Bundle "Glench/Vim-Jinja2-Syntax"
+
   call vundle#end()
   filetype plugin indent on
 
