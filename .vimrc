@@ -78,6 +78,9 @@
   " Jinja2 Syntax
   Bundle "Glench/Vim-Jinja2-Syntax"
 
+  " Elixir Syntax
+  Bundle "elixir-lang/vim-elixir"
+
   call vundle#end()
   filetype plugin indent on
 
