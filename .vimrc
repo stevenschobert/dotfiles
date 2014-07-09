@@ -81,6 +81,9 @@
   " Elixir Syntax
   Bundle "elixir-lang/vim-elixir"
 
+  " Handlebars/Mustache highlighting
+  Bundle "mustache/vim-mustache-handlebars"
+
   call vundle#end()
   filetype plugin indent on
 
