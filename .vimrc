@@ -208,3 +208,8 @@
   let g:airline_left_sep=''             " turn off arrows causing spacing issues
   let g:airline_right_sep=''            " turn off arrows causing spacing issues
 
+"= Vim-Emmet ======================================================================================
+
+  let g:user_emmet_leader_key='tt'   " remap leader key
+  let g:user_emmet_mode='n'          "only enable normal mode functions.
+
