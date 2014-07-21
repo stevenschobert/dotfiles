@@ -121,6 +121,14 @@
   nmap ]b :bn<CR>
   nmap [b :bp<CR>
 
+  " Quick make commands
+  nmap <Leader>mm :make<CR>
+  nmap <Leader>mb :make build<CR>
+  nmap <Leader>mc :make clean<CR>
+  nmap <Leader>mt :make test<CR>
+  nmap <Leader>ms :make start<CR>
+  nmap <Leader>mi :make install<CR>
+
 "= Theme ==========================================================================================
 
   set background=dark
