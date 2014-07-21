@@ -13,76 +13,31 @@
   " Vundle is short for 'Vim bundle' and is a Vim plugin manager.
   " See https://github.com/gmarik/Vundle.vim for more information
 
-  Plugin 'gmarik/Vundle.vim'
+  Plugin 'gmarik/Vundle.vim'                      " package manager
 
-  " Solarized color scheme
-  Bundle 'altercation/vim-colors-solarized'
-
-  " Pencil color theme for writing
-  Bundle "reedes/vim-colors-pencil"
-
-  " Unimpaired
-  Bundle "tpope/vim-unimpaired"
-
-  " File/Folder Explorer
-  Bundle 'scrooloose/nerdtree'
-
-  " CoffeeScript syntax highlighting
-  Bundle 'kchmck/vim-coffee-script'
-
-  " JSON Formatting & Editing plugin
-  Bundle 'elzr/vim-json'
-
-  " Fuzzy file open plugin
-  Bundle 'kien/ctrlp.vim'
-
-  " JavaScript Syntax and indent
-  Bundle "pangloss/vim-javascript"
-
-  " Jade syntax and indent
-  Bundle "digitaltoad/vim-jade"
-
-  " Less syntax
-  Bundle "groenewege/vim-less"
-
-  " Syntax Checking
-  Bundle "scrooloose/syntastic"
-
-  " Comment-toggling plugin
-  Bundle "scrooloose/nerdcommenter"
-
-  " Ruby highlighting
-  Bundle "vim-ruby/vim-ruby"
-
-  " Ruby doend block completion
-  Bundle "tpope/vim-endwise"
-
-  " Instant markdown previews in browser
-  Bundle "suan/vim-instant-markdown"
-
-  " Status Bar
-  Bundle "bling/vim-airline"
-
-  " Bufferline
-  Bundle "bling/vim-bufferline"
-
-  " Stylus syntax highlighting
-  Bundle "wavded/vim-stylus"
-
-  " Highlight colors in CSS files
-  Bundle "ap/vim-css-color"
-
-  " Emmet shortcuts (see http://emmet.io)
-  Bundle "mattn/emmet-vim"
-
-  " Jinja2 Syntax
-  Bundle "Glench/Vim-Jinja2-Syntax"
-
-  " Elixir Syntax
-  Bundle "elixir-lang/vim-elixir"
-
-  " Handlebars/Mustache highlighting
-  Bundle "mustache/vim-mustache-handlebars"
+  Plugin 'altercation/vim-colors-solarized'       " Solarized color scheme
+  Plugin 'reedes/vim-colors-pencil'               " Pencil theme for writing
+  Plugin 'tpope/vim-unimpaired'                   " awesome key shortucts
+  Plugin 'scrooloose/nerdtree'                    " file/folder explorer
+  Plugin 'kchmck/vim-coffee-script'               " coffee-script syntax
+  Plugin 'elzr/vim-json'                          " better JSON editing
+  Plugin 'kien/ctrlp.vim'                         " fuzzy file searching
+  Plugin 'pangloss/vim-javascript'                " better javascript editing
+  Plugin 'digitaltoad/vim-jade'                   " jade syntax
+  Plugin 'groenewege/vim-less'                    " less syntax
+  Plugin 'scrooloose/syntastic'                   " syntax checker
+  Plugin 'scrooloose/nerdcommenter'               " easy comment toggling
+  Plugin 'vim-ruby/vim-ruby'                      " better ruby editing
+  Plugin 'tpope/vim-endwise'                      " block closing helper
+  Plugin 'suan/vim-instant-markdown'              " preview markdown files
+  Plugin 'bling/vim-airline'                      " status bar
+  Plugin 'bling/vim-bufferline'                   " show buffers in status bar
+  Plugin 'wavded/vim-stylus'                      " sylus syntax
+  Plugin 'ap/vim-css-color'                       " show hex colors in files
+  Plugin 'mattn/emmet-vim'                        " html key shortcuts
+  Plugin 'Glench/Vim-Jinja2-Syntax'               " jinja2 syntax
+  Plugin 'elixir-lang/vim-elixir'                 " elixir syntax
+  Plugin 'mustache/vim-mustache-handlebars'       " mustache syntax
 
   call vundle#end()
   filetype plugin indent on
