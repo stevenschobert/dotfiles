@@ -179,6 +179,10 @@
   set fillchars+=vert:                    " set vertical fillchar to "en space" (it's there, trust
                                           " me) for tab splits
 
+"= File Types =====================================================================================
+
+  au BufRead,BufNewFile *.sjs setf javascript       " JavaScript for sweet.js files
+
 "= Vim-JSON  ======================================================================================
 
   let g:vim_json_syntax_conceal = 0       " turn off quote-concealing
