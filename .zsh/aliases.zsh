@@ -15,7 +15,8 @@ alias pg_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 
 # docker
 function dk_clean {docker rm `docker ps --no-trunc -a -q` }
-function export_boot2docker_host { echo $(boot2docker shellinit) > ~/.zsh/boot2docker.zsh }
+function export_boot2docker { echo $(boot2docker shellinit) > ~/.zsh/boot2docker.zsh }
+function export_localdocker { sudo sed -i -e 's/^[0-9\.]* localdocker$//g' /private/etc/hosts && echo "$(boot2docker ip 2>/dev/null) localdocker" | xargs -I % sudo sh -c "echo '%' >> /private/etc/hosts" }
 
 # spin up a simple web server
 alias simple_server="python -m SimpleHTTPServer"
