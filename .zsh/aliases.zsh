@@ -15,6 +15,7 @@ alias pg_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 
 # docker
 function dk_clean {docker rm `docker ps --no-trunc -a -q` }
+function export_boot2docker_host { echo $(boot2docker shellinit) > ~/.zsh/boot2docker.zsh }
 
 # spin up a simple web server
 alias simple_server="python -m SimpleHTTPServer"
