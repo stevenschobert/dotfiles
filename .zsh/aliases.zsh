@@ -21,8 +21,6 @@ function export_localdocker { sudo sed -i -e 's/^[0-9\.]* localdocker$//g' /priv
 # spin up a simple web server
 alias simple_server="python -m SimpleHTTPServer"
 
-# saucelabs connect (requires auth, see auth.sample)
-function localsauce { cd /usr/local/lib/saucelabs/sauce-connect && java -jar Sauce-Connect.jar $SAUCE_USERNAME $SAUCE_API_KEY; }
 
 # misc
 alias tp="TexturePacker"
