@@ -21,6 +21,8 @@ function export_localdocker { sudo sed -i -e 's/^[0-9\.]* localdocker$//g' /priv
 # spin up a simple web server
 alias simple_server="python -m SimpleHTTPServer"
 
+# katon
+alias katon=/Users/stevenschobert/.nvm/v0.10.32/bin/katon
 
 # misc
 alias tp="TexturePacker"
