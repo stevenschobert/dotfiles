@@ -1,0 +1,15 @@
+'exception-reporting':
+  'userId': '4508902b-a08a-427c-c1bf-74e8d9ed6e65'
+'welcome':
+  'showOnStartup': false
+'metrics':
+  'userId': '72dce8f3441ebe286b9af88b851744020d918444'
+'core':
+  'themes': [
+    'unity-ui'
+    'atom-dark-syntax'
+  ]
+'editor':
+  'invisibles': {}
+  'fontFamily': 'Inconsolata'
+  'fontSize': 15
