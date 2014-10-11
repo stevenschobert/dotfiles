@@ -18,3 +18,5 @@
 	tool = Kaleidoscope
 [heroku]
 	account = personal
+[credential]
+	helper = store
