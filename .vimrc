@@ -38,6 +38,7 @@
   Plugin 'Glench/Vim-Jinja2-Syntax'               " jinja2 syntax
   Plugin 'elixir-lang/vim-elixir'                 " elixir syntax
   Plugin 'mustache/vim-mustache-handlebars'       " mustache syntax
+  Plugin 'heartsentwined/vim-emblem'              " emblem syntax
 
   call vundle#end()
   filetype plugin indent on
