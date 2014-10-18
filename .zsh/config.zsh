@@ -17,6 +17,10 @@ export PATH=$PATH:/usr/local/heroku/bin
 export ANDROID_HOME=/Applications/Android\ Studio.app/sdk/
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform_tools
 
+# Boot2Docker
+export DOCKER_CERT_PATH=/Users/stevenschobert/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+
 # NVM
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh
 
