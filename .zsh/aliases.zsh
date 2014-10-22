@@ -27,3 +27,4 @@ alias katon=/Users/stevenschobert/.nvm/v0.10.32/bin/katon
 # misc
 alias tp="TexturePacker"
 alias nw="/usr/local/bin/node-webkit.app/Contents/MacOS/node-webkit"
+alias nw_legacy="/usr/local/bin/node-webkit-legacy.app/Contents/MacOS/node-webkit"
