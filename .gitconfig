@@ -1,5 +1,6 @@
 [core]
 	excludesfile = ~/.gitignore
+	editor = /usr/bin/vim
 [user]
 	name = Steven Schobert
 	email = spschobert@gmail.com
