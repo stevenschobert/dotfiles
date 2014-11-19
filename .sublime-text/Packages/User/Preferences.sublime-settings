@@ -11,6 +11,7 @@
 	[
 		"Vintage"
 	],
+	"rulers": [99],
 	"line_padding_bottom": 1.5,
 	"line_padding_top": 1.5,
 	"scroll_past_end": true,
