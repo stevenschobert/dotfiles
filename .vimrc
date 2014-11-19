@@ -39,6 +39,7 @@
   Plugin 'elixir-lang/vim-elixir'                 " elixir syntax
   Plugin 'mustache/vim-mustache-handlebars'       " mustache syntax
   Plugin 'heartsentwined/vim-emblem'              " emblem syntax
+  Plugin 'rizzatti/dash.vim'                      " Dash documentation search
 
   call vundle#end()
   filetype plugin indent on
@@ -129,6 +130,9 @@
   nmap <Leader>mt :make test<CR>
   nmap <Leader>ms :make start<CR>
   nmap <Leader>mi :make install<CR>
+
+  " Dash documentation search
+  nmap <silent> <leader>- <Plug>DashSearch
 
 "= Theme ==========================================================================================
 
