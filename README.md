@@ -55,6 +55,8 @@ rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 ln -s ~/.sublime-text/Packages/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 ```
 
+- [Package Control](https://sublime.wbond.net/installation)
+
 ## Other Things
 
 Here's some other things you'll probably want to install for more dev-happiness.
