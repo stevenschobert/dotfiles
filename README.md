@@ -46,6 +46,15 @@ echo '*' >> ~/.git/info/exclude
 
 This will simply exclude everything. This will prevent the messy `git status` messages, and force changes to be tracked manually.
 
+### Sublime Text
+
+Symlink the folder to the Sublime Text application direction:
+
+```sh
+rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+ln -s ~/.sublime-text/Packages/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+```
+
 ## Other Things
 
 Here's some other things you'll probably want to install for more dev-happiness.
