@@ -11,9 +11,12 @@
 	[
 		"Vintage"
 	],
-	"rulers": [99],
 	"line_padding_bottom": 1.5,
 	"line_padding_top": 1.5,
+	"rulers":
+	[
+		99
+	],
 	"scroll_past_end": true,
 	"show_full_path": true,
 	"tab_size": 2,
