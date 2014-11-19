@@ -57,6 +57,20 @@ ln -s ~/.sublime-text/Packages/User ~/Library/Application\ Support/Sublime\ Text
 
 - [Package Control](https://sublime.wbond.net/installation)
 
+### Vim
+
+Install [Vundle](https://github.com/gmarik/Vundle.vim):
+
+```sh
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+
+Open vim and install packages:
+
+```
+:PluginInstall
+```
+
 ## Other Things
 
 Here's some other things you'll probably want to install for more dev-happiness.
