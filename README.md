@@ -1,6 +1,16 @@
-# steven/:house:
+# steven's dotfiles
 
-Home sweet home.
+My workbench for writing software (and some stuff just for fun).
+
+- Vim
+- iTerm2
+- Zsh
+- Git
+- Sublime Text 3
+- DotJS
+- Homebrew
+
+![My editors](http://d.pr/i/1i6r5+)
 
 ## Requirements
 
