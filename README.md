@@ -8,9 +8,8 @@ My workbench for writing software (and some stuff just for fun).
 - Git
 - Sublime Text 3
 - DotJS
-- Homebrew
 
-![My editors](http://d.pr/i/1i6r5+)
+![My editors](http://d.pr/i/1lJ6I+)
 
 ## Requirements
 
