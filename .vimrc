@@ -22,6 +22,7 @@
   Plugin 'kchmck/vim-coffee-script'               " coffee-script syntax
   Plugin 'elzr/vim-json'                          " better JSON editing
   Plugin 'kien/ctrlp.vim'                         " fuzzy file searching
+  Plugin 'terryma/vim-multiple-cursors'           " multiple cursor selection
   Plugin 'pangloss/vim-javascript'                " better javascript editing
   Plugin 'digitaltoad/vim-jade'                   " jade syntax
   Plugin 'groenewege/vim-less'                    " less syntax
