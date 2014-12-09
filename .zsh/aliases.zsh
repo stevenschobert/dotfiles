@@ -24,6 +24,9 @@ alias simple_server="python -m SimpleHTTPServer"
 # katon
 alias katon=/Users/stevenschobert/.nvm/v0.10.32/bin/katon
 
+# go
+function export_go_path { export GOPATH=$(pwd) }
+
 # misc
 alias tp="TexturePacker"
 alias nw="/usr/local/bin/node-webkit.app/Contents/MacOS/node-webkit"
