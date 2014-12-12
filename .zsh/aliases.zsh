@@ -25,7 +25,8 @@ alias simple_server="python -m SimpleHTTPServer"
 alias katon=/Users/stevenschobert/.nvm/v0.10.32/bin/katon
 
 # go
-function export_go_path { export GOPATH=$(pwd) }
+export GOPATH="$HOME/Documents/go"
+export PATH=$PATH:"$HOME/Documents/go/bin"
 
 # misc
 alias tp="TexturePacker"
