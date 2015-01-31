@@ -18,6 +18,9 @@ function dk_clean {docker rm `docker ps --no-trunc -a -q` }
 function export_boot2docker { echo $(boot2docker shellinit) > ~/.zsh/boot2docker.zsh }
 function export_localdocker { sudo sed -i -e 's/^[0-9\.]* localdocker$//g' /private/etc/hosts && echo "$(boot2docker ip 2>/dev/null) localdocker" | xargs -I % sudo sh -c "echo '%' >> /private/etc/hosts" }
 
+# gitignore fetch
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+
 # spin up a simple web server
 alias simple_server="python -m SimpleHTTPServer"
 
