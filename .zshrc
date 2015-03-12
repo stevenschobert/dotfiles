@@ -1,6 +1,6 @@
 # Oh my zsh setup
 ZSH=$HOME/.oh-my-zsh
-plugins=(git sublime)
+plugins=(git sublime bundler brew npm mix encode64 jsontools urltools last-working-dir wd)
 source $ZSH/oh-my-zsh.sh
 
 # Theme: https://github.com/sindresorhus/pure
