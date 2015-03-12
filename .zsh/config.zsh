@@ -2,11 +2,7 @@
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:vendor/bundle/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 
-# Elixir
-#export PATH=$PATH:$(find /usr/local/Cellar/elixir -type d -name bin | awk 'END{print}')
-
 # Rbenv
-#export RBENV_ROOT=/usr/local/var/rbenv
 export PATH=$PATH:$HOME/.rbenv/bin
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
