@@ -4,10 +4,7 @@ alias showHiddenFiles="defaults write com.apple.finder AppleShowAllFiles TRUE &&
 alias hideHiddenFiles="defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder"
 
 # bundler
-alias bake="bundle exec rake"
-alias bails="bundle exec rails"
-alias boreman="bundle exec foreman"
-alias buard="bundle exec guard"
+alias b="bundle"
 
 # postgres
 alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
