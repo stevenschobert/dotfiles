@@ -972,15 +972,15 @@
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>995 241 445 77 0 0 1440 877 </string>
+	<string>995 107 445 77 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>1148 713 924 485 0 0 2560 1417 </string>
+	<string>516 392 924 485 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>317 140 906 666 0 0 1440 877 </string>
+	<string>218 102 1034 698 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 611 479 266 0 0 1440 877 </string>
+	<string>261 97 986 740 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>979 452 906 666 0 0 2560 1417 </string>
+	<string>316 88 1002 698 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1175,7 +1175,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>128</integer>
+			<integer>124</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Color</key>
@@ -1537,11 +1537,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>InconsolataForPowerline 14</string>
+			<string>InconsolataForPowerline 15</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Inconsolata 14</string>
+			<string>Inconsolata 15</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1907,7 +1907,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>128</integer>
+			<integer>124</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Color</key>
@@ -2269,11 +2269,11 @@
 			<key>Name</key>
 			<string>Writing</string>
 			<key>Non Ascii Font</key>
-			<string>InconsolataForPowerline 14</string>
+			<string>InconsolataForPowerline 15</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Inconsolata 14</string>
+			<string>Inconsolata 15</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
