@@ -3,6 +3,9 @@ alias o="open ."
 alias showHiddenFiles="defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder"
 alias hideHiddenFiles="defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder"
 
+# Gitx
+alias gx="gitx"
+
 # docker
 function dk_clean {docker rm `docker ps --no-trunc -a -q` }
 function export_boot2docker { echo $(boot2docker shellinit) > ~/.zsh/boot2docker.zsh }
