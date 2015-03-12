@@ -41,6 +41,7 @@
   Plugin 'mustache/vim-mustache-handlebars'       " mustache syntax
   Plugin 'heartsentwined/vim-emblem'              " emblem syntax
   Plugin 'rizzatti/dash.vim'                      " Dash documentation search
+  Plugin 'rking/ag.vim'                           " the_silver_search bindings
 
   call vundle#end()
   filetype plugin indent on
