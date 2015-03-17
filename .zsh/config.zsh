@@ -2,6 +2,9 @@
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:vendor/bundle/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 
+# Editor
+export EDITOR=vim
+
 # Rbenv
 export PATH=$PATH:$HOME/.rbenv/bin
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
