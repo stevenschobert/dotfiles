@@ -42,7 +42,7 @@
   Plugin 'heartsentwined/vim-emblem'              " emblem syntax
   Plugin 'rizzatti/dash.vim'                      " Dash documentation search
   Plugin 'rking/ag.vim'                           " the_silver_search bindings
-  Plugin 'thoughtbot/vim-rspec'                   " rspec helper
+  Plugin 'janko-m/vim-test'                       " test runner
 
   call vundle#end()
   filetype plugin indent on
@@ -134,11 +134,12 @@
   nmap <Leader>ms :make start<CR>
   nmap <Leader>mi :make install<CR>
 
-  " Rspec shortcuts
-  nmap <Leader>tf :call RunCurrentSpecFile()<CR>
-  nmap <Leader>tn :call RunNearestSpec()<CR>
-  nmap <Leader>tl :call RunLastSpec()<CR>
-  nmap <Leader>ta :call RunAllSpecs()<CR>
+  " Test shortcuts
+  nmap <silent> <leader>tn :TestNearest<CR>
+  nmap <silent> <leader>tf :TestFile<CR>
+  nmap <silent> <leader>ta :TestSuite<CR>
+  nmap <silent> <leader>tl :TestLast<CR>
+  nmap <silent> <leader>tv :TestVisit<CR>
 
   " Dash documentation search
   nmap <silent> <leader>- <Plug>DashSearch
@@ -198,8 +199,8 @@
   let g:user_emmet_leader_key='tt'   " remap leader key
   let g:user_emmet_mode='n'          "only enable normal mode functions.
 
-"= Vim-Rspec ======================================================================================
+"= Vim-Test =======================================================================================
 
-  let g:rspec_runner = "os_x_iterm"
-  let g:rspec_command = "!bundle exec rspec -f d {spec}"
+  let g:test#ruby#rspec#executable = 'bundle exec rspec'
+  let g:test#ruby#rspec#options = '-f d'
 
