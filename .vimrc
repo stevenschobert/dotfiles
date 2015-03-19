@@ -159,8 +159,9 @@
 
 "= File Types =====================================================================================
 
-  au BufRead,BufNewFile *.sjs setf javascript       " JavaScript for sweet.js files
-  au BufRead,BufNewFile .jshintrc setf json         " JSON for .jshintrc files
+  au BufRead,BufNewFile *.sjs setf javascript         " JavaScript for sweet.js files
+  au BufRead,BufNewFile .jshintrc setf json           " JSON for .jshintrc files
+  au BufNewFile,BufRead *.json.jbuilder set ft=ruby   " Ruby for .jbuilder files
 
 "= Vim-JSON  ======================================================================================
 
