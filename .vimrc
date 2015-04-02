@@ -43,6 +43,7 @@
   Plugin 'rizzatti/dash.vim'                      " Dash documentation search
   Plugin 'rking/ag.vim'                           " the_silver_search bindings
   Plugin 'janko-m/vim-test'                       " test runner
+  Plugin 'zerowidth/vim-copy-as-rtf'              " copy out to OSX as RTF
 
   call vundle#end()
   filetype plugin indent on
