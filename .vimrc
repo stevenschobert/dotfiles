@@ -17,15 +17,11 @@
 
   Plugin 'altercation/vim-colors-solarized'       " Solarized color scheme
   Plugin 'reedes/vim-colors-pencil'               " Pencil theme for writing
+
   Plugin 'tpope/vim-unimpaired'                   " awesome key shortucts
   Plugin 'scrooloose/nerdtree'                    " file/folder explorer
-  Plugin 'kchmck/vim-coffee-script'               " coffee-script syntax
-  Plugin 'elzr/vim-json'                          " better JSON editing
   Plugin 'kien/ctrlp.vim'                         " fuzzy file searching
   Plugin 'terryma/vim-multiple-cursors'           " multiple cursor selection
-  Plugin 'pangloss/vim-javascript'                " better javascript editing
-  Plugin 'digitaltoad/vim-jade'                   " jade syntax
-  Plugin 'groenewege/vim-less'                    " less syntax
   Plugin 'scrooloose/syntastic'                   " syntax checker
   Plugin 'scrooloose/nerdcommenter'               " easy comment toggling
   Plugin 'vim-ruby/vim-ruby'                      " better ruby editing
@@ -33,17 +29,24 @@
   Plugin 'suan/vim-instant-markdown'              " preview markdown files
   Plugin 'bling/vim-airline'                      " status bar
   Plugin 'bling/vim-bufferline'                   " show buffers in status bar
-  Plugin 'wavded/vim-stylus'                      " sylus syntax
   Plugin 'ap/vim-css-color'                       " show hex colors in files
   Plugin 'mattn/emmet-vim'                        " html key shortcuts
-  Plugin 'Glench/Vim-Jinja2-Syntax'               " jinja2 syntax
-  Plugin 'elixir-lang/vim-elixir'                 " elixir syntax
-  Plugin 'mustache/vim-mustache-handlebars'       " mustache syntax
-  Plugin 'heartsentwined/vim-emblem'              " emblem syntax
   Plugin 'rizzatti/dash.vim'                      " Dash documentation search
   Plugin 'rking/ag.vim'                           " the_silver_search bindings
   Plugin 'janko-m/vim-test'                       " test runner
   Plugin 'zerowidth/vim-copy-as-rtf'              " copy out to OSX as RTF
+  Plugin 'godlygeek/tabular'                      " easy align columns
+
+  Plugin 'mustache/vim-mustache-handlebars'       " mustache syntax
+  Plugin 'elzr/vim-json'                          " better JSON editing
+  Plugin 'heartsentwined/vim-emblem'              " emblem syntax
+  Plugin 'Glench/Vim-Jinja2-Syntax'               " jinja2 syntax
+  Plugin 'wavded/vim-stylus'                      " sylus syntax
+  Plugin 'groenewege/vim-less'                    " less syntax
+  Plugin 'pangloss/vim-javascript'                " better javascript editing
+  Plugin 'digitaltoad/vim-jade'                   " jade syntax
+  Plugin 'kchmck/vim-coffee-script'               " coffee-script syntax
+  Plugin 'elixir-lang/vim-elixir'                 " elixir syntax
 
   call vundle#end()
   filetype plugin indent on
