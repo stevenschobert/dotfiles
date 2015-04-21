@@ -14,6 +14,9 @@ function export_localdocker { sudo sed -i -e 's/^[0-9\.]* localdocker$//g' /priv
 # gitignore fetch
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
+# open emacs in gui
+function emacs() { /Applications/Emacs.app/Contents/MacOS/Emacs "$@" ;}
+
 # spin up a simple web server
 alias simple_server="python -m SimpleHTTPServer"
 
