@@ -139,6 +139,7 @@ before layers configuration."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
+  (setq neo-theme 'nerd)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
