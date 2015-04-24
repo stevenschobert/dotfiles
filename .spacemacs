@@ -16,7 +16,8 @@
      ;; Example of useful layers you may want to use right away
      ;; Uncomment a layer name and press C-c C-c to install it
      ;; --------------------------------------------------------
-     auto-completion
+     (auto-completion :variables
+                      auto-completion-use-tab-instead-of-enter t)
      ;; better-defaults
      (git :variables
           git-gutter-use-fringe t)
