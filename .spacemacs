@@ -7,7 +7,7 @@
   (setq-default
    ;; List of additional paths where to look for configuration layers.
    ;; Paths must have a trailing slash (ie. `~/.mycontribs/')
-   dotspacemacs-configuration-layer-path '()
+   dotspacemacs-configuration-layer-path '("~/.spacemacs-custom/")
    ;; List of configuration layers to load. If it is the symbol `all' instead
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
@@ -18,14 +18,11 @@
      ;; --------------------------------------------------------
      (auto-completion :variables
                       auto-completion-use-tab-instead-of-enter t)
-     ;; better-defaults
      (git :variables
           git-gutter-use-fringe t)
      markdown
-     ;; org
      syntax-checking
      osx
-     themes-megapack
      dash
      erlang-elixir
      )
@@ -40,6 +37,8 @@
   "Initialization function.
 This function is called at the very startup of Spacemacs initialization
 before layers configuration."
+  ;; Load in custom themes
+  (add-to-list 'custom-theme-load-path "~/.spacemacs-custom/themes/")
   ;; This setq-default sexp is an exhaustive list of all the supported
   ;; spacemacs settings.
   (setq-default
@@ -63,8 +62,7 @@ before layers configuration."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(lush
-                         espresso)
+   dotspacemacs-themes '(Amelie)
    ;; If non nil the cursor color matches the state color.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
