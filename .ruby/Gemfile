@@ -1,0 +1,11 @@
+# List of gems I want to always keep installed globally
+#
+# After upgrading/installing ruby, do:
+#
+#   gem install bundler
+#   bundle install --gemfile=~/.ruby/Gemfile
+#
+source "https://rubygems.org"
+
+gem "pry"
+gem "rails"
