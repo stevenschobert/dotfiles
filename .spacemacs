@@ -16,14 +16,16 @@
      ;; Example of useful layers you may want to use right away
      ;; Uncomment a layer name and press C-c C-c to install it
      ;; --------------------------------------------------------
-     (auto-completion :variables
-                      auto-completion-use-tab-instead-of-enter t)
+     auto-completion
      (git :variables
           git-gutter-use-fringe t)
      markdown
      syntax-checking
      osx
      dash
+     javascript
+     html
+     ruby
      erlang-elixir
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
@@ -140,8 +142,21 @@ before layers configuration."
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
   (setq
+   ;; Better folder icons
    neo-theme 'nerd
-   powerline-default-separator 'nil)
+   ;; Remove powerline separators
+   powerline-default-separator 'nil
+   ;; Ruby version manager
+   ruby-version-manager 'rbenv
+   ;; Rails support
+   ruby-enable-ruby-on-rails-support t
+   ;; Javascript indentation
+   js2-basic-offset 2
+   ;; Html indentation
+   web-mode-markup-indent-offset 2
+   web-mode-css-indent-offset 2
+   web-mode-code-indent-offset 2)
+  ;; Enable global auto-completion
   (global-company-mode)
 )
 
