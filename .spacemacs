@@ -139,7 +139,9 @@ before layers configuration."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
-  (setq neo-theme 'nerd)
+  (setq
+   neo-theme 'nerd
+   powerline-default-separator 'nil)
   (global-company-mode)
 )
 
