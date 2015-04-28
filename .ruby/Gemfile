@@ -9,3 +9,4 @@ source "https://rubygems.org"
 
 gem "pry"
 gem "rails"
+gem "rspec"
