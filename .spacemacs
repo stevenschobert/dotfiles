@@ -135,6 +135,9 @@ before layers configuration."
    dotspacemacs-default-package-repository nil
    )
   ;; User initialization goes here
+  ;; https://github.com/purcell/color-theme-sanityinc-solarized/issues/15
+  (eval-after-load 'enh-ruby-mode
+    '(remove-hook 'enh-ruby-mode-hook 'erm-define-faces))
   )
 
 (defun dotspacemacs/config ()
