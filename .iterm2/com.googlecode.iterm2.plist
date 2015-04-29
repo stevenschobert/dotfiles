@@ -947,7 +947,9 @@
 	<key>NSFontPanelSizeSliderParams</key>
 	<string>2 0 100</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.iterm2</string>
+	<string>~/Downloads/mbadolato-iTerm2-Color-Schemes-2aee4b4/schemes</string>
+	<key>NSNavPanelExpandedSizeForOpenMode</key>
+	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -972,15 +974,17 @@
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>995 97 445 77 0 0 1440 877 </string>
+	<string>1893 235 445 77 0 0 2560 1417 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>516 392 924 485 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>217 122 1034 698 0 0 1440 877 </string>
+	<string>383 118 970 740 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>439 101 970 740 0 0 1440 877 </string>
+	<string>1707 740 850 677 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>220 127 1002 698 0 0 1440 877 </string>
+	<string>1619 99 970 740 0 0 2560 1417 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>440 120 970 740 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2514,7 +2518,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-04-21T15:07:36Z</date>
+	<date>2015-04-29T05:02:13Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -2560,6 +2564,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.0.0.20150412</string>
+	<string>2.1</string>
 </dict>
 </plist>
