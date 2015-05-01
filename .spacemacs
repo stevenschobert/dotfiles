@@ -135,15 +135,10 @@ before layers configuration."
    dotspacemacs-default-package-repository nil
    )
   ;; User initialization goes here
+  ;; -----------------------------
   ;; https://github.com/purcell/color-theme-sanityinc-solarized/issues/15
   (eval-after-load 'enh-ruby-mode
     '(remove-hook 'enh-ruby-mode-hook 'erm-define-faces))
-  )
-
-(defun dotspacemacs/config ()
-  "Configuration function.
- This function is called at the very end of Spacemacs initialization after
-layers configuration."
   (setq
    ;; Better folder icons
    neo-theme 'nerd
@@ -159,6 +154,12 @@ layers configuration."
    web-mode-markup-indent-offset 2
    web-mode-css-indent-offset 2
    web-mode-code-indent-offset 2)
+  )
+
+(defun dotspacemacs/config ()
+  "Configuration function.
+ This function is called at the very end of Spacemacs initialization after
+layers configuration."
   ;; Enable global auto-completion
   (global-company-mode)
 )
