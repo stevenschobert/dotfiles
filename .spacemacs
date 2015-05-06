@@ -142,8 +142,6 @@ before layers configuration."
   (setq
    ;; Better folder icons
    neo-theme 'nerd
-   ;; Remove powerline separators
-   powerline-default-separator 'nil
    ;; Ruby version manager
    ruby-version-manager 'rbenv
    ;; Rails support
@@ -162,6 +160,9 @@ before layers configuration."
 layers configuration."
   ;; Enable global auto-completion
   (global-company-mode)
+  (setq
+   ;; Remove powerline separators
+   powerline-default-separator 'nil)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
