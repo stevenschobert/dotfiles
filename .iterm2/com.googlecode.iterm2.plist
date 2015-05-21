@@ -978,7 +978,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>516 392 924 485 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>272 73 970 740 0 0 1440 877 </string>
+	<string>385 71 970 740 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>720 11 714 866 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -2289,7 +2289,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>0</integer>
 			<key>Scrollback With Status Bar</key>
 			<false/>
 			<key>Scrollback in Alternate Screen</key>
