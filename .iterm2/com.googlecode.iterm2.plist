@@ -978,9 +978,9 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>516 392 924 485 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>158 39 970 740 0 0 1440 877 </string>
+	<string>117 299 722 509 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>720 11 714 866 0 0 1440 877 </string>
+	<string>116 299 730 509 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>1619 99 970 740 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -1179,7 +1179,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>120</integer>
+			<integer>89</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Color</key>
@@ -1553,7 +1553,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>34</integer>
+			<integer>23</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
@@ -1911,7 +1911,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>120</integer>
+			<integer>89</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Color</key>
@@ -2285,7 +2285,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>34</integer>
+			<integer>23</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
@@ -2455,7 +2455,7 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>453236810.92281902</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>454541772.73500001</real>
+	<real>456372457.16596502</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -2522,7 +2522,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-05-28T19:02:25Z</date>
+	<date>2015-06-19T02:07:13Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
