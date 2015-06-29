@@ -30,6 +30,7 @@ brew 'the_silver_searcher'
 
 # languages/frameworks
 brew 'rbenv'
+brew 'ruby-build'
 brew 'nvm'
 
 # db
