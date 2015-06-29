@@ -28,6 +28,10 @@ brew 'the_silver_searcher'
 #brew 'ansible'
 #brew 'terraform'
 
+# languages/frameworks
+brew 'rbenv'
+brew 'nvm'
+
 # db
 brew 'postgresql'
 brew 'redis'
