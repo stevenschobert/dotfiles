@@ -6,7 +6,7 @@ export PATH=$PATH:vendor/bundle/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin
 export EDITOR=vim
 
 # Rbenv
-export PATH=$PATH:$HOME/.rbenv/bin
+export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Heroku Toolbelt
@@ -21,5 +21,5 @@ export DOCKER_CERT_PATH=/Users/stevenschobert/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
 
 # NVM
-[ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh
-
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
