@@ -1,6 +1,7 @@
 # taps
 tap 'caskroom/cask'
 tap 'homebrew/bundle'
+tap 'homebrew/dupes'
 tap 'jingweno/ccat'
 
 # casks
@@ -25,14 +26,8 @@ brew 'ngrok'
 brew 'the_silver_searcher'
 
 # ops
-#brew 'ansible'
-#brew 'terraform'
-
-# languages/frameworks
-brew 'rbenv'
-brew 'ruby-build'
-brew 'nvm'
-brew 'python'
+brew 'ansible'
+brew 'terraform'
 
 # db
 brew 'postgresql'
@@ -45,24 +40,28 @@ brew 'redis'
 #brew 'solr'
 
 # system
-brew 'imagemagick'
-brew 'openssl'
 brew 'autoconf'
 brew 'automake'
 brew 'freetype'
+brew 'gdbm'
+brew 'gmp'
+brew 'icu4c'
+brew 'imagemagick'
+brew 'jpeg'
 brew 'libpng'
 brew 'libtiff'
-brew 'gmp'
-brew 'gdbm'
-brew 'icu4c'
-brew 'jpeg'
 brew 'libtool'
+brew 'libxml2'
+brew 'libxslt'
 brew 'libyaml'
 brew 'lz4'
+brew 'ncurses'
 brew 'nspr'
+brew 'openssl'
 brew 'pandoc'
 brew 'pcre'
 brew 'pkg-config'
+brew 'python'
 brew 'readline'
 brew 'snappy'
 brew 'spidermonkey'
