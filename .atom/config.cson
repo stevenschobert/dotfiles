@@ -1,0 +1,17 @@
+"*":
+  "exception-reporting":
+    userId: "317006e9-bbb8-faf6-4d58-90db35619d88"
+  welcome:
+    showOnStartup: false
+  core: {}
+  editor:
+    invisibles: {}
+    fontFamily: "Inconsolata for Powerline"
+    autoIndentOnPaste: false
+  "vim-mode":
+    startInInsertMode: true
+  linter: {}
+  "linter-ruby":
+    rubyExecutablePath: "/Users/stevenschobert/.asdf/shims/ruby"
+  "tree-view":
+    hideVcsIgnoredFiles: true
