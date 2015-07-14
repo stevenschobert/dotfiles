@@ -1,6 +1,7 @@
 # keeps a list of npm packages I always want installed globally
 npm install -g \
-    jsonlint \
+    instant-markdown-d \
     jshint \
-    tern \
-    instant-markdown-d
+    jsonlint \
+    metalsmith \
+    tern
