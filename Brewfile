@@ -24,6 +24,7 @@ brew 'heroku-toolbelt'
 brew 'pgcli'
 brew 'ngrok'
 brew 'the_silver_searcher'
+brew 'ctags'
 
 # ops
 brew 'ansible'
