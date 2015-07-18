@@ -22,3 +22,6 @@ tmp/**/*
 
 # Secure stuff
 .zsh/auth.zsh
+
+# Ctags
+tags
