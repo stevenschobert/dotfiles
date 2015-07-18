@@ -15,3 +15,5 @@
     rubyExecutablePath: "/Users/stevenschobert/.asdf/shims/ruby"
   "tree-view":
     hideVcsIgnoredFiles: true
+  "linter-jshint":
+    executablePath: "/Users/stevenschobert/.asdf/shims/jshint"
