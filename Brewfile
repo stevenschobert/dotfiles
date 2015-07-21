@@ -2,6 +2,7 @@
 tap 'caskroom/cask'
 tap 'homebrew/bundle'
 tap 'homebrew/dupes'
+tap 'homebrew/php'
 tap 'jingweno/ccat'
 
 # casks
@@ -29,16 +30,16 @@ brew 'ctags'
 # ops
 brew 'ansible'
 brew 'terraform'
+brew 'nginx'
+
+# language
+brew 'php56'
 
 # db
 brew 'postgresql'
 brew 'sqlite'
 brew 'redis'
-#brew 'rethinkdb'
-#brew 'influxdb'
-#brew 'couchdb'
-#brew 'mysql'
-#brew 'solr'
+brew 'mysql'
 
 # system
 brew 'autoconf'
