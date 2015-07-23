@@ -3,6 +3,9 @@ alias o="open ."
 alias showHiddenFiles="defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder"
 alias hideHiddenFiles="defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder"
 
+# BBEdit
+function e() { bbedit $@ }
+
 # Gitx
 alias gx="gitx"
 
