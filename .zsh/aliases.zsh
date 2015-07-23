@@ -1,10 +1,24 @@
 # File System
-alias o="open ."
+function o() {
+  if [[ "$1" != "" ]]; then
+    TARGET="$1"
+  else
+    TARGET=.
+  fi
+  open $TARGET
+}
 alias showHiddenFiles="defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder"
 alias hideHiddenFiles="defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder"
 
 # BBEdit
-function e() { bbedit $@ }
+function e() {
+  if [[ "$1" != "" ]]; then
+    TARGET="$1"
+  else
+    TARGET=.
+  fi
+  bbedit $TARGET  
+}
 
 # Gitx
 alias gx="gitx"
