@@ -34,14 +34,8 @@ function resetdb_rails() { rake db:drop && rake db:create && rake db:migrate && 
 # gitignore fetch
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
-# open emacs in gui
-function emacs() { /Applications/Emacs.app/Contents/MacOS/Emacs "$@" ;}
-
 # spin up a simple web server
 alias simple_server="python -m SimpleHTTPServer"
-
-# katon
-alias katon=/Users/stevenschobert/.nvm/v0.10.32/bin/katon
 
 # go
 export GOPATH="$HOME/Documents/go"
