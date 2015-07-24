@@ -2,6 +2,9 @@
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:vendor/bundle/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 
+# Don't match patterns
+unsetopt nomatch
+
 # asdf
 . $HOME/.asdf/asdf.sh
 
