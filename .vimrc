@@ -67,7 +67,6 @@
     set number                   " display line numbers
     set visualbell               " use visual bell
 
-    set background=dark          " Dark background
     set laststatus=2             " Fix for statusbar toggling
     set encoding=utf-8           " Fix special character encoding
     set t_Co=256                 " MOAR COLOCS
@@ -149,9 +148,6 @@
   nmap <silent> <leader>- <Plug>DashSearch
 
 "= Theme ==========================================================================================
-
-  set background=dark
-  colorscheme solarized
 
   set hlsearch                            " highlight all search matches
   set colorcolumn=100                     " visual indicator at column 100
