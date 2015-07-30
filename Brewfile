@@ -26,6 +26,7 @@ brew 'pgcli'
 brew 'ngrok'
 brew 'the_silver_searcher'
 brew 'ctags'
+brew 'carthage'
 
 # ops
 brew 'ansible'
