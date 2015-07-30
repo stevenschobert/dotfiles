@@ -10,6 +10,16 @@ function o() {
 alias showHiddenFiles="defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder"
 alias hideHiddenFiles="defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder"
 
+# Ruby
+function rinstall_gem() {
+  GEMSPEC=$(ls -l | grep \.gemspec | awk '{ print $9; exit }')
+  echo "building $GEMSPEC"
+  gem build "./$GEMSPEC"
+  GEM=$(ls -l | grep \.gem | awk '{ print $9; exit }')
+  echo "install $GEM"
+  gem install "./$GEM"
+}
+
 # BBEdit
 function e() {
   if [[ "$1" != "" ]]; then
