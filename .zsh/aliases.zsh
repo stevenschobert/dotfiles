@@ -20,6 +20,10 @@ function rinstall_gem() {
   gem install "./$GEM"
 }
 
+function mtime() {
+  echo 'puts Time.now.strftime("%Y%m%d%H%M%S")' | ruby
+}
+
 # BBEdit
 function e() {
   if [[ "$1" != "" ]]; then
