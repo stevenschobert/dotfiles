@@ -41,6 +41,7 @@ brew 'postgresql'
 brew 'sqlite'
 brew 'redis'
 brew 'mysql'
+brew 'couchdb'
 
 # system
 brew 'autoconf'
