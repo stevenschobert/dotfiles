@@ -15,8 +15,7 @@ export EDITOR=vim
 export PATH=$PATH:/usr/local/heroku/bin
 
 # Android
-export ANDROID_HOME=/Applications/Android\ Studio.app/sdk/
-export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform_tools
+export PATH=$PATH:~/Library/Android/sdk/platform-tools:~/Library/Android/sdk/tools
 
 # Boot2Docker
 export DOCKER_CERT_PATH=/Users/stevenschobert/.boot2docker/certs/boot2docker-vm
