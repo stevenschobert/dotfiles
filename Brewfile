@@ -27,6 +27,7 @@ brew 'ngrok'
 brew 'the_silver_searcher'
 brew 'ctags'
 brew 'carthage'
+brew 'solr'
 
 # ops
 brew 'ansible'
