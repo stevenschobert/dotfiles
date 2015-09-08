@@ -12,6 +12,9 @@ Thumbs.db
 vendor/bundle
 vendor/bin
 
+# Asdf
+.tool-versions
+
 # App-Specific
 .env
 .powenv
