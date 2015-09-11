@@ -4,6 +4,8 @@ tap 'homebrew/bundle'
 tap 'homebrew/dupes'
 tap 'homebrew/php'
 tap 'jingweno/ccat'
+tap 'homebrew/boneyard'
+tap 'homebrew/versions'
 
 # casks
 brew 'brew-cask'
@@ -30,7 +32,7 @@ brew 'carthage'
 brew 'solr'
 
 # ops
-brew 'ansible'
+brew 'homebrew/versions/ansible18'
 brew 'terraform'
 brew 'nginx'
 
