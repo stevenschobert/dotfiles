@@ -4,5 +4,6 @@ npm install -g \
     instant-markdown-d \
     jshint \
     jsonlint \
+    knex \
     metalsmith \
     tern
