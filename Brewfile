@@ -1,11 +1,12 @@
 # taps
 tap 'caskroom/cask'
+tap 'homebrew/boneyard'
 tap 'homebrew/bundle'
 tap 'homebrew/dupes'
 tap 'homebrew/php'
-tap 'jingweno/ccat'
-tap 'homebrew/boneyard'
 tap 'homebrew/versions'
+tap 'jingweno/ccat'
+tap 'yudai/gotty'
 
 # casks
 brew 'brew-cask'
@@ -20,16 +21,17 @@ cask 'quicklook-json'
 brew 'vim'
 
 # cli
-brew 'git'
-brew 'ccat'
-brew 'httpie'
-brew 'heroku-toolbelt'
-brew 'pgcli'
-brew 'ngrok'
-brew 'the_silver_searcher'
-brew 'ctags'
 brew 'carthage'
+brew 'ccat'
+brew 'ctags'
+brew 'git'
+brew 'gotty'
+brew 'heroku-toolbelt'
+brew 'httpie'
+brew 'ngrok'
+brew 'pgcli'
 brew 'solr'
+brew 'the_silver_searcher'
 
 # ops
 brew 'homebrew/versions/ansible18'
