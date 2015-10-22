@@ -6,3 +6,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Load files
 for file (~/.zsh/*.zsh) source $file
+
+# added by travis gem
+[ -f /Users/stevenschobert/.travis/travis.sh ] && source /Users/stevenschobert/.travis/travis.sh
