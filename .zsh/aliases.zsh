@@ -21,7 +21,11 @@ function rinstall_gem() {
 }
 
 function mtime() {
-  echo 'puts Time.now.strftime("%Y%m%d%H%M%S")' | ruby
+  echo '$stdout.sync = true; print Time.now.strftime("%Y%m%d%H%M%S")' | ruby
+}
+
+function hash() {
+  echo "require 'SecureRandom'; \$stdout.sync = true; print SecureRandom.hex($1);" | ruby
 }
 
 # BBEdit
