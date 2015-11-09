@@ -5,5 +5,6 @@ npm install -g \
     jshint \
     jsonlint \
     knex \
+    lodash \
     metalsmith \
     tern
