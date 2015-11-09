@@ -2,6 +2,7 @@
 npm install -g \
     bower \
     instant-markdown-d \
+    js-beautify \
     jshint \
     jsonlint \
     knex \
