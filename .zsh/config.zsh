@@ -8,6 +8,9 @@ unsetopt nomatch
 # asdf
 . $HOME/.asdf/asdf.sh
 
+# node
+. $HOME/.node/path_shim.sh
+
 # Editor
 export EDITOR=vim
 
