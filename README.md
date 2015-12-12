@@ -43,6 +43,7 @@ If you want to hide the readme and license files from your home directory, run t
 ```sh
 SetFile -a "V" ~/README.md
 SetFile -a "V" ~/LICENSE
+SetFile -a "V" ~/Brewfile
 ```
 
 ### Git Exclude
