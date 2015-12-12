@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+BBEdit Language Module for CoffeeScript
+
+Put this file in
+   ~/Library/Application Support/BBEdit/Language Modules
+or equivalent.
+
+Based off of the examples shipped in the BBEdit SDK.
+-->
+<plist version="1.0">
+<dict>
+	<key>BBEditDocumentType</key>
+	<string>CodelessLanguageModule</string>
+	<key>com.barebones.DocumentType</key>
+	<string>CodelessLanguageModule</string>
+	<key>BBLMLanguageDisplayName</key>
+	<string><![CDATA[CoffeeScript]]></string>
+	<key>BBLMLanguageCode</key>
+	<string><![CDATA[CoSc]]></string>
+	<key>BBLMColorsSyntax</key>
+	<true/>
+	<key>BBLMScansFunctions</key>
+	<true/>
+	<key>BBLMIsCaseSensitive</key>
+	<true/>
+	<key>BBLMKeywordList</key>
+	<array>
+		<string><![CDATA[if]]></string>
+		<string><![CDATA[for]]></string>
+		<string><![CDATA[in]]></string>
+		<string><![CDATA[then]]></string>
+		<string><![CDATA[else]]></string>
+		<string><![CDATA[or]]></string>
+		<string><![CDATA[of]]></string>
+		<string><![CDATA[while]]></string>
+		<string><![CDATA[until]]></string>
+		<string><![CDATA[do]]></string>
+		<string><![CDATA[try]]></string>
+		<string><![CDATA[catch]]></string>
+		<string><![CDATA[is]]></string>
+		<string><![CDATA[isnt]]></string>
+		<string><![CDATA[unless]]></string>
+		<string><![CDATA[and]]></string>
+		<string><![CDATA[not]]></string>
+		<string><![CDATA[class]]></string>
+		<string><![CDATA[extends]]></string>
+		<string><![CDATA[super]]></string>
+		<string><![CDATA[new]]></string>
+		<string><![CDATA[this]]></string>
+		<string><![CDATA[switch]]></string>
+		<string><![CDATA[when]]></string>
+		<string><![CDATA[finally]]></string>
+		<string><![CDATA[typeof]]></string>
+		<string><![CDATA[->]]></string>
+		<string><![CDATA[=>]]></string>
+	</array>
+	<key>BBLMPredefinedNameList</key>
+	<array>
+	  <string><![CDATA[true]]></string>
+	  <string><![CDATA[false]]></string>
+	  <string><![CDATA[null]]></string>
+	  <string><![CDATA[@]]></string>
+	</array>
+	<key>BBLMSuffixMap</key>
+	<array>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string><![CDATA[.coffee]]></string>
+		</dict>
+	</array>
+	<key>BBLMCommentLineDefault</key>
+	<string><![CDATA[#]]></string>
+	<key>Language Features</key>
+	<dict>
+		<key>Identifier and Keyword Character Class</key>
+		<string><![CDATA[0-9A-Z_a-z\@\=\-\>\?]]></string>
+		<key>Comment Pattern</key>
+		<string><![CDATA[(?x:
+			(\#.*?$) |
+			(?s:^\s*\#\#\#.+?\s*\#\#\#)
+		)
+		]]></string>
+
+		<key>String Pattern</key>
+		<string><![CDATA[
+		(?x:
+      ("(\\"|[^"\r]|\\\r)*") |  (?# Double-quote)
+      ('(\\'|[^'\r]|\\\r)*') |  (?# Single-quote)
+      (?s:                      (?# Here-document)
+          <<-?(?P<delim>\w+)
+          .*?
+          (?P=delim)
+      )
+    )
+    ]]></string>
+    <key>Function Pattern</key>
+    <string><![CDATA[(?sx:^\s*(?P<function>(?P<function_name>[a-zA-Z0-9_@]+)\W*(=|:)\W*(\([a-zA-Z0-9_, ]+\))?\W*(\-\>|\=\>)\W*))]]></string>
+	</dict>
+</dict>
+</plist>
