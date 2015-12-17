@@ -12,6 +12,10 @@ if !(cat "$HOME/.git/info/exclude" | grep -q \*$ 2>/dev/null); then
   echo "*" >> "$HOME/.git/info/exclude"
 fi
 
+# System flags
+echo "[setup] Setting OS X preferences at $HOME/.osx/set_system_flags.sh"
+sh "$HOME/.osx/set_system_flags.sh"
+
 # Homebrew
 # http://brew.sh
 if !(hash brew 2>/dev/null); then
