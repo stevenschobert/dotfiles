@@ -1,12 +1,8 @@
 # taps
 tap 'caskroom/cask'
-tap 'homebrew/boneyard'
 tap 'homebrew/bundle'
 tap 'homebrew/dupes'
-tap 'homebrew/php'
-tap 'homebrew/versions'
 tap 'jingweno/ccat'
-tap 'yudai/gotty'
 
 # casks
 brew 'brew-cask'
@@ -21,32 +17,11 @@ cask 'quicklook-json'
 brew 'vim'
 
 # cli
-brew 'carthage'
 brew 'ccat'
-brew 'ctags'
 brew 'git'
-brew 'gotty'
 brew 'heroku-toolbelt'
 brew 'httpie'
 brew 'ngrok'
-brew 'pgcli'
-brew 'solr'
-brew 'the_silver_searcher'
-
-# ops
-brew 'homebrew/versions/ansible18'
-brew 'terraform'
-brew 'nginx'
-
-# language
-brew 'php56'
-
-# db
-brew 'postgresql'
-brew 'sqlite'
-brew 'redis'
-brew 'mysql'
-brew 'couchdb'
 
 # system
 brew 'autoconf'
@@ -64,16 +39,13 @@ brew 'libxml2'
 brew 'libxslt'
 brew 'libyaml'
 brew 'lz4'
-brew 'ncurses'
 brew 'nspr'
 brew 'openssl'
 brew 'pandoc'
 brew 'pcre'
 brew 'pkg-config'
-brew 'python'
 brew 'readline'
 brew 'snappy'
-brew 'spidermonkey'
 brew 'unixodbc'
 brew 'watchman'
 brew 'wxmac'
