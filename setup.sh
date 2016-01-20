@@ -3,7 +3,7 @@
 ASDF_DIR="$HOME/.asdf"
 OMZSH_DIR="$HOME/.oh-my-zsh"
 VUNDLE_DIR="$HOME/.vim/bundle/Vundle.vim"
-RUBY_VERSION="2.2.3"
+RUBY_VERSION="2.2.4"
 NODE_VERSION="4.2.3"
 
 # Repo setup
