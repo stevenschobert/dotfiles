@@ -10,6 +10,7 @@ npm install -g \
     knex \
     lodash \
     metalsmith \
+    react-native-cli \
     tern
 
 # updates shimmed asdf path with global modules
