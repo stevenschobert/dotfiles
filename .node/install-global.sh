@@ -10,6 +10,7 @@ npm install -g \
     knex \
     lodash \
     metalsmith \
+    nodemon \
     react-native-cli \
     tern
 
