@@ -17,6 +17,7 @@ cask 'quicklook-json'
 brew 'vim'
 
 # cli
+brew 'awscli'
 brew 'ccat'
 brew 'git'
 brew 'heroku-toolbelt'
