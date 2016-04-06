@@ -19,7 +19,3 @@ export PATH=$PATH:/usr/local/heroku/bin
 
 # Android
 export PATH=$PATH:~/Library/Android/sdk/platform-tools:~/Library/Android/sdk/tools
-
-# Boot2Docker
-export DOCKER_CERT_PATH=/Users/stevenschobert/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1

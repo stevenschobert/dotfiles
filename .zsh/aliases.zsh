@@ -42,9 +42,9 @@ function e() {
 alias gx="gitx"
 
 # docker
-function dk_clean {docker rm `docker ps --no-trunc -a -q` }
-function export_boot2docker { echo $(boot2docker shellinit) > ~/.zsh/boot2docker.zsh }
-function export_localdocker { sudo sed -i -e 's/^[0-9\.]* localdocker$//g' /private/etc/hosts && echo "$(boot2docker ip 2>/dev/null) localdocker" | xargs -I % sudo sh -c "echo '%' >> /private/etc/hosts" }
+function dk_clean { docker rm `docker ps --no-trunc -a -q` }
+function export_docker_env { echo $(docker-machine env default) > ~/.zsh/docker_env.zsh }
+function export_localdocker { sudo sed -i -e 's/^[0-9\.]* localdocker$//g' /private/etc/hosts && echo "$(docker-machine ip 2>/dev/null) localdocker" | xargs -I % sudo sh -c "echo '%' >> /private/etc/hosts" }
 
 # reset rails db
 function resetdb_rails() { rake db:drop && rake db:create && rake db:migrate && rake db:seed; }
