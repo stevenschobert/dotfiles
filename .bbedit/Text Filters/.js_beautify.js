@@ -7,7 +7,7 @@ process.stdin.on('data', function(chunk) {
 
   var s = jsbeautify(chunk, {
     indent_size: 2,
-    brace_style: "end-expand"
+    brace_style: 'end-expand'
   });
 
   process.stdout.write(s);
