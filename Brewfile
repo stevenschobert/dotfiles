@@ -22,7 +22,6 @@ brew 'ccat'
 brew 'git'
 brew 'heroku-toolbelt'
 brew 'httpie'
-brew 'ngrok'
 
 # system
 brew 'autoconf'
