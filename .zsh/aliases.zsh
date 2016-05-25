@@ -52,6 +52,9 @@ function resetdb_rails() { rake db:drop && rake db:create && rake db:migrate && 
 # gitignore fetch
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
+# copy output of command without newlines
+function cpc() { echo -n `$@` | pbcopy; }
+
 # spin up a simple web server
 alias simple_server="python -m SimpleHTTPServer"
 
