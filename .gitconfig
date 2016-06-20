@@ -4,6 +4,7 @@
 [user]
 	name = Steven Schobert
 	email = spschobert@gmail.com
+	signingkey = 8B8C39DD
 [credential]
 	helper = store
 [diff]
@@ -16,3 +17,5 @@
 	tool = bbdiff
 [mergetool "bbdiff"]
 	cmd = bbdiff --wait --resume \"$LOCAL\" \"$REMOTE\"
+[commit]
+	gpgsign = true
