@@ -52,6 +52,12 @@ function resetdb_rails() { rake db:drop && rake db:create && rake db:migrate && 
 # gitignore fetch
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
+# open git directory on github
+function gh() {
+  URL=$(cat .git/config | grep github | sed -E 's/^.*(github\.com):(.*)(\.git)?/http:\/\/\1\/\2/')
+  open $URL
+}
+
 # copy output of command without newlines
 function cpc() { echo -n `$@` | pbcopy; }
 
