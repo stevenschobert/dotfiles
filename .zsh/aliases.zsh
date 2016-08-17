@@ -53,7 +53,7 @@ function resetdb_rails() { rake db:drop && rake db:create && rake db:migrate && 
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
 # open git directory on github
-function gh() {
+function ghb() {
   URL=$(cat .git/config | grep github | sed -E 's/^.*(github\.com):(.*)(\.git)?/http:\/\/\1\/\2/')
   open $URL
 }
