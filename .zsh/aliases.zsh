@@ -10,6 +10,10 @@ function o() {
 alias showHiddenFiles="defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder"
 alias hideHiddenFiles="defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder"
 
+function bkup() {
+  cp "$1" "$1.bkup"
+}
+
 # Ruby
 function rinstall_gem() {
   GEMSPEC=$(ls -l | grep \.gemspec | awk '{ print $9; exit }')
