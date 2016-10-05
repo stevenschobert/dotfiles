@@ -22,6 +22,7 @@ brew 'ccat'
 brew 'git'
 brew 'heroku-toolbelt'
 brew 'httpie'
+brew 'httpstat'
 brew 'wrk'
 
 # system
