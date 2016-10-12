@@ -11,6 +11,7 @@ plugins=(
   colored-man-pages
   encode64
   git
+  heroku
   jsontools
   mix
   npm
