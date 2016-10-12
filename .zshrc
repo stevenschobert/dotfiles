@@ -8,6 +8,7 @@ ZSH_THEME=honukai
 plugins=(
   brew
   bundler
+  colored-man-pages
   encode64
   git
   jsontools
