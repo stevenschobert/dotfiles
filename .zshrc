@@ -5,7 +5,18 @@ ZSH_CUSTOM=$HOME/.zsh/custom
 # Theme from https://github.com/oskarkrawczyk/honukai-iterm-zsh
 ZSH_THEME=honukai
 
-plugins=(git atom bundler brew npm mix encode64 jsontools urltools wd)
+plugins=(
+  atom
+  brew
+  bundler
+  encode64
+  git
+  jsontools
+  mix
+  npm
+  urltools
+  wd
+)
 source $ZSH/oh-my-zsh.sh
 
 # Load files
