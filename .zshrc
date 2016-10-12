@@ -6,7 +6,6 @@ ZSH_CUSTOM=$HOME/.zsh/custom
 ZSH_THEME=honukai
 
 plugins=(
-  atom
   brew
   bundler
   encode64
