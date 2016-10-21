@@ -4,6 +4,7 @@ BASEDIR=$(dirname $0)
 npm install -g \
     bower \
     instant-markdown-d \
+    github-labeller \
     js-beautify \
     jshint \
     jsonlint \
