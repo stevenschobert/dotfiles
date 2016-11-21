@@ -5,7 +5,6 @@ tap 'homebrew/dupes'
 tap 'jingweno/ccat'
 
 # casks
-brew 'brew-cask'
 cask 'launchrocket'
 cask 'qlcolorcode'
 cask 'qlimagesize'
