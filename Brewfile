@@ -28,6 +28,7 @@ brew 'wrk'
 # system
 brew 'autoconf'
 brew 'automake'
+brew 'cmake'
 brew 'freetype'
 brew 'gdbm'
 brew 'gmp'
