@@ -3,8 +3,8 @@
 ASDF_DIR="$HOME/.asdf"
 OMZSH_DIR="$HOME/.oh-my-zsh"
 VUNDLE_DIR="$HOME/.vim/bundle/Vundle.vim"
-RUBY_VERSION="2.3.1"
-NODE_VERSION="6.2.2"
+RUBY_VERSION="2.3.3"
+NODE_VERSION="6.9.2"
 
 # Repo setup
 if !(cat "$HOME/.git/info/exclude" | grep -q \*$ 2>/dev/null); then
