@@ -9,6 +9,7 @@ npm install -g \
     jshint \
     jsonlint \
     knex \
+    leasot \
     lodash \
     metalsmith \
     nodemon \
