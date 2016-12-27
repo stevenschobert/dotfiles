@@ -22,6 +22,7 @@ brew 'git'
 brew 'heroku-toolbelt'
 brew 'httpie'
 brew 'httpstat'
+brew 'jq'
 brew 'tree'
 brew 'wrk'
 
