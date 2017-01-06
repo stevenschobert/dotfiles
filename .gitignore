@@ -17,6 +17,7 @@ vendor/bin
 
 # Asdf
 .tool-versions
+.tool-versions-e
 
 # App-Specific
 .env
