@@ -11,6 +11,7 @@ npm install -g \
     knex \
     leasot \
     lodash \
+    mermaid \
     metalsmith \
     nodemon \
     react-native-cli \
