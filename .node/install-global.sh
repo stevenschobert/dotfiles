@@ -14,6 +14,7 @@ npm install -g \
     mermaid \
     metalsmith \
     nodemon \
+    vue-cli \
     react-native-cli \
     tern
 
