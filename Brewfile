@@ -24,6 +24,7 @@ brew 'heroku-toolbelt'
 brew 'httpie'
 brew 'httpstat'
 brew 'jq'
+brew 'mosh'
 brew 'tree'
 brew 'wrk'
 
