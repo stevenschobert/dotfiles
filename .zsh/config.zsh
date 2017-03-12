@@ -14,15 +14,16 @@ export EDITOR=vim
 unsetopt nomatch
 
 if [[ "$PLATFORMSTR" == "Darwin" ]]; then
-  # asdf
-  . $HOME/.asdf/asdf.sh
-
-  # node
-  . $HOME/.node/path_shim.sh
-
   # Android
   export PATH=$PATH:~/Library/Android/sdk/platform-tools:~/Library/Android/sdk/tools
 fi
+
+# asdf
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+
+# node
+. $HOME/.node/path_shim.sh
 
 if [[ "$PLATFORMSTR" == "Linux" ]]; then
   # Source ssh-agent finder
