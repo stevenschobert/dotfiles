@@ -7,18 +7,10 @@
 	signingkey = 8B8C39DD
 [credential]
 	helper = store
-[diff]
-	tool = bbdiff
 [difftool "bbdiff"]
 	cmd = bbdiff --wait --resume \"$LOCAL\" \"$REMOTE\"
-[difftool]
-	prompt = false
-[merge]
-	tool = bbdiff
 [mergetool "bbdiff"]
 	cmd = bbdiff --wait --resume \"$LOCAL\" \"$REMOTE\"
-[commit]
-	gpgsign = true
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
