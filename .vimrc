@@ -26,7 +26,6 @@
   Plugin 'scrooloose/nerdcommenter'               " easy comment toggling
   Plugin 'vim-ruby/vim-ruby'                      " better ruby editing
   Plugin 'tpope/vim-endwise'                      " block closing helper
-  Plugin 'suan/vim-instant-markdown'              " preview markdown files
   Plugin 'bling/vim-airline'                      " status bar
   Plugin 'bling/vim-bufferline'                   " show buffers in status bar
   Plugin 'ap/vim-css-color'                       " show hex colors in files
@@ -34,7 +33,6 @@
   Plugin 'rizzatti/dash.vim'                      " Dash documentation search
   Plugin 'rking/ag.vim'                           " the_silver_search bindings
   Plugin 'janko-m/vim-test'                       " test runner
-  Plugin 'zerowidth/vim-copy-as-rtf'              " copy out to OSX as RTF
   Plugin 'godlygeek/tabular'                      " easy align columns
 
   Plugin 'mustache/vim-mustache-handlebars'       " mustache syntax
@@ -47,6 +45,15 @@
   Plugin 'digitaltoad/vim-jade'                   " jade syntax
   Plugin 'kchmck/vim-coffee-script'               " coffee-script syntax
   Plugin 'elixir-lang/vim-elixir'                 " elixir syntax
+
+  " macOS only plugins
+  if has("unix")
+    let s:uname = system("uname -s")
+    if s:uname == "Darwin"
+      Plugin 'zerowidth/vim-copy-as-rtf'              " copy out to OSX as RTF
+      Plugin 'suan/vim-instant-markdown'              " preview markdown files
+    endif
+  endif
 
   call vundle#end()
   filetype plugin indent on
