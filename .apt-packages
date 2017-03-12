@@ -1,0 +1,5 @@
+build-essential
+git
+software-properties-common
+vim
+zsh
