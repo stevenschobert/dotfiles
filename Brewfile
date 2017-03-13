@@ -13,6 +13,7 @@ cask 'qlstephen'
 cask 'quicklook-json'
 
 # editor
+brew 'tmux'
 brew 'vim'
 
 # cli
