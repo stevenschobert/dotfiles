@@ -13,6 +13,7 @@ libxslt-dev
 libyaml-dev
 python-setuptools
 software-properties-common
+tmux
 unixodbc-dev
 vim
 zsh
