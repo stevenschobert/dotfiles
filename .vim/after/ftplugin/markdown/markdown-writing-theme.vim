@@ -10,5 +10,11 @@ fu! s:switchToSolarized()
   set background=dark
 endfu
 
-au BufEnter <buffer> call s:switchToPencil()
-au BufWinLeave <buffer> call s:switchToSolarized()
+" macOS only
+if has("unix")
+  let s:uname = system("uname -s")
+  if s:uname == "Darwin"
+    au BufEnter <buffer> call s:switchToPencil()
+    au BufWinLeave <buffer> call s:switchToSolarized()
+  endif
+endif
