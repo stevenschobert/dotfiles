@@ -2,12 +2,12 @@
 
 ASDF_DIR="$HOME/.asdf"
 OMZSH_DIR="$HOME/.oh-my-zsh"
-TPM_DIR="$HOME/.tmux/plugins/tmp"
+TPM_DIR="$HOME/.tmux/plugins/tpm"
 VUNDLE_DIR="$HOME/.vim/bundle/Vundle.vim"
 RUBY_VERSION="2.3.3"
 NODE_VERSION="6.9.2"
 
-PLATFORMSTR=$(uname -s)
+PLATFORMSTR="$(uname -s)"
 
 # Repo setup
 if !(cat "$HOME/.git/info/exclude" | grep -q \*$ 2>/dev/null); then
@@ -101,18 +101,13 @@ if !(cat "$HOME/.tool-versions" | grep -q "nodejs $NODE_VERSION" 2>/dev/null); t
   echo "nodejs $NODE_VERSION" >> "$HOME/.tool-versions"
 fi
 
-# Bundler/Gems
-if !(hash bundle 2>/dev/null); then
-  echo "[setup] Installing bundler for ruby $RUBY_VERSION"
-  gem install bundler
-fi
-
-echo "[setup] Installing global gems from $HOME/.ruby/Gemfile"
-bundle install --gemfile="$HOME/.ruby/Gemfile"
+# Ruby gems
+echo "[setup] Installing global gems from $HOME/.ruby/install-global.sh"
+bash "$HOME/.ruby/install-global.sh"
 
 # Nodejs packages
 echo "[setup] Installing global node packages from $HOME/.node/install-global.sh"
-sh "$HOME/.node/install-global.sh"
+bash "$HOME/.node/install-global.sh"
 
 # Vundle
 # https://github.com/VundleVim/Vundle.vim
@@ -135,6 +130,6 @@ if [ "$SHELL" != "/bin/zsh" ]; then
   chsh -s /bin/zsh
 fi
 
-echo "\n\n[setup] All done, have at it!"
+echo "[setup] All done, have at it!"
 
 exit 0;
