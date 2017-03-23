@@ -2,6 +2,7 @@
 
 ASDF_DIR="$HOME/.asdf"
 OMZSH_DIR="$HOME/.oh-my-zsh"
+TPM_DIR="$HOME/.tmux/plugins/tmp"
 VUNDLE_DIR="$HOME/.vim/bundle/Vundle.vim"
 RUBY_VERSION="2.3.3"
 NODE_VERSION="6.9.2"
@@ -39,6 +40,15 @@ if [[ "$PLATFORMSTR" == "Darwin" ]]; then
   # Homebrew deps
   echo "[setup] Installing homebrew dependencies"
   (cd "$HOME"; brew bundle)
+fi
+
+# Tmux plugin manager
+# https://github.com/tmux-plugins/tmp
+if command -v tmux>/dev/null; then
+  if !(test -d "$TPM_DIR" 2>/dev/null); then
+    echo "[setup] Installing tmux plugin manager"
+    git clone https://github.com/tmux-plugins/tpm.git "$TPM_DIR"
+  fi
 fi
 
 # Asdf version manager
