@@ -4,6 +4,7 @@ build-essential
 curl
 file
 git
+htop
 libffi-dev
 libncurses-dev
 libreadline-dev
