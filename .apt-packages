@@ -4,6 +4,7 @@ build-essential
 curl
 file
 git
+heroku
 htop
 libffi-dev
 libncurses-dev
