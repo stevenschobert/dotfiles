@@ -6,6 +6,7 @@ TPM_DIR="$HOME/.tmux/plugins/tpm"
 VUNDLE_DIR="$HOME/.vim/bundle/Vundle.vim"
 RUBY_VERSION="2.3.3"
 NODE_VERSION="6.9.2"
+ERLANG_VERSION="19.3"
 
 PLATFORMSTR="$(uname -s)"
 
@@ -76,6 +77,12 @@ if !(asdf plugin-list | grep -q nodejs 2>/dev/null); then
   bash "$ASDF_DIR/plugins/nodejs/bin/import-release-team-keyring"
 fi
 
+# Erlang version manager plugin
+if !(asdf plugin-list | grep -q erlang 2>/dev/null); then
+  echo "[setup] Installing asdf plugin for erlang"
+  asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
+fi
+
 # TODO - Swift version manager
 
 # Install ruby version
@@ -90,6 +97,12 @@ if !(asdf list nodejs | grep -q "$NODE_VERSION" 2>/dev/null); then
   asdf install nodejs "$NODE_VERSION"
 fi
 
+# Install erlang version
+if !(asdf list erlang | grep -q "$ERLANG_VERSION" 2>/dev/null); then
+  echo "[setup] Installing erlang $ERLANG_VERSION"
+  asdf install erlang "$ERLANG_VERSION"
+fi
+
 # Set .tool-versions
 if !(cat "$HOME/.tool-versions" | grep -q "ruby $RUBY_VERSION" 2>/dev/null); then
   echo "[setup] Setting ruby $RUBY_VERSION in $HOME/.tool-versions"
@@ -99,6 +112,11 @@ fi
 if !(cat "$HOME/.tool-versions" | grep -q "nodejs $NODE_VERSION" 2>/dev/null); then
   echo "[setup] Setting nodejs $NODE_VERSION in $HOME/.tool-versions"
   echo "nodejs $NODE_VERSION" >> "$HOME/.tool-versions"
+fi
+
+if !(cat "$HOME/.tool-versions" | grep -q "erlang $ERLANG_VERSION" 2>/dev/null); then
+  echo "[setup] Setting erlang $ERLANG_VERSION in $HOME/.tool-versions"
+  echo "erlang $ERLANG_VERSION" >> "$HOME/.tool-versions"
 fi
 
 # Ruby gems
