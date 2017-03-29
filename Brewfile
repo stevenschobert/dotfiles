@@ -27,6 +27,7 @@ brew 'httpie'
 brew 'httpstat'
 brew 'jq'
 brew 'mosh'
+brew 'the_silver_searcher'
 brew 'tree'
 brew 'wrk'
 
