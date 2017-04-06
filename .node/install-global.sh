@@ -3,20 +3,20 @@ BASEDIR=$(dirname $0)
 # keeps a list of npm packages I always want installed globally
 npm install -g \
     bower \
-    instant-markdown-d \
     github-labeller \
+    instant-markdown-d \
     js-beautify \
     jshint \
     jsonlint \
-    knex \
     leasot \
     lodash \
     mermaid \
     metalsmith \
     nodemon \
-    vue-cli \
     react-native-cli \
-    tern
+    serverless \
+    tern \
+    vue-cli
 
 # updates shimmed asdf path with global modules
 echo "export NODE_PATH=\$NODE_PATH:$(npm config get prefix)/lib/node_modules"\
