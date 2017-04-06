@@ -14,7 +14,7 @@ git init
 git remote add origin git@github.com:stevenschobert/dotfiles.git
 git pull origin master
 
-sh setup.sh
+./setup.sh
 ```
 
 ## Misc
