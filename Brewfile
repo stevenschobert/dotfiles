@@ -2,7 +2,6 @@
 tap 'caskroom/cask'
 tap 'homebrew/bundle'
 tap 'homebrew/dupes'
-tap 'jingweno/ccat'
 
 # casks
 cask 'qlcolorcode'
