@@ -16,6 +16,7 @@ npm install -g \
     react-native-cli \
     serverless \
     tern \
+    uglify-js \
     vue-cli
 
 # updates shimmed asdf path with global modules
