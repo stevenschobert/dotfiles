@@ -116,6 +116,8 @@
   let mapleader = ','                " set <Leader>
   set backspace=indent,eol,start     " Make backspace behave as expected
 
+  set clipboard=unnamed              " to patch pbcopy with tmux
+
   " File operations (save, close, discard)
   nmap <Leader>f :w<bar>bd<CR>
   nmap <Leader>d :bd!<CR>
