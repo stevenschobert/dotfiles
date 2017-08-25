@@ -5,6 +5,7 @@ npm install -g \
     bower \
     github-labeller \
     instant-markdown-d \
+    gtop \
     js-beautify \
     jshint \
     jsonlint \
