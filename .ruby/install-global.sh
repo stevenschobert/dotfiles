@@ -4,6 +4,7 @@ gem install cocoapods \
   foreman \
   gifme \
   god \
+  gtk3 \
   guard \
   guard-shell \
   nokogiri \
