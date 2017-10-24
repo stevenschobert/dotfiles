@@ -1,7 +1,17 @@
 #!/usr/bin/env bash
 THIS_DIR=$(dirname "$0")
-DIRS_TO_COPY=("Text Filters" "Color Schemes" "Language Modules" "Setup" "Scripts" "Text Filters")
-BBEDIT_PATH="$HOME/Library/Application Support/BBEdit"
+DIRS_TO_COPY=(
+  "Clippings"
+  "Color Schemes"
+  "Custom Keywords"
+  "Language Modules"
+  "Menu Scripts"
+  "Scripts"
+  "Setup"
+  "Text Filters"
+)
+#BBEDIT_PATH="$HOME/Library/Application Support/BBEdit"
+BBEDIT_PATH="$HOME/Dropbox/Application Support/BBEdit"
 
 for dir in "${DIRS_TO_COPY[@]}"
 do
