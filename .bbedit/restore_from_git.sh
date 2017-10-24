@@ -25,3 +25,4 @@ done
 # lookup URL defined, that includes the language
 # prefix dash://ruby:__SYMBOL_NAME__)
 defaults write com.barebones.bbedit UseDashForReferenceLookups_Ruby -bool NO
+defaults write com.barebones.bbedit "UseDashForReferenceLookups_C#/Mono" -bool NO
