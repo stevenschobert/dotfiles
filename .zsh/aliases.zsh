@@ -62,6 +62,12 @@ function ghb() {
   open $URL
 }
 
+# logbook
+# https://routley.io/tech/2017/11/23/logbook.html
+function lb() {
+  vim ~/Dropbox/logbook/$(date '+%Y-%m-%d').md
+}
+
 # copy output of command without newlines
 function cpc() { echo -n `$@` | pbcopy; }
 
