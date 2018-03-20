@@ -4,8 +4,8 @@ BASEDIR=$(dirname $0)
 npm install -g \
     bower \
     github-labeller \
-    instant-markdown-d \
     gtop \
+    instant-markdown-d \
     js-beautify \
     jshint \
     jsonlint \
@@ -17,6 +17,7 @@ npm install -g \
     react-native-cli \
     serverless \
     tern \
+    typescript \
     uglify-js \
     vue-cli
 
