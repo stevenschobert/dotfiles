@@ -2,6 +2,8 @@ BASEDIR=$(dirname $0)
 
 # keeps a list of npm packages I always want installed globally
 npm install -g \
+    @angular/cli \
+    @sakuraapi/cli \
     bower \
     github-labeller \
     gtop \
