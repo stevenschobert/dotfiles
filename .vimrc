@@ -45,6 +45,7 @@
   Plugin 'digitaltoad/vim-jade'                   " jade syntax
   Plugin 'kchmck/vim-coffee-script'               " coffee-script syntax
   Plugin 'elixir-lang/vim-elixir'                 " elixir syntax
+  Plugin 'leafgarland/typescript-vim'             " typescript syntax
 
   " macOS only plugins
   if has("unix")
