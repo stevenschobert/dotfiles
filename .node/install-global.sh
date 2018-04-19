@@ -19,6 +19,7 @@ npm install -g \
     react-native-cli \
     serverless \
     tern \
+    tslint \
     typescript \
     uglify-js \
     vue-cli
