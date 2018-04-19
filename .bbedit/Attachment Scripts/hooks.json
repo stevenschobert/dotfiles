@@ -1,0 +1,14 @@
+{
+  "ruby": {
+    "on_save": [
+      {
+        "command": "ruby -wc \"<%= file %>\"",
+        "on_error": {
+          "title": "Ruby Linter",
+          "message": "Found <%= output.lines.count %> ruby warnings!",
+          "details": "<%= output %>"
+        }
+      }
+    ]
+  }
+}
