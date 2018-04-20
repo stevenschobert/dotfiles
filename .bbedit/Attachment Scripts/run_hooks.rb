@@ -7,7 +7,7 @@ config = JSON.parse(File.read(config_file))
 
 language = ARGV[0].downcase
 hook = ARGV[1].downcase
-file = ARGV[2].downcase
+file = ARGV[2]
 
 unless config.key?(language)
   exit 0
@@ -15,6 +15,21 @@ end
 
 unless File.exists?(file)
   return
+end
+
+def file_in_parent_tree(pattern, dir = File.dirname(ARGV[2]))
+  while true
+    path = File.join(dir, pattern)
+    match = Dir.glob(path).first
+    if match
+      return match
+    end
+    next_dir = File.expand_path("..", dir)
+    if dir == next_dir
+      return nil
+    end
+    dir = next_dir
+  end
 end
 
 lang_config = config[language]
@@ -42,7 +57,7 @@ hooks.each do |h|
       output = result
       target = on_success
     elsif (!status.success? || err != "") && on_error
-      output = err
+      output = err == "" ? result : err
       target = on_error
     end
 
