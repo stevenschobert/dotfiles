@@ -10,5 +10,17 @@
         }
       }
     ]
+  },
+  "typescript": {
+    "on_save": [
+      {
+        "command": ". $HOME/.asdf/asdf.sh; tslint -c \"<%= file_in_parent_tree('tslint.json') %>\" \"<%= file %>\"",
+        "on_error": {
+          "title": "TypeScript Linter",
+          "message": "Found <%= output.strip.lines.count %> typescript warnings!",
+          "details": "<%= output.strip %>"
+        }
+      }
+    ]
   }
 }
