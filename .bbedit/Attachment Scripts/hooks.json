@@ -5,8 +5,8 @@
         "command": "ruby -wc \"<%= file %>\"",
         "on_error": {
           "title": "Ruby Linter",
-          "message": "Found <%= output.lines.count %> ruby warnings!",
-          "details": "<%= output %>"
+          "message": "Found ruby warnings: ",
+          "details": "<%= output.strip %>"
         }
       }
     ]
@@ -17,7 +17,19 @@
         "command": ". $HOME/.asdf/asdf.sh; tslint -c \"<%= file_in_parent_tree('tslint.json') %>\" \"<%= file %>\"",
         "on_error": {
           "title": "TypeScript Linter",
-          "message": "Found <%= output.strip.lines.count %> typescript warnings!",
+          "message": "Found TS warnings: ",
+          "details": "<%= output.strip %>"
+        }
+      }
+    ]
+  },
+  "javascript": {
+    "on_save": [
+      {
+        "command": ". $HOME/.asdf/asdf.sh; jshint -c \"<%= file_in_parent_tree('.jshintrc') %>\" \"<%= file %>\"",
+        "on_error": {
+          "title": "JavaScript Linter",
+          "message": "Found JS warnings: ",
           "details": "<%= output.strip %>"
         }
       }
