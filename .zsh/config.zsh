@@ -4,6 +4,9 @@ PLATFORMSTR=$(uname -s)
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:vendor/bundle/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 
+# Qmake
+export PATH=$PATH:/usr/local/opt/qt@5.5/bin
+
 # Heroku Toolbelt
 export PATH=$PATH:/usr/local/heroku/bin
 
