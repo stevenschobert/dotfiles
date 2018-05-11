@@ -1,0 +1,10 @@
+blob-store
+compile-cache
+dev
+storage
+.node-gyp
+.npm
+.apm
+github.cson
+packages/
+atom-shell/

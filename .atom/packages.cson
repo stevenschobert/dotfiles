@@ -1,0 +1,4 @@
+packages: [
+  "file-icons"
+  "package-sync"
+]
