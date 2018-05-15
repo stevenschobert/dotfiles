@@ -1,0 +1,2 @@
+'atom-text-editor:not([mini])':
+  'ctrl-u': 'sort-lines:sort'

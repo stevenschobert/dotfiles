@@ -1,4 +1,11 @@
 packages: [
+  "busy-signal"
   "file-icons"
+  "highlight-selected"
+  "intentions"
+  "linter-tslint"
+  "linter-ui-default"
+  "linter"
   "package-sync"
+  "sort-lines"
 ]
