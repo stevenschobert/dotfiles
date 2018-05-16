@@ -3,6 +3,7 @@ packages: [
   "file-icons"
   "highlight-selected"
   "intentions"
+  "linter-eslint"
   "linter-tslint"
   "linter-ui-default"
   "linter"
