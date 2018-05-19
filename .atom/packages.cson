@@ -13,5 +13,4 @@ packages: [
   "package-sync"
   "project-plus"
   "sort-lines"
-  "tree-view-extended"
 ]
