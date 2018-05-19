@@ -1,6 +1,7 @@
 packages: [
   "busy-signal"
   "dash"
+  "dracula-theme"
   "file-icons"
   "highlight-selected"
   "intentions"
