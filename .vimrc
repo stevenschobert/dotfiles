@@ -18,6 +18,8 @@
   Plugin 'altercation/vim-colors-solarized'       " Solarized color scheme
   Plugin 'reedes/vim-colors-pencil'               " Pencil theme for writing
 
+  Plugin 'dracula/vim'                            " Dracula color scheme
+
   Plugin 'tpope/vim-unimpaired'                   " awesome key shortucts
   Plugin 'scrooloose/nerdtree'                    " file/folder explorer
   Plugin 'kien/ctrlp.vim'                         " fuzzy file searching
@@ -65,7 +67,7 @@
 
     syntax on                    " turn on syntax highilghting
 
-    colorscheme lucario          " use lucario theme for syntax
+    color lucario                " use dracula theme for syntax
 
     filetype plugin on           " enable loading plugins for filetypes
     filetype indent on           " enable loading 'indent files' for filetypes
@@ -79,7 +81,7 @@
 
     set laststatus=2             " Fix for statusbar toggling
     set encoding=utf-8           " Fix special character encoding
-    set t_Co=256                 " MOAR COLOCS
+    "set t_Co=256                 " MOAR COLOCS
 
   "- Interaction ----------------------------------------------------------------------------------
 
