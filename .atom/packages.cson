@@ -1,5 +1,6 @@
 packages: [
   "busy-signal"
+  "dash"
   "file-icons"
   "highlight-selected"
   "intentions"
@@ -7,6 +8,9 @@ packages: [
   "linter-tslint"
   "linter-ui-default"
   "linter"
+  "lucario"
   "package-sync"
+  "project-plus"
   "sort-lines"
+  "tree-view-extended"
 ]

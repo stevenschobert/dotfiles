@@ -1,10 +1,19 @@
 "*":
   core:
     telemetryConsent: "no"
+    themes: [
+      "one-light-ui"
+      "Lucario"
+    ]
+    titleBar: "custom"
   editor:
     fontSize: 12
   "exception-reporting":
     userId: "424d8951-d72d-4084-ad4e-00c911987c60"
+  "file-icons":
+    coloured: false
+  "linter-ui-default":
+    showPanel: true
   "tree-view":
     hideIgnoredNames: true
     squashDirectoryNames: true
