@@ -65,6 +65,8 @@
 
     syntax on                    " turn on syntax highilghting
 
+    colorscheme lucario          " use lucario theme for syntax
+
     filetype plugin on           " enable loading plugins for filetypes
     filetype indent on           " enable loading 'indent files' for filetypes
 
