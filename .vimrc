@@ -67,7 +67,7 @@
 
     syntax on                    " turn on syntax highilghting
 
-    color lucario                " use dracula theme for syntax
+    color dracula                " use dracula theme for syntax
 
     filetype plugin on           " enable loading plugins for filetypes
     filetype indent on           " enable loading 'indent files' for filetypes
