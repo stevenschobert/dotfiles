@@ -67,6 +67,7 @@
 
     syntax on                    " turn on syntax highilghting
 
+    set background=dark          " use dark background
     color dracula                " use dracula theme for syntax
 
     filetype plugin on           " enable loading plugins for filetypes
@@ -81,7 +82,11 @@
 
     set laststatus=2             " Fix for statusbar toggling
     set encoding=utf-8           " Fix special character encoding
-    "set t_Co=256                 " MOAR COLOCS
+
+    set t_Co=256                              " 256 color correction
+    set termguicolors                         " 256 color correction
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"    " 256 color correction
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"    " 256 color correction
 
   "- Interaction ----------------------------------------------------------------------------------
 
