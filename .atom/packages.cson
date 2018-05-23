@@ -13,4 +13,5 @@ packages: [
   "package-sync"
   "project-plus"
   "sort-lines"
+  "tree-view-git-modified"
 ]
