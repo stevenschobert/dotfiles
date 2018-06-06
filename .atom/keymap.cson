@@ -1,2 +1,6 @@
 'atom-text-editor:not([mini])':
   'ctrl-u': 'sort-lines:sort'
+'atom-text-editor':
+  'alt-cmd-p': 'unset!'
+'.platform-darwin':
+  'alt-cmd-p': 'project-plus:toggle-project-finder'
