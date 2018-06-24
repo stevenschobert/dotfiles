@@ -15,4 +15,5 @@ packages: [
   "project-plus"
   "sort-lines"
   "tree-view-git-modified"
+  "zentabs"
 ]
