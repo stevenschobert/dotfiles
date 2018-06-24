@@ -5,6 +5,7 @@ packages: [
   "file-icons"
   "highlight-selected"
   "intentions"
+  "language-ember"
   "linter-eslint"
   "linter-tslint"
   "linter-ui-default"
