@@ -2,6 +2,7 @@ packages: [
   "busy-signal"
   "dash"
   "dracula-theme"
+  "emmet"
   "file-icons"
   "highlight-selected"
   "intentions"
