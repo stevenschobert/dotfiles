@@ -17,6 +17,7 @@ brew 'vim'
 # cli
 brew 'awscli'
 brew 'ccat'
+brew 'ctags'
 brew 'git'
 brew 'git-lfs'
 brew 'htop'

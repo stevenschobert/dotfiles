@@ -42,6 +42,9 @@ function e() {
   bbedit $TARGET  
 }
 
+# Ctags
+alias ctags="`brew --prefix`/bin/ctags"
+
 # Gitx
 alias gx="gitx"
 
