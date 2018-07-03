@@ -1,7 +1,6 @@
 # taps
 tap 'caskroom/cask'
 tap 'homebrew/bundle'
-tap 'homebrew/dupes'
 
 # casks
 cask 'qlcolorcode'
@@ -28,6 +27,7 @@ brew 'mosh'
 brew 'the_silver_searcher'
 brew 'tree'
 brew 'wrk'
+brew 'yarn', args: [ '--without-node' ]
 
 # system
 brew 'autoconf'
