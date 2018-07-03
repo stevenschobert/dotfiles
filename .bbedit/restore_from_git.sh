@@ -11,8 +11,8 @@ DIRS_TO_COPY=(
   "Setup"
   "Text Filters"
 )
-#BBEDIT_PATH="$HOME/Library/Application Support/BBEdit"
-BBEDIT_PATH="$HOME/Dropbox/Application Support/BBEdit"
+BBEDIT_PATH="$HOME/Library/Application Support/BBEdit"
+#BBEDIT_PATH="$HOME/Dropbox/Application Support/BBEdit"
 
 for dir in "${DIRS_TO_COPY[@]}"
 do
