@@ -45,6 +45,9 @@ function e() {
 # Ctags
 alias ctags="`brew --prefix`/bin/ctags"
 
+# Ember
+alias em="ember"
+
 # Gitx
 alias gx="gitx"
 
