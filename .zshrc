@@ -1,6 +1,6 @@
 # Always launch tmux first if available
 if command -v tmux>/dev/null; then
-  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux new-session -A -s main
+  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux new-session -A -s _main
 fi
 
 # Oh my zsh setup
