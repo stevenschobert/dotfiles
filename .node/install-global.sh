@@ -10,6 +10,7 @@ npm install -g \
     jshint \
     jsonlint \
     leasot \
+    lerna \
     lodash \
     mermaid \
     metalsmith \
