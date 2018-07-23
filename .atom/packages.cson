@@ -8,6 +8,7 @@ packages: [
   "intentions"
   "language-elixir"
   "language-ember"
+  "language-graphql"
   "linter-eslint"
   "linter-tslint"
   "linter-ui-default"
