@@ -4,7 +4,10 @@
   'alt-cmd-p': 'unset!'
 '.platform-darwin':
   'alt-cmd-p': 'project-plus:toggle-project-finder'
+  'cmd-0': 'tree-view:toggle'
+'body':
+  'cmd-0': 'unset!'
 'atom-text-editor[data-grammar="text html mustache"]:not([mini])':
-    'tab': 'emmet:expand-abbreviation-with-tab'
+  'tab': 'emmet:expand-abbreviation-with-tab'
 'atom-text-editor[data-grammar="source handlebars"]:not([mini])':
-    'tab': 'emmet:expand-abbreviation-with-tab'
+  'tab': 'emmet:expand-abbreviation-with-tab'
