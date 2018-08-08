@@ -48,6 +48,9 @@ alias ctags="`brew --prefix`/bin/ctags"
 # Ember
 alias em="ember"
 
+# Kubernetes
+alias kb="kubectl"
+
 # Gitx
 alias gx="gitx"
 
