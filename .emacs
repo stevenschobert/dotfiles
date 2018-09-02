@@ -22,14 +22,21 @@
 (use-package markdown-mode
   :ensure t)
 
+(use-package dracula-theme
+  :ensure t)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (dracula)))
+ '(custom-safe-themes
+   (quote
+    ("aaffceb9b0f539b6ad6becb8e96a04f2140c8faa1de8039a343a4f1e009174fb" default)))
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
- '(package-selected-packages (quote (evil use-package)))
+ '(package-selected-packages (quote (dracula-theme evil use-package)))
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
