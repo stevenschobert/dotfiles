@@ -14,16 +14,36 @@
 (eval-when-compile
   (require 'use-package))
 
+;; Evil stuff
 (use-package evil
   :ensure t
   :config
   (evil-mode t))
 
+(use-package evil-leader
+  :ensure t
+  :config
+  (evil-leader/set-leader ",")
+  (evil-leader/set-key
+    "w"  'save-buffer
+    "o"  'delete-other-windows
+    ","  'other-window
+    "d"  'kill-this-buffer)
+  (global-evil-leader-mode))
+
+;; Languages
 (use-package markdown-mode
   :ensure t)
 
+;; Appearances
 (use-package dracula-theme
   :ensure t)
+
+(use-package powerline
+  :ensure t
+  :config
+  (setq powerline-image-apple-rgb t) ;; Fixes separator colors. See https://github.com/milkypostman/powerline/issues/99
+  (powerline-default-theme))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
