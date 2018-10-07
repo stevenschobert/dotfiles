@@ -34,6 +34,8 @@
 ;; Languages
 (use-package markdown-mode
   :ensure t)
+(use-package swift-mode
+  :ensure t)
 
 ;; Appearances
 (use-package dracula-theme
@@ -55,7 +57,7 @@
    (quote
     ("aaffceb9b0f539b6ad6becb8e96a04f2140c8faa1de8039a343a4f1e009174fb" default)))
  '(inhibit-startup-screen t)
- '(package-selected-packages (quote (dracula-theme evil use-package)))
+ '(package-selected-packages (quote (swift-mode dracula-theme evil use-package)))
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
