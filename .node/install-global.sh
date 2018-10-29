@@ -2,15 +2,12 @@ BASEDIR=$(dirname $0)
 
 # keeps a list of npm packages I always want installed globally
 npm install -g \
-    ember-cli \
+    eslint \
     github-labeller \
     gtop \
-    instant-markdown-d \
     js-beautify \
-    jshint \
     jsonlint \
     leasot \
-    lerna \
     lodash \
     mermaid \
     metalsmith \
@@ -18,8 +15,7 @@ npm install -g \
     tern \
     tslint \
     typescript \
-    uglify-js \
-    vue-cli
+    uglify-js
 
 # updates shimmed asdf path with global modules
 echo "export NODE_PATH=\$NODE_PATH:$(npm config get prefix)/lib/node_modules"\
