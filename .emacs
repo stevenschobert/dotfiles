@@ -14,6 +14,17 @@
 (eval-when-compile
   (require 'use-package))
 
+;; defaults
+(setq-default indent-tabs-mode nil)
+(global-linum-mode t)
+
+;; Helm
+(use-package helm
+  :ensure t
+  :config
+  (helm-mode t)
+  (setq helm-buffers-fuzzy-matching t))
+
 ;; Evil stuff
 (use-package evil
   :ensure t
@@ -26,10 +37,28 @@
   (evil-leader/set-leader ",")
   (evil-leader/set-key
     "w"  'save-buffer
-    "o"  'delete-other-windows
-    ","  'other-window
-    "d"  'kill-this-buffer)
+    "b"  'helm-mini                     ;; Open other buffers using Helm
+    "o"  'delete-other-windows          ;; Close all other windows
+    ","  'other-window                  ;; Switch to other window
+    "d"  'kill-this-buffer
+    "l"  'whitespace-mode               ;; Toggle invisible characters
+    "S"  'delete-trailing-whitespace)
   (global-evil-leader-mode))
+
+;; Flycheck
+(use-package exec-path-from-shell
+  :ensure t
+  :config
+  (exec-path-from-shell-initialize))
+(use-package add-node-modules-path
+  :ensure t
+  :config
+  (add-hook 'js-mode-hook 'add-node-modules-path))
+
+(use-package flycheck
+  :ensure t
+  :config
+  (global-flycheck-mode))
 
 ;; Languages
 (use-package markdown-mode
@@ -46,6 +75,13 @@
   :config
   (setq powerline-image-apple-rgb t) ;; Fixes separator colors. See https://github.com/milkypostman/powerline/issues/99
   (powerline-default-theme))
+
+;; js-mode
+(setq js-indent-level 2)
+
+;; Emacs server config
+(setq server-socket-dir (expand-file-name "server" user-emacs-directory))
+(server-start)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
