@@ -11,7 +11,8 @@ export PATH=$PATH:/usr/local/opt/qt@5.5/bin
 export PATH=$PATH:/usr/local/heroku/bin
 
 # Editor
-export EDITOR=vim
+export EDITOR="$HOME/.editor/editor"
+alias e="$EDITOR"
 
 # Don't match patterns
 unsetopt nomatch

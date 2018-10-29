@@ -33,14 +33,7 @@ function hash() {
 }
 
 # BBEdit
-function e() {
-  if [[ "$1" != "" ]]; then
-    TARGET="$1"
-  else
-    TARGET=.
-  fi
-  bbedit $TARGET  
-}
+alias e="$EDITOR"
 
 # Ctags
 alias ctags="`brew --prefix`/bin/ctags"
