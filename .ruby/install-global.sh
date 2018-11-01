@@ -3,10 +3,8 @@ gem install cocoapods \
   curses \
   foreman \
   gifme \
-  god \
   gtk3 \
-  guard \
-  guard-shell \
+  jekyll \
   nokogiri \
   pry \
   pry-doc \
