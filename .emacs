@@ -65,6 +65,8 @@
   :ensure t)
 (use-package swift-mode
   :ensure t)
+(use-package graphql-mode
+  :ensure t)
 
 ;; Appearances
 (use-package dracula-theme
