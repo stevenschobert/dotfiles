@@ -8,6 +8,7 @@ gem install cocoapods \
   nokogiri \
   pry \
   pry-doc \
+  pygments.rb \
   rack \
   rails \
   rspec \
