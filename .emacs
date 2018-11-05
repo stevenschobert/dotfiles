@@ -78,8 +78,9 @@
   (setq powerline-image-apple-rgb t) ;; Fixes separator colors. See https://github.com/milkypostman/powerline/issues/99
   (powerline-default-theme))
 
-;; js-mode
+;; Indentation
 (setq js-indent-level 2)
+(setq css-indent-offset 2)
 
 ;; Emacs server config
 (setq server-socket-dir (expand-file-name "server" user-emacs-directory))
