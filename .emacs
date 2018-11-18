@@ -17,6 +17,7 @@
 ;; defaults
 (setq-default indent-tabs-mode nil)
 (global-linum-mode t)
+(cua-mode t)
 
 ;; Helm
 (use-package helm
