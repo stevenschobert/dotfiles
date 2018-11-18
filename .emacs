@@ -14,11 +14,6 @@
 (eval-when-compile
   (require 'use-package))
 
-;; defaults
-(setq-default indent-tabs-mode nil)
-(global-linum-mode t)
-(cua-mode t)
-
 ;; Helm
 (use-package helm
   :ensure t
@@ -100,10 +95,15 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(global-linum-mode t)
  '(inhibit-startup-screen t)
+ '(mac-command-modifier (quote super))
+ '(mac-option-modifier (quote meta))
  '(package-selected-packages
    (quote
     (spaceline atom-one-dark-theme swift-mode evil use-package)))
+ '(setq-default indent-tabs-mode)
+ '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
