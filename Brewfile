@@ -1,9 +1,10 @@
 # taps
 tap 'caskroom/cask'
 tap 'homebrew/bundle'
+tap 'railwaycat/emacsmacport'
 
 # casks
-cask 'emacs'
+cask 'emacs-mac'
 cask 'qlcolorcode'
 cask 'qlimagesize'
 cask 'qlmarkdown'
