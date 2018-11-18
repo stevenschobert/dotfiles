@@ -54,7 +54,6 @@
   :ensure t
   :config
   (add-hook 'js-mode-hook 'add-node-modules-path))
-
 (use-package flycheck
   :ensure t
   :config
@@ -69,14 +68,23 @@
   :ensure t)
 
 ;; Appearances
-(use-package dracula-theme
-  :ensure t)
-
-(use-package powerline
+(use-package atom-one-dark-theme
   :ensure t
   :config
-  (setq powerline-image-apple-rgb t) ;; Fixes separator colors. See https://github.com/milkypostman/powerline/issues/99
-  (powerline-default-theme))
+  (load-theme 'atom-one-dark t))
+(use-package dimmer
+  :ensure t
+  :config
+  (setq dimmer-fraction 0.33)
+  (setq dimmer-exclusion-regexp "^\*helm.*\\|^ \*Minibuf-.*\\|^ \*Echo.*")
+  (dimmer-mode))
+
+;; Spaceline
+(use-package spaceline
+  :ensure t
+  :config
+  (spaceline-spacemacs-theme)
+  (spaceline-helm-mode))
 
 ;; Indentation
 (setq js-indent-level 2)
@@ -91,16 +99,14 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (dracula)))
- '(custom-safe-themes
-   (quote
-    ("aaffceb9b0f539b6ad6becb8e96a04f2140c8faa1de8039a343a4f1e009174fb" default)))
  '(inhibit-startup-screen t)
- '(package-selected-packages (quote (swift-mode dracula-theme evil use-package)))
+ '(package-selected-packages
+   (quote
+    (spaceline atom-one-dark-theme swift-mode evil use-package)))
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:height 160 :family "Inconsolata")))))
