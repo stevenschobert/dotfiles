@@ -41,6 +41,12 @@
     "S"  'delete-trailing-whitespace)
   (global-evil-leader-mode))
 
+;; Copy/paste
+(use-package simpleclip
+  :ensure t
+  :config
+  (simpleclip-mode))
+
 ;; Flycheck
 (use-package exec-path-from-shell
   :ensure t
