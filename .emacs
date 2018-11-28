@@ -89,6 +89,7 @@
   (spaceline-helm-mode))
 
 ;; Indentation
+(setq-default indent-tabs-mode nil)
 (setq js-indent-level 2)
 (setq css-indent-offset 2)
 
@@ -108,7 +109,6 @@
  '(package-selected-packages
    (quote
     (spaceline atom-one-dark-theme swift-mode evil use-package)))
- '(setq-default indent-tabs-mode)
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
