@@ -3,6 +3,7 @@ tap 'caskroom/cask'
 tap 'homebrew/bundle'
 
 # casks
+cask 'google-cloud-sdk'
 cask 'qlcolorcode'
 cask 'qlimagesize'
 cask 'qlmarkdown'
