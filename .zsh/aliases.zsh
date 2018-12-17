@@ -33,7 +33,15 @@ function hash() {
 }
 
 # BBEdit
-alias e="$EDITOR"
+function e() {
+  if [[ "$1" != "" ]]; then
+    TARGET="$1"
+  else
+    TARGET=.
+  fi
+  bbedit $TARGET
+}
+
 
 # Ctags
 alias ctags="`brew --prefix`/bin/ctags"
@@ -81,6 +89,5 @@ export GOPATH="$HOME/Documents/go"
 export PATH=$PATH:"$HOME/Documents/go/bin"
 
 # misc
-alias tp="TexturePacker"
 alias nw="/usr/local/bin/node-webkit.app/Contents/MacOS/node-webkit"
 alias nw_legacy="/usr/local/bin/node-webkit-legacy.app/Contents/MacOS/node-webkit"
