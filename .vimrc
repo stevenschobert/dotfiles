@@ -15,10 +15,7 @@
 
   Plugin 'gmarik/Vundle.vim'                      " package manager
 
-  Plugin 'altercation/vim-colors-solarized'       " Solarized color scheme
-  Plugin 'reedes/vim-colors-pencil'               " Pencil theme for writing
-
-  Plugin 'dracula/vim'                            " Dracula color scheme
+  Plugin 'vim-scripts/rdark-terminal2.vim'        " Color scheme
 
   Plugin 'tpope/vim-unimpaired'                   " awesome key shortucts
   Plugin 'scrooloose/nerdtree'                    " file/folder explorer
@@ -67,8 +64,7 @@
 
     syntax on                    " turn on syntax highilghting
 
-    set background=dark          " use dark background
-    color dracula                " use dracula theme for syntax
+    colorscheme rdark-terminal2  " Color scheme
 
     filetype plugin on           " enable loading plugins for filetypes
     filetype indent on           " enable loading 'indent files' for filetypes
@@ -83,10 +79,7 @@
     set laststatus=2             " Fix for statusbar toggling
     set encoding=utf-8           " Fix special character encoding
 
-    set t_Co=256                              " 256 color correction
-    set termguicolors                         " 256 color correction
-    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"    " 256 color correction
-    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"    " 256 color correction
+    set t_Co=256                 " 256 color correction
 
   "- Interaction ----------------------------------------------------------------------------------
 
