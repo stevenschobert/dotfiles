@@ -43,7 +43,7 @@ function e() {
 }
 
 # Git
-function grl { git rev-parse --short HEAD } # get short version of last commit ref
+function glr { git rev-parse --short HEAD } # get short version of last commit ref
 
 # Ctags
 alias ctags="`brew --prefix`/bin/ctags"
