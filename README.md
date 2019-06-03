@@ -28,6 +28,7 @@ SetFile -a "V" ~/README.md
 SetFile -a "V" ~/LICENSE
 SetFile -a "V" ~/Brewfile
 SetFile -a "V" ~/setup.sh
+SetFile -a "V" ~/package-lock.json
 ```
 
 ### Thanks
