@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SavedGrepPatterns</key>
+	<array>
+		<dict>
+			<key>ReplacePattern</key>
+			<string></string>
+			<key>SearchPattern</key>
+			<string>^\s*$\n</string>
+			<key>Title</key>
+			<string>Remove Blank Lines</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>/* \1 */</string>
+			<key>SearchPattern</key>
+			<string>{([^}]*)}</string>
+			<key>Title</key>
+			<string>Pascal Comment to C Comment</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>/* \1 */</string>
+			<key>SearchPattern</key>
+			<string>//(.*)</string>
+			<key>Title</key>
+			<string>C++ Comment to C Comment</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>\t</string>
+			<key>SearchPattern</key>
+			<string> +</string>
+			<key>Title</key>
+			<string>Run of Spaces to One Tab</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string></string>
+			<key>SearchPattern</key>
+			<string>^[^ \t#\r/@][^\r]*\([^\r]*\)$</string>
+			<key>Title</key>
+			<string>C Function Header</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>{\1}</string>
+			<key>SearchPattern</key>
+			<string>/\*([^\r]*)\*/</string>
+			<key>Title</key>
+			<string>C Comment to Pascal Comment</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>\1\2\t\3</string>
+			<key>SearchPattern</key>
+			<string>(.*)(\t\t*)(.*)</string>
+			<key>Title</key>
+			<string>Shift Variables Right</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>\1\3\4</string>
+			<key>SearchPattern</key>
+			<string>(.*)(\t)(\t*)(.*)</string>
+			<key>Title</key>
+			<string>Shift Variables Left</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>\1\L\2\E\3</string>
+			<key>SearchPattern</key>
+			<string>(&lt;img [^&gt;]*src\s*=\s*")([^"]+)("[^&gt;]*&gt;)</string>
+			<key>Title</key>
+			<string>Lower Case SRC values in IMG tags</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>\1\L\2\E\3</string>
+			<key>SearchPattern</key>
+			<string>(&lt;a [^&gt;]*href\s*=\s*")([^"]+)("[^&gt;]*&gt;)</string>
+			<key>Title</key>
+			<string>Lower Case HREF values in A tags</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>\1</string>
+			<key>SearchPattern</key>
+			<string>^[^\t]+\t([^\t]+)</string>
+			<key>Title</key>
+			<string>Column #2</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>foo bar</string>
+			<key>SearchPattern</key>
+			<string>(\d+\.){3}\d+</string>
+			<key>Title</key>
+			<string>Dotted Quad</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string></string>
+			<key>SearchPattern</key>
+			<string>(PURCHASE|RECURRING PAYMENT) AUTHORIZED ON \d{2}/\d{2} </string>
+			<key>Title</key>
+			<string>Wells Fargo Transactions Cleanup</string>
+			<key>UniqueID</key>
+			<string>C3B1B0C6-9157-4015-AFB6-48C815821F69</string>
+		</dict>
+	</array>
+</dict>
+</plist>
