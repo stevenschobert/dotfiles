@@ -9,7 +9,6 @@ cask 'qlimagesize'
 cask 'qlmarkdown'
 cask 'qlstephen'
 cask 'quicklook-json'
-cask 'caskroom/fonts/font-hack'
 
 # editor
 brew 'tmux'
@@ -29,7 +28,7 @@ brew 'mosh'
 brew 'the_silver_searcher'
 brew 'tree'
 brew 'wrk'
-brew 'yarn', args: [ '--without-node' ]
+brew 'yarn', args: [ '--ignore-dependencies' ]
 
 # system
 brew 'autoconf'
@@ -56,7 +55,7 @@ brew 'openssl'
 brew 'pandoc'
 brew 'pcre'
 brew 'pkg-config'
-brew 'qt@5.5'
+#brew 'qt@5.5'
 brew 'readline'
 brew 'reattach-to-user-namespace'
 brew 'shtool'
