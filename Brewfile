@@ -9,6 +9,7 @@ cask 'qlimagesize'
 cask 'qlmarkdown'
 cask 'qlstephen'
 cask 'quicklook-json'
+cask 'caskroom/fonts/font-hack'
 
 # editor
 brew 'tmux'
