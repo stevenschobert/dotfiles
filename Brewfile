@@ -9,6 +9,7 @@ cask 'qlimagesize'
 cask 'qlmarkdown'
 cask 'qlstephen'
 cask 'quicklook-json'
+cask 'java'
 
 # editor
 brew 'tmux'
