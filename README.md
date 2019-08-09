@@ -19,6 +19,15 @@ git pull origin master
 
 ## Misc
 
+## iCloud Drive Alias
+
+I like to have an alias in my home directory that takes me to my iCloud drive:
+
+```sh
+cd ~
+ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs iCloud
+```
+
 ### Visual Tweaks
 
 If you want to hide the readme and license files from your home directory, run these commands:
@@ -28,7 +37,6 @@ SetFile -a "V" ~/README.md
 SetFile -a "V" ~/LICENSE
 SetFile -a "V" ~/Brewfile
 SetFile -a "V" ~/setup.sh
-SetFile -a "V" ~/package-lock.json
 ```
 
 ### Thanks
