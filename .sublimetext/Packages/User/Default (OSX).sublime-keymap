@@ -1,0 +1,10 @@
+[
+  {
+    "keys": ["super+shift+r"],
+    "command": "open_dir",
+    "args": {
+      "dir": "$file_path",
+      "file": "$file_name"
+    }
+  }
+]
