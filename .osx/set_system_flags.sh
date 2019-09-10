@@ -4,3 +4,6 @@
 
 # Disable screenshot window shadow
 # defaults write com.apple.screencapture disable-shadow -bool true
+
+# Enable fast key-repeat in Sublime Text
+defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false
