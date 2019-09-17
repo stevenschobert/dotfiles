@@ -9,4 +9,6 @@ for dir in "${DIRS_TO_COPY[@]}"
 do
   rm -rf "$THIS_DIR/$dir"
   cp -r "$SUBLIMETEXT_PATH/$dir" "$THIS_DIR/$dir"
+  find "$THIS_DIR/$dir" -iname "package control*" -exec rm -rf {} \;
+  find "$THIS_DIR/$dir" -iname "*.crt" -exec rm -rf {} \;
 done
