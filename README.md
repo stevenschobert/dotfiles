@@ -19,6 +19,11 @@ git pull origin master
 
 ## Misc
 
+## Fonts
+
+For Terminal.app & BBEdit, I use InconsolataGo Nerd Font from the [Nerd
+Fonts](https://github.com/ryanoasis/nerd-fonts) project.
+
 ## iCloud Drive Alias
 
 I like to have an alias in my home directory that takes me to my iCloud drive:
