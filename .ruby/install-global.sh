@@ -11,6 +11,7 @@ gem install cocoapods \
   pygments.rb \
   rack \
   rails \
+  rerun \
   rspec \
   savon \
   synx \
