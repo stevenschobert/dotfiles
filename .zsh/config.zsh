@@ -16,6 +16,9 @@ export EDITOR="vim"
 # Don't match patterns
 unsetopt nomatch
 
+# bundle open should use BBEdit
+export BUNDLER_EDITOR=bbedit
+
 if [[ "$PLATFORMSTR" == "Darwin" ]]; then
   # Android
   export PATH=$PATH:~/Library/Android/sdk/platform-tools:~/Library/Android/sdk/tools
