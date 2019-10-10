@@ -87,10 +87,6 @@ function cpc() { echo -n `$@` | pbcopy; }
 # spin up a simple web server
 alias simple_server="python -m SimpleHTTPServer"
 
-# go
-export GOPATH="$HOME/Documents/go"
-export PATH=$PATH:"$HOME/Documents/go/bin"
-
 # misc
 alias nw="/usr/local/bin/node-webkit.app/Contents/MacOS/node-webkit"
 alias nw_legacy="/usr/local/bin/node-webkit-legacy.app/Contents/MacOS/node-webkit"
