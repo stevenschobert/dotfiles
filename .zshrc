@@ -14,6 +14,7 @@ plugins=(
   brew
   bundler
   colored-man-pages
+  docker-compose
   encode64
   git
   go
