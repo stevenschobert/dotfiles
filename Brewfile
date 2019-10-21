@@ -1,5 +1,6 @@
 # taps
 tap 'caskroom/cask'
+tap 'heroku/brew'
 tap 'homebrew/bundle'
 
 # casks
@@ -21,6 +22,7 @@ brew 'ccat'
 brew 'ctags'
 brew 'git'
 brew 'git-lfs'
+brew 'heroku'
 brew 'htop'
 brew 'httpie'
 brew 'httpstat'
