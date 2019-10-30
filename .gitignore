@@ -33,6 +33,9 @@ tmp/**/*
 # Ctags
 tags
 
+# EditorConfig
+.editorconfig
+
 # Emacs
 *~
 .dir-locals.el
