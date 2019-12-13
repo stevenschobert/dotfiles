@@ -25,6 +25,7 @@
 (use-package evil
   :ensure t
   :init
+  (setq evil-want-C-u-scroll t)
   (if (eq system-type 'windows-nt)
     (setq load-path (remove (expand-file-name "~/.emacs.d/elpa/undo-tree-0.6.5") load-path)) ;; Windows-specific bug with undo-tree https://github.com/emacs-evil/evil/issues/1074
   )
