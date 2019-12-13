@@ -24,6 +24,10 @@
 ;; Evil stuff
 (use-package evil
   :ensure t
+  :init
+  (if (eq system-type 'windows-nt)
+    (setq load-path (remove (expand-file-name "~/.emacs.d/elpa/undo-tree-0.6.5") load-path)) ;; Windows-specific bug with undo-tree https://github.com/emacs-evil/evil/issues/1074
+  )
   :config
   (evil-mode t))
 
@@ -42,10 +46,12 @@
   (global-evil-leader-mode))
 
 ;; Copy/paste
-(use-package simpleclip
-  :ensure t
-  :config
-  (simpleclip-mode))
+(if (eq system-type 'darwin)
+  (use-package simpleclip
+    :ensure t
+    :config
+    (simpleclip-mode))
+)
 
 ;; Flycheck
 (use-package exec-path-from-shell
@@ -67,6 +73,8 @@
 (use-package swift-mode
   :ensure t)
 (use-package graphql-mode
+  :ensure t)
+(use-package go-mode
   :ensure t)
 
 ;; Appearances
@@ -93,6 +101,11 @@
 (setq js-indent-level 2)
 (setq css-indent-offset 2)
 
+;; Starting working directory
+(if (eq system-type 'windows-nt)
+  (setq default-directory (getenv "USERPROFILE"))
+)
+
 ;; Emacs server config
 (setq server-socket-dir (expand-file-name "server" user-emacs-directory))
 (server-start)
@@ -108,12 +121,23 @@
  '(mac-option-modifier (quote meta))
  '(package-selected-packages
    (quote
-    (spaceline atom-one-dark-theme swift-mode evil use-package)))
+    (go-mode spaceline atom-one-dark-theme swift-mode evil use-package)))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:height 160 :family "Inconsolata")))))
+
+(if (eq system-type 'windows-nt)
+  (custom-set-faces
+   ;; custom-set-faces was added by Custom.
+   ;; If you edit it by hand, you could mess it up, so be careful.
+   ;; Your init file should contain only one such instance.
+   ;; If there is more than one, they won't work right.
+   '(default ((t (:height 140 :family "InconsolataGo NF")))))
+)
+(if (eq system-type 'darwin)
+  (custom-set-faces
+   ;; custom-set-faces was added by Custom.
+   ;; If you edit it by hand, you could mess it up, so be careful.
+   ;; Your init file should contain only one such instance.
+   ;; If there is more than one, they won't work right.
+   '(default ((t (:height 160 :family "InconsolataGo Nerd Font")))))
+)
