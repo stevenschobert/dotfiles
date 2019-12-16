@@ -80,7 +80,7 @@
   :ensure t
   :config
   (treemacs-follow-mode t)
-  (treemacs-width 20))
+  (setq treemacs-width 20))
 (use-package treemacs-evil
   :after treemacs evil
   :ensure t)
