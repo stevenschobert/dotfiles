@@ -46,12 +46,12 @@
   (evil-leader/set-leader ",")
   (evil-leader/set-key
     "w"  'save-buffer
-    "b"  'helm-mini                     ;; Open other buffers using Helm
-    "o"  'delete-other-windows          ;; Close all other windows
-    ","  'other-window                  ;; Switch to other window
+    "o"  'delete-other-windows
+    "b"  'helm-mini
+    "f"  'helm-projectile-find-file
+    "p"  'helm-projectile-switch-project
+    "s"  'helm-projectile-ag
     "d"  'kill-this-buffer
-    ;; "l"  'whitespace-mode               ;; Toggle invisible characters
-    "S"  'delete-trailing-whitespace
     "n"  'treemacs
     "j"  'evil-window-down
     "k"  'evil-window-up
@@ -77,7 +77,10 @@
 
 ;; Treemacs
 (use-package treemacs
-  :ensure t)
+  :ensure t
+  :config
+  (treemacs-follow-mode t)
+  (treemacs-width 20))
 (use-package treemacs-evil
   :after treemacs evil
   :ensure t)
