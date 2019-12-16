@@ -42,9 +42,14 @@
     "o"  'delete-other-windows          ;; Close all other windows
     ","  'other-window                  ;; Switch to other window
     "d"  'kill-this-buffer
-    "l"  'whitespace-mode               ;; Toggle invisible characters
+    ;; "l"  'whitespace-mode               ;; Toggle invisible characters
     "S"  'delete-trailing-whitespace
-    "n"  'treemacs)
+    "n"  'treemacs
+    "j"  'evil-window-down
+    "k"  'evil-window-up
+    "h"  'evil-window-left
+    "l"  'evil-window-right
+    "x"  'evil-window-delete)
   (global-evil-leader-mode))
 
 ;; Copy/paste
@@ -106,6 +111,7 @@
 
 ;; Indentation
 (setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
 (setq js-indent-level 2)
 (setq css-indent-offset 2)
 
