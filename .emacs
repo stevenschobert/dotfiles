@@ -43,7 +43,8 @@
     ","  'other-window                  ;; Switch to other window
     "d"  'kill-this-buffer
     "l"  'whitespace-mode               ;; Toggle invisible characters
-    "S"  'delete-trailing-whitespace)
+    "S"  'delete-trailing-whitespace
+    "n"  'treemacs)
   (global-evil-leader-mode))
 
 ;; Copy/paste
@@ -53,6 +54,12 @@
     :config
     (simpleclip-mode))
 )
+
+;; Treemacs
+(use-package treemacs
+  :ensure t)
+(use-package treemacs-evil
+  :ensure t)
 
 ;; Flycheck
 (use-package exec-path-from-shell
