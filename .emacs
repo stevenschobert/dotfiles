@@ -20,6 +20,14 @@
   :config
   (helm-mode t)
   (setq helm-buffers-fuzzy-matching t))
+(use-package helm-projectile
+  :after projectile helm
+  :ensure t
+  :config
+  (helm-projectile-on))
+(use-package helm-ag
+  :after helm
+  :ensure t)
 
 ;; Evil stuff
 (use-package evil
@@ -52,6 +60,13 @@
     "x"  'evil-window-delete)
   (global-evil-leader-mode))
 
+;; Projectile
+(use-package projectile
+  :ensure t
+  :config
+  (setq projectile-project-search-path '("~/code/"))
+  (projectile-mode))
+
 ;; Copy/paste
 (if (eq system-type 'darwin)
   (use-package simpleclip
@@ -64,7 +79,16 @@
 (use-package treemacs
   :ensure t)
 (use-package treemacs-evil
+  :after treemacs evil
   :ensure t)
+(use-package treemacs-projectile
+  :after treemacs projectile
+  :ensure t)
+(use-package treemacs-icons-dired
+  :after treemacs dired
+  :ensure t
+  :config
+  (treemacs-icons-dired-mode))
 
 ;; Flycheck
 (use-package exec-path-from-shell
@@ -115,10 +139,8 @@
 (setq js-indent-level 2)
 (setq css-indent-offset 2)
 
-;; Starting working directory
-(if (eq system-type 'windows-nt)
-  (setq default-directory (getenv "USERPROFILE"))
-)
+;; Working directory
+(setq default-directory "~/")
 
 ;; Emacs server config
 (setq server-socket-dir (expand-file-name "server" user-emacs-directory))
@@ -155,3 +177,9 @@
    ;; If there is more than one, they won't work right.
    '(default ((t (:height 160 :family "InconsolataGo Nerd Font")))))
 )
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:height 140 :family "InconsolataGo NF")))))
