@@ -116,6 +116,8 @@
   :ensure t)
 (use-package go-mode
   :ensure t)
+(use-package yaml-mode
+  :ensure t)
 
 ;; Appearances
 (use-package atom-one-dark-theme
