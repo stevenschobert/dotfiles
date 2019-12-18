@@ -19,6 +19,7 @@ brew 'vim'
 # cli
 brew 'awscli'
 brew 'ccat'
+brew 'cloc'
 brew 'ctags'
 brew 'git'
 brew 'git-lfs'
