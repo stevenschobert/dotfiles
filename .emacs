@@ -14,6 +14,13 @@
 (eval-when-compile
   (require 'use-package))
 
+(use-package exec-path-from-shell
+  :ensure t
+  :config
+  (if (eq system-type 'darwin)
+      (exec-path-from-shell-initialize))
+  )
+
 ;; Helm
 (use-package helm
   :ensure t
@@ -80,7 +87,10 @@
   :ensure t
   :config
   (treemacs-follow-mode t)
-  (setq treemacs-width 30))
+  (setq treemacs-width 30)
+  (if (eq system-type 'windows-nt)
+      (setq treemacs-python-executable "C:\\Python37\\python.exe")
+      ))
 (use-package treemacs-evil
   :after treemacs evil
   :ensure t)
@@ -94,10 +104,6 @@
   (treemacs-icons-dired-mode))
 
 ;; Flycheck
-(use-package exec-path-from-shell
-  :ensure t
-  :config
-  (exec-path-from-shell-initialize))
 (use-package add-node-modules-path
   :ensure t
   :config
@@ -106,6 +112,9 @@
   :ensure t
   :config
   (global-flycheck-mode))
+(use-package flymake-go
+  :after flycheck
+  :ensure t)
 
 ;; Languages
 (use-package markdown-mode
@@ -115,7 +124,13 @@
 (use-package graphql-mode
   :ensure t)
 (use-package go-mode
-  :ensure t)
+  :ensure t
+  :init
+  (if (eq system-type 'windows-nt)
+      (setq exec-path (append exec-path '(concat (getenv "GOPATH") "\bin")))
+    )
+  :config
+  (add-hook 'before-save-hook #'gofmt-before-save))
 (use-package yaml-mode
   :ensure t)
 
@@ -162,7 +177,7 @@
  '(mac-option-modifier (quote meta))
  '(package-selected-packages
    (quote
-    (go-mode spaceline atom-one-dark-theme swift-mode evil use-package)))
+    (flymake-go go-mode spaceline atom-one-dark-theme swift-mode evil use-package)))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 
