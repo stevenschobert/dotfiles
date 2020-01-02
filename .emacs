@@ -54,6 +54,7 @@
   (evil-leader/set-key
     "w"  'save-buffer
     "o"  'delete-other-windows
+    "c"  'comment-line
     "b"  'helm-mini
     "f"  'helm-projectile-find-file
     "p"  'helm-projectile-switch-project
