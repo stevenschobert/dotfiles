@@ -108,9 +108,9 @@ if WinActive("ahk_exe WindowsTerminal.exe") {
 return
 
 F12::
-if WinActive("ahk_exe emacs.exe") {
-    WinMinimize, ahk_exe emacs.exe
+if WinActive("ahk_exe Code.exe") {
+    WinMinimize, ahk_exe Code.exe
 } else {
-    WinActivate, ahk_exe emacs.exe
+    WinActivate, ahk_exe Code.exe
 }
 return
