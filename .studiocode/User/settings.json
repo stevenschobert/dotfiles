@@ -1,6 +1,6 @@
 {
     "editor.tabSize": 2,
-    "editor.fontFamily": "'InconsolataGo Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "'InconsolataGo Nerd Font', 'InconsolataGo NF', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 16,
     "editor.fontWeight": "500",
     "editor.renderWhitespace": "selection",
