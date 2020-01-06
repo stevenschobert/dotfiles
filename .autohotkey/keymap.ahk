@@ -5,6 +5,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 GroupAdd, ChomeShortcuts, ahk_exe chrome.exe
 GroupAdd, TermShortcuts, ahk_exe WindowsTerminal.exe
+GroupAdd, IgnoreApps, ahk_exe synergys.exe
 
 #IfWinActive ahk_group ChomeShortcuts
 !t::
@@ -27,6 +28,7 @@ Send, {Ctrl down}{Shift down}v{Ctrl up}{Shift up}
 return
 #IfWinActive
 
+#IfWinNotActive ahk_group IgnoreApps
 !c::
 Send, {Ctrl down}c{Ctrl up}
 return
@@ -114,3 +116,4 @@ if WinActive("ahk_exe Code.exe") {
     WinActivate, ahk_exe Code.exe
 }
 return
+#IfWinNotActive
