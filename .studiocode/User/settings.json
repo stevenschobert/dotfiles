@@ -16,4 +16,6 @@
     "go.formatTool": "goimports",
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
+    "editor.minimap.enabled": false,
+    "go.lintTool": "revive"
 }
