@@ -10,6 +10,9 @@ Thumbs.db
 # Rails
 config/database.yml
 
+# Go
+revive.toml
+
 # Bundler
 .bundle
 vendor/bundle
