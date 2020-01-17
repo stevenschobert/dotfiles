@@ -3,7 +3,6 @@
     "editor.fontFamily": "'InconsolataGo Nerd Font', 'InconsolataGo NF', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 16,
     "editor.fontWeight": "500",
-    "editor.renderWhitespace": "selection",
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.fontWeight": "500",
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
@@ -17,5 +16,9 @@
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "editor.minimap.enabled": false,
-    "go.lintTool": "revive"
+    "go.lintTool": "revive",
+    "code-eol.toggleWithWhiteSpace": true,
+    "editor.renderWhitespace": "none",
+    "go.useLanguageServer": false,
+    "terraform.codelens.enabled": false,
 }
