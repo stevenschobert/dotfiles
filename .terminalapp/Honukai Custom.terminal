@@ -216,7 +216,7 @@
 	<key>name</key>
 	<string>Honukai Custom</string>
 	<key>rowCount</key>
-	<integer>45</integer>
+	<integer>32</integer>
 	<key>type</key>
 	<string>Window Settings</string>
 </dict>
