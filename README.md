@@ -24,6 +24,14 @@ git pull origin master
 For Terminal.app & BBEdit, I use InconsolataGo Nerd Font from the [Nerd
 Fonts](https://github.com/ryanoasis/nerd-fonts) project.
 
+## QuickLook Extension on Catalina
+
+To enable quick look extension on macOS Catalina, run:
+
+```
+xattr -d -r com.apple.quarantine ~/Library/QuickLook
+```
+
 ## iCloud Drive Alias
 
 I like to have an alias in my home directory that takes me to my iCloud drive:
