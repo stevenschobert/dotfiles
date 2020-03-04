@@ -13,6 +13,9 @@ export PATH=$PATH:/usr/local/heroku/bin
 # Editor
 export EDITOR="vim"
 
+# Perforce
+export P4CONFIG=.p4c
+
 # Don't match patterns
 unsetopt nomatch
 
