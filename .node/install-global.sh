@@ -11,6 +11,7 @@ npm install -g \
     lodash \
     mermaid \
     metalsmith \
+    node-gyp \
     nodemon \
     tern \
     tslint \
