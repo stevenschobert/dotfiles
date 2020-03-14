@@ -31,6 +31,9 @@ fi
 export GOPATH="$HOME/Code/go"
 export PATH=$PATH:"$HOME/Code/go/bin"
 
+# java
+export JAVA_HOME=$(/usr/libexec/java_home)
+
 # asdf
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
