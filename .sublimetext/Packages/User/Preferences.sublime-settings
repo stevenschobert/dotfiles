@@ -1,13 +1,14 @@
 {
-	"color_scheme": "Packages/Rainglow/rainglow/Peacocks In Space (rainglow).tmTheme",
-	"ensure_newline_at_eof_on_save": true,
-	"font_face": "InconsolataGo Nerd Font",
-	"font_size": 16,
-	"ignored_packages":
+	"added_words":
 	[
+		""
 	],
+	"ensure_newline_at_eof_on_save": true,
+	"spell_check": true,
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"vintage_start_in_command_mode": true
+	"rulers": [
+		90
+	]
 }
