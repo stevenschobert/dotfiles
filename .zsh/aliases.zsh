@@ -85,7 +85,9 @@ function lb() {
 function cpc() { echo -n `$@` | pbcopy; }
 
 # spin up a simple web server
-alias simple_server="python -m SimpleHTTPServer"
+function simple_server() {
+  python -m SimpleHTTPServer $@;
+}
 
 # misc
 alias nw="/usr/local/bin/node-webkit.app/Contents/MacOS/node-webkit"
