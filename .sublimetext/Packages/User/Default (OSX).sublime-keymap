@@ -6,5 +6,12 @@
       "dir": "$file_path",
       "file": "$file_name"
     }
+  },
+  {
+    "keys": ["ctrl+shift+u"],
+    "command": "sort_lines",
+    "args": {
+      "case_sensitive": false
+    }
   }
 ]
