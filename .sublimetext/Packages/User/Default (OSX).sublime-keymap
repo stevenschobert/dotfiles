@@ -13,5 +13,12 @@
     "args": {
       "case_sensitive": false
     }
+  },
+  {
+    "keys": ["super+alt+p"],
+    "command": "prompt_select_workspace",
+    "args": {
+
+    }
   }
 ]
