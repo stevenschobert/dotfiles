@@ -6,6 +6,7 @@ TPM_DIR="$HOME/.tmux/plugins/tpm"
 VUNDLE_DIR="$HOME/.vim/bundle/Vundle.vim"
 RUBY_VERSION="2.6.3"
 NODE_VERSION="8.16.0"
+JAVA_VERSION="adopt-openjdk-8u252-b09.1"
 ERLANG_VERSION="19.3"
 
 PLATFORMSTR="$(uname -s)"
@@ -77,6 +78,12 @@ if !(asdf plugin-list | grep -q nodejs 2>/dev/null); then
   bash "$ASDF_DIR/plugins/nodejs/bin/import-release-team-keyring"
 fi
 
+# Java version manager plugin
+if !(asdf plugin-list | grep -q java 2>/dev/null); then
+  echo "[setup] Installing asdf plugin for java"
+  asdf plugin-add java https://github.com/halcyon/asdf-java.git
+fi
+
 # Erlang version manager plugin
 # if !(asdf plugin-list | grep -q erlang 2>/dev/null); then
 #   echo "[setup] Installing asdf plugin for erlang"
@@ -97,6 +104,12 @@ if !(asdf list nodejs | grep -q "$NODE_VERSION" 2>/dev/null); then
   asdf install nodejs "$NODE_VERSION"
 fi
 
+# Install java version
+if !(asdf list java | grep -q "$JAVA_VERSION" 2>/dev/null); then
+  echo "[setup] Installing java $JAVA_VERSION"
+  asdf install java "$JAVA_VERSION"
+fi
+
 # Install erlang version
 # if !(asdf list erlang | grep -q "$ERLANG_VERSION" 2>/dev/null); then
 #   echo "[setup] Installing erlang $ERLANG_VERSION"
@@ -112,6 +125,11 @@ fi
 if !(cat "$HOME/.tool-versions" | grep -q "nodejs $NODE_VERSION" 2>/dev/null); then
   echo "[setup] Setting nodejs $NODE_VERSION in $HOME/.tool-versions"
   echo "nodejs $NODE_VERSION" >> "$HOME/.tool-versions"
+fi
+
+if !(cat "$HOME/.tool-versions" | grep -q "java $JAVA_VERSION" 2>/dev/null); then
+  echo "[setup] Setting java $JAVA_VERSION in $HOME/.tool-versions"
+  echo "java $JAVA_VERSION" >> "$HOME/.tool-versions"
 fi
 
 # if !(cat "$HOME/.tool-versions" | grep -q "erlang $ERLANG_VERSION" 2>/dev/null); then
