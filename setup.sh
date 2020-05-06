@@ -7,6 +7,7 @@ VUNDLE_DIR="$HOME/.vim/bundle/Vundle.vim"
 RUBY_VERSION="2.6.3"
 NODE_VERSION="8.16.0"
 JAVA_VERSION="adopt-openjdk-8u252-b09.1"
+KOTLIN_VERSION="1.3.72"
 ERLANG_VERSION="19.3"
 
 PLATFORMSTR="$(uname -s)"
@@ -84,6 +85,12 @@ if !(asdf plugin-list | grep -q java 2>/dev/null); then
   asdf plugin-add java https://github.com/halcyon/asdf-java.git
 fi
 
+# Kotlin version manager plugin
+if !(asdf plugin-list | grep -q kotlin 2>/dev/null); then
+  echo "[setup] Installing asdf plugin for kotlin"
+  asdf plugin-add kotlin https://github.com/missingcharacter/asdf-kotlin.git
+fi
+
 # Erlang version manager plugin
 # if !(asdf plugin-list | grep -q erlang 2>/dev/null); then
 #   echo "[setup] Installing asdf plugin for erlang"
@@ -110,6 +117,12 @@ if !(asdf list java | grep -q "$JAVA_VERSION" 2>/dev/null); then
   asdf install java "$JAVA_VERSION"
 fi
 
+# Install kotlin version
+if !(asdf list kotlin | grep -q "$KOTLIN_VERSION" 2>/dev/null); then
+  echo "[setup] Installing kotlin $KOTLIN_VERSION"
+  asdf install kotlin "$KOTLIN_VERSION"
+fi
+
 # Install erlang version
 # if !(asdf list erlang | grep -q "$ERLANG_VERSION" 2>/dev/null); then
 #   echo "[setup] Installing erlang $ERLANG_VERSION"
@@ -130,6 +143,11 @@ fi
 if !(cat "$HOME/.tool-versions" | grep -q "java $JAVA_VERSION" 2>/dev/null); then
   echo "[setup] Setting java $JAVA_VERSION in $HOME/.tool-versions"
   echo "java $JAVA_VERSION" >> "$HOME/.tool-versions"
+fi
+
+if !(cat "$HOME/.tool-versions" | grep -q "kotlin $KOTLIN_VERSION" 2>/dev/null); then
+  echo "[setup] Setting kotlin $KOTLIN_VERSION in $HOME/.tool-versions"
+  echo "kotlin $KOTLIN_VERSION" >> "$HOME/.tool-versions"
 fi
 
 # if !(cat "$HOME/.tool-versions" | grep -q "erlang $ERLANG_VERSION" 2>/dev/null); then
