@@ -20,5 +20,12 @@
     "args": {
 
     }
+  },
+  {
+    "keys": ["super+shift+/"],
+    "command": "dash_doc",
+    "args": {
+
+    }
   }
 ]
