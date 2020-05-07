@@ -17,6 +17,7 @@ brew 'vim'
 
 # cli
 brew 'awscli'
+brew 'bat'
 brew 'ccat'
 brew 'cloc'
 brew 'ctags'
