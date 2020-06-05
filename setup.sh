@@ -9,6 +9,7 @@ NODE_VERSION="8.16.0"
 JAVA_VERSION="adopt-openjdk-8u252-b09.1"
 KOTLIN_VERSION="1.3.72"
 ERLANG_VERSION="19.3"
+PYTHON_VERSION="3.6.2"
 
 PLATFORMSTR="$(uname -s)"
 
@@ -91,13 +92,17 @@ if !(asdf plugin-list | grep -q kotlin 2>/dev/null); then
   asdf plugin-add kotlin https://github.com/missingcharacter/asdf-kotlin.git
 fi
 
+# Python version manager plugin
+if !(asdf plugin-list | grep -q python 2>/dev/null); then
+  echo "[setup] Installing asdf plugin for python"
+  asdf plugin-add python https://github.com/danhper/asdf-python.git
+fi
+
 # Erlang version manager plugin
 # if !(asdf plugin-list | grep -q erlang 2>/dev/null); then
 #   echo "[setup] Installing asdf plugin for erlang"
 #   asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
 # fi
-
-# TODO - Swift version manager
 
 # Install ruby version
 if !(asdf list ruby | grep -q "$RUBY_VERSION" 2>/dev/null); then
@@ -121,6 +126,12 @@ fi
 if !(asdf list kotlin | grep -q "$KOTLIN_VERSION" 2>/dev/null); then
   echo "[setup] Installing kotlin $KOTLIN_VERSION"
   asdf install kotlin "$KOTLIN_VERSION"
+fi
+
+# Install python version
+if !(asdf list python | grep -q "$PYTHON_VERSION" 2>/dev/null); then
+  echo "[setup] Installing python $PYTHON_VERSION"
+  asdf install python "$PYTHON_VERSION"
 fi
 
 # Install erlang version
@@ -148,6 +159,11 @@ fi
 if !(cat "$HOME/.tool-versions" | grep -q "kotlin $KOTLIN_VERSION" 2>/dev/null); then
   echo "[setup] Setting kotlin $KOTLIN_VERSION in $HOME/.tool-versions"
   echo "kotlin $KOTLIN_VERSION" >> "$HOME/.tool-versions"
+fi
+
+if !(cat "$HOME/.tool-versions" | grep -q "kotlin $PYTHON_VERSION" 2>/dev/null); then
+  echo "[setup] Setting python $PYTHON_VERSION in $HOME/.tool-versions"
+  echo "python $PYTHON_VERSION" >> "$HOME/.tool-versions"
 fi
 
 # if !(cat "$HOME/.tool-versions" | grep -q "erlang $ERLANG_VERSION" 2>/dev/null); then
