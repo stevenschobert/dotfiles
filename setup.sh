@@ -10,6 +10,7 @@ JAVA_VERSION="adopt-openjdk-8u252-b09.1"
 KOTLIN_VERSION="1.3.72"
 PYTHON_VERSION="3.6.2"
 GROOVY_VERSION="apache-groovy-binary-3.0.4"
+GOLANG_VERSION="1.14.4"
 ERLANG_VERSION="23.0.2"
 
 PLATFORMSTR="$(uname -s)"
@@ -105,6 +106,12 @@ if !(asdf plugin-list | grep -q groovy 2>/dev/null); then
   asdf plugin-add groovy https://github.com/weibemoura/asdf-groovy.git
 fi
 
+# Golang version manager plugin
+if !(asdf plugin-list | grep -q golang 2>/dev/null); then
+  echo "[setup] Installing asdf plugin for golang"
+  asdf plugin-add golang https://github.com/kennyp/asdf-golang.git
+fi
+
 # Erlang version manager plugin
 if !(asdf plugin-list | grep -q erlang 2>/dev/null); then
   echo "[setup] Installing asdf plugin for erlang"
@@ -147,6 +154,12 @@ if !(asdf list groovy | grep -q "$GROOVY_VERSION" 2>/dev/null); then
   asdf install groovy "$GROOVY_VERSION"
 fi
 
+# Install golang version
+if !(asdf list golang | grep -q "$GOLANG_VERSION" 2>/dev/null); then
+  echo "[setup] Installing golang $GOLANG_VERSION"
+  asdf install golang "$GOLANG_VERSION"
+fi
+
 # Install erlang version
 if !(asdf list erlang | grep -q "$ERLANG_VERSION" 2>/dev/null); then
   echo "[setup] Installing erlang $ERLANG_VERSION"
@@ -182,6 +195,11 @@ fi
 if !(cat "$HOME/.tool-versions" | grep -q "groovy $GROOVY_VERSION" 2>/dev/null); then
   echo "[setup] Setting groovy $GROOVY_VERSION in $HOME/.tool-versions"
   echo "groovy $GROOVY_VERSION" >> "$HOME/.tool-versions"
+fi
+
+if !(cat "$HOME/.tool-versions" | grep -q "golang $GOLANG_VERSION" 2>/dev/null); then
+  echo "[setup] Setting golang $GOLANG_VERSION in $HOME/.tool-versions"
+  echo "golang $GOLANG_VERSION" >> "$HOME/.tool-versions"
 fi
 
 if !(cat "$HOME/.tool-versions" | grep -q "erlang $ERLANG_VERSION" 2>/dev/null); then
