@@ -41,6 +41,9 @@ export PATH=$PATH:"$HOME/Code/go/bin"
 # java
 . ~/.asdf/plugins/java/set-java-home.zsh
 
+# groovy
+export ASDF_GROOVY_DISABLE_JAVA_HOME_EXPORT=true
+
 if [[ "$PLATFORMSTR" == "Linux" ]]; then
   # Source ssh-agent finder
   . ~/.ssh/find-agent.sh

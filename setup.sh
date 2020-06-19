@@ -10,6 +10,7 @@ JAVA_VERSION="adopt-openjdk-8u252-b09.1"
 KOTLIN_VERSION="1.3.72"
 ERLANG_VERSION="19.3"
 PYTHON_VERSION="3.6.2"
+GROOVY_VERSION="apache-groovy-binary-3.0.4"
 
 PLATFORMSTR="$(uname -s)"
 
@@ -98,6 +99,12 @@ if !(asdf plugin-list | grep -q python 2>/dev/null); then
   asdf plugin-add python https://github.com/danhper/asdf-python.git
 fi
 
+# Groovy version manager plugin
+if !(asdf plugin-list | grep -q groovy 2>/dev/null); then
+  echo "[setup] Installing asdf plugin for groovy"
+  asdf plugin-add groovy https://github.com/weibemoura/asdf-groovy.git
+fi
+
 # Erlang version manager plugin
 # if !(asdf plugin-list | grep -q erlang 2>/dev/null); then
 #   echo "[setup] Installing asdf plugin for erlang"
@@ -134,6 +141,12 @@ if !(asdf list python | grep -q "$PYTHON_VERSION" 2>/dev/null); then
   asdf install python "$PYTHON_VERSION"
 fi
 
+# Install groovy version
+if !(asdf list groovy | grep -q "$GROOVY_VERSION" 2>/dev/null); then
+  echo "[setup] Installing python $GROOVY_VERSION"
+  asdf install groovy "$GROOVY_VERSION"
+fi
+
 # Install erlang version
 # if !(asdf list erlang | grep -q "$ERLANG_VERSION" 2>/dev/null); then
 #   echo "[setup] Installing erlang $ERLANG_VERSION"
@@ -164,6 +177,11 @@ fi
 if !(cat "$HOME/.tool-versions" | grep -q "kotlin $PYTHON_VERSION" 2>/dev/null); then
   echo "[setup] Setting python $PYTHON_VERSION in $HOME/.tool-versions"
   echo "python $PYTHON_VERSION" >> "$HOME/.tool-versions"
+fi
+
+if !(cat "$HOME/.tool-versions" | grep -q "groovy $GROOVY_VERSION" 2>/dev/null); then
+  echo "[setup] Setting groovy $GROOVY_VERSION in $HOME/.tool-versions"
+  echo "groovy $GROOVY_VERSION" >> "$HOME/.tool-versions"
 fi
 
 # if !(cat "$HOME/.tool-versions" | grep -q "erlang $ERLANG_VERSION" 2>/dev/null); then
