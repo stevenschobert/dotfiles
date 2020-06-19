@@ -150,7 +150,7 @@ fi
 
 # Install groovy version
 if !(asdf list groovy | grep -q "$GROOVY_VERSION" 2>/dev/null); then
-  echo "[setup] Installing python $GROOVY_VERSION"
+  echo "[setup] Installing groovy $GROOVY_VERSION"
   asdf install groovy "$GROOVY_VERSION"
 fi
 
