@@ -17,7 +17,6 @@ plugins=(
   docker-compose
   encode64
   git
-  golang
   heroku
   jsontools
   mix

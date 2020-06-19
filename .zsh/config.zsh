@@ -27,10 +27,6 @@ if [[ "$PLATFORMSTR" == "Darwin" ]]; then
   export PATH=$PATH:~/Library/Android/sdk/platform-tools:~/Library/Android/sdk/tools
 fi
 
-# go
-export GOPATH="$HOME/Code/go"
-export PATH=$PATH:"$HOME/Code/go/bin"
-
 # asdf
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
