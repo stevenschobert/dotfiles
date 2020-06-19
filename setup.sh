@@ -174,7 +174,7 @@ if !(cat "$HOME/.tool-versions" | grep -q "kotlin $KOTLIN_VERSION" 2>/dev/null);
   echo "kotlin $KOTLIN_VERSION" >> "$HOME/.tool-versions"
 fi
 
-if !(cat "$HOME/.tool-versions" | grep -q "kotlin $PYTHON_VERSION" 2>/dev/null); then
+if !(cat "$HOME/.tool-versions" | grep -q "python $PYTHON_VERSION" 2>/dev/null); then
   echo "[setup] Setting python $PYTHON_VERSION in $HOME/.tool-versions"
   echo "python $PYTHON_VERSION" >> "$HOME/.tool-versions"
 fi
