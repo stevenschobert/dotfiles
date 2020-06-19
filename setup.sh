@@ -8,9 +8,9 @@ RUBY_VERSION="2.6.3"
 NODE_VERSION="8.16.0"
 JAVA_VERSION="adopt-openjdk-8u252-b09.1"
 KOTLIN_VERSION="1.3.72"
-ERLANG_VERSION="19.3"
 PYTHON_VERSION="3.6.2"
 GROOVY_VERSION="apache-groovy-binary-3.0.4"
+ERLANG_VERSION="23.0.2"
 
 PLATFORMSTR="$(uname -s)"
 
@@ -106,10 +106,10 @@ if !(asdf plugin-list | grep -q groovy 2>/dev/null); then
 fi
 
 # Erlang version manager plugin
-# if !(asdf plugin-list | grep -q erlang 2>/dev/null); then
-#   echo "[setup] Installing asdf plugin for erlang"
-#   asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
-# fi
+if !(asdf plugin-list | grep -q erlang 2>/dev/null); then
+  echo "[setup] Installing asdf plugin for erlang"
+  asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
+fi
 
 # Install ruby version
 if !(asdf list ruby | grep -q "$RUBY_VERSION" 2>/dev/null); then
@@ -148,10 +148,10 @@ if !(asdf list groovy | grep -q "$GROOVY_VERSION" 2>/dev/null); then
 fi
 
 # Install erlang version
-# if !(asdf list erlang | grep -q "$ERLANG_VERSION" 2>/dev/null); then
-#   echo "[setup] Installing erlang $ERLANG_VERSION"
-#   asdf install erlang "$ERLANG_VERSION"
-# fi
+if !(asdf list erlang | grep -q "$ERLANG_VERSION" 2>/dev/null); then
+  echo "[setup] Installing erlang $ERLANG_VERSION"
+  asdf install erlang "$ERLANG_VERSION"
+fi
 
 # Set .tool-versions
 if !(cat "$HOME/.tool-versions" | grep -q "ruby $RUBY_VERSION" 2>/dev/null); then
@@ -184,10 +184,10 @@ if !(cat "$HOME/.tool-versions" | grep -q "groovy $GROOVY_VERSION" 2>/dev/null);
   echo "groovy $GROOVY_VERSION" >> "$HOME/.tool-versions"
 fi
 
-# if !(cat "$HOME/.tool-versions" | grep -q "erlang $ERLANG_VERSION" 2>/dev/null); then
-#   echo "[setup] Setting erlang $ERLANG_VERSION in $HOME/.tool-versions"
-#   echo "erlang $ERLANG_VERSION" >> "$HOME/.tool-versions"
-# fi
+if !(cat "$HOME/.tool-versions" | grep -q "erlang $ERLANG_VERSION" 2>/dev/null); then
+  echo "[setup] Setting erlang $ERLANG_VERSION in $HOME/.tool-versions"
+  echo "erlang $ERLANG_VERSION" >> "$HOME/.tool-versions"
+fi
 
 # Ruby gems
 echo "[setup] Installing global gems from $HOME/.ruby/install-global.sh"
