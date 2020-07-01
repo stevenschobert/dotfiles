@@ -72,7 +72,7 @@ function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 # open git directory on github
 function ghb() {
   GITDIR=$(git rev-parse --show-toplevel)
-  URL=$(cat "$GITDIR/.git/config" | grep github | head -n 1 | sed -E 's/^.*(github\.com):(.*)(\.git)?/http:\/\/\1\/\2/')
+  URL=$(awk '/\[remote "origin"\]/{getline; print}' "$GITDIR/.git/config" | sed -E "s/[[:space:]]*url[[:space:]]*\=[[:space:]]*(.*)[[:space:]]*/\1/" | sed -E "s/^git@(.*)\:/http:\/\/\1\//")
   open $URL
 }
 
