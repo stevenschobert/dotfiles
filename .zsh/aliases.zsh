@@ -87,7 +87,8 @@ function cpc() { echo -n `$@` | pbcopy; }
 
 # spin up a simple web server
 function simple_server() {
-  python -m SimpleHTTPServer $@;
+  # python -m SimpleHTTPServer $@; # For python 2
+  python -m http.server $@; # For python 3
 }
 
 # misc
