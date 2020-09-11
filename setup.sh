@@ -12,6 +12,7 @@ PYTHON_VERSION="3.6.2"
 GROOVY_VERSION="apache-groovy-binary-3.0.4"
 GOLANG_VERSION="1.14.4"
 ERLANG_VERSION="23.0.2"
+HAXE_VERSION="4.1.4"
 
 PLATFORMSTR="$(uname -s)"
 
@@ -118,6 +119,12 @@ if !(asdf plugin-list | grep -q erlang 2>/dev/null); then
   asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
 fi
 
+# Haxe version manager plugin
+if !(asdf plugin-list | grep -q haxe 2>/dev/null); then
+  echo "[setup] Installing asdf plugin for haxe"
+  asdf plugin-add haxe https://github.com/asdf-community/asdf-haxe.git
+fi
+
 # Install ruby version
 if !(asdf list ruby | grep -q "$RUBY_VERSION" 2>/dev/null); then
   echo "[setup] Installing ruby $RUBY_VERSION"
@@ -166,6 +173,12 @@ if !(asdf list erlang | grep -q "$ERLANG_VERSION" 2>/dev/null); then
   asdf install erlang "$ERLANG_VERSION"
 fi
 
+# Install haxe version
+if !(asdf list haxe | grep -q "$HAXE_VERSION" 2>/dev/null); then
+  echo "[setup] Installing haxe $HAXE_VERSION"
+  asdf install haxe "$HAXE_VERSION"
+fi
+
 # Set .tool-versions
 if !(cat "$HOME/.tool-versions" | grep -q "ruby $RUBY_VERSION" 2>/dev/null); then
   echo "[setup] Setting ruby $RUBY_VERSION in $HOME/.tool-versions"
@@ -205,6 +218,11 @@ fi
 if !(cat "$HOME/.tool-versions" | grep -q "erlang $ERLANG_VERSION" 2>/dev/null); then
   echo "[setup] Setting erlang $ERLANG_VERSION in $HOME/.tool-versions"
   echo "erlang $ERLANG_VERSION" >> "$HOME/.tool-versions"
+fi
+
+if !(cat "$HOME/.tool-versions" | grep -q "erlang $HAXE_VERSION" 2>/dev/null); then
+  echo "[setup] Setting haxe $HAXE_VERSION in $HOME/.tool-versions"
+  echo "haxe $HAXE_VERSION" >> "$HOME/.tool-versions"
 fi
 
 # Ruby gems
