@@ -13,6 +13,7 @@ GROOVY_VERSION="apache-groovy-binary-3.0.4"
 GOLANG_VERSION="1.14.4"
 ERLANG_VERSION="23.0.2"
 HAXE_VERSION="4.1.4"
+NEKO_VERSION="2.3.0"
 
 PLATFORMSTR="$(uname -s)"
 
@@ -125,6 +126,13 @@ if !(asdf plugin-list | grep -q haxe 2>/dev/null); then
   asdf plugin-add haxe https://github.com/asdf-community/asdf-haxe.git
 fi
 
+# Neko version manager plugin
+if !(asdf plugin-list | grep -q neko 2>/dev/null); then
+  echo "[setup] Installing asdf plugin for neko"
+  asdf plugin-add neko https://github.com/asdf-community/asdf-neko.git
+  asdf haxe neko dylibs link # link neko dylibs
+fi
+
 # Install ruby version
 if !(asdf list ruby | grep -q "$RUBY_VERSION" 2>/dev/null); then
   echo "[setup] Installing ruby $RUBY_VERSION"
@@ -179,6 +187,12 @@ if !(asdf list haxe | grep -q "$HAXE_VERSION" 2>/dev/null); then
   asdf install haxe "$HAXE_VERSION"
 fi
 
+# Install haxe version
+if !(asdf list neko | grep -q "$NEKO_VERSION" 2>/dev/null); then
+  echo "[setup] Installing neko $NEKO_VERSION"
+  asdf install neko "$NEKO_VERSION"
+fi
+
 # Set .tool-versions
 if !(cat "$HOME/.tool-versions" | grep -q "ruby $RUBY_VERSION" 2>/dev/null); then
   echo "[setup] Setting ruby $RUBY_VERSION in $HOME/.tool-versions"
@@ -220,9 +234,14 @@ if !(cat "$HOME/.tool-versions" | grep -q "erlang $ERLANG_VERSION" 2>/dev/null);
   echo "erlang $ERLANG_VERSION" >> "$HOME/.tool-versions"
 fi
 
-if !(cat "$HOME/.tool-versions" | grep -q "erlang $HAXE_VERSION" 2>/dev/null); then
+if !(cat "$HOME/.tool-versions" | grep -q "haxe $HAXE_VERSION" 2>/dev/null); then
   echo "[setup] Setting haxe $HAXE_VERSION in $HOME/.tool-versions"
   echo "haxe $HAXE_VERSION" >> "$HOME/.tool-versions"
+fi
+
+if !(cat "$HOME/.tool-versions" | grep -q "neko $NEKO_VERSION" 2>/dev/null); then
+  echo "[setup] Setting neko $NEKO_VERSION in $HOME/.tool-versions"
+  echo "neko $NEKO_VERSION" >> "$HOME/.tool-versions"
 fi
 
 # Ruby gems
