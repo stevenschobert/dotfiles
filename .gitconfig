@@ -18,3 +18,5 @@
 	smudge = git-lfs smudge -- %f
 [diff]
 	submodule = log
+[pull]
+	rebase = true
