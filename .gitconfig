@@ -20,3 +20,5 @@
 	submodule = log
 [pull]
 	rebase = true
+[includeIf "gitdir/i:~/code/work/"]
+	path = ~/.gitconfig.work
