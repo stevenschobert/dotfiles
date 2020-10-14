@@ -1,5 +1,4 @@
 # taps
-tap 'caskroom/cask'
 tap 'heroku/brew'
 tap 'homebrew/bundle'
 
@@ -34,7 +33,6 @@ brew 'mosh'
 brew 'the_silver_searcher'
 brew 'tree'
 brew 'wrk'
-brew 'yarn', args: [ '--ignore-dependencies' ]
 
 # system
 brew 'autoconf'
