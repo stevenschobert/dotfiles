@@ -1,6 +1,7 @@
 # taps
 tap 'heroku/brew'
 tap 'homebrew/bundle'
+tap 'mike-engel/jwt-cli'
 
 # casks
 cask 'google-cloud-sdk'
@@ -30,6 +31,7 @@ brew 'htop'
 brew 'httpie'
 brew 'httpstat'
 brew 'jq'
+brew 'jwt-cli'
 brew 'mosh'
 brew 'the_silver_searcher'
 brew 'tree'
