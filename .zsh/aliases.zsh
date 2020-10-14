@@ -39,8 +39,8 @@ function e() {
   else
     TARGET=.
   fi
-  # bbedit $TARGET
-  subl $TARGET
+  bbedit $TARGET
+  # subl $TARGET
 }
 
 # Git
