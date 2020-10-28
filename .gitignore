@@ -7,6 +7,9 @@
 ehthumbs.db
 Thumbs.db
 
+# direnv
+.envrc
+
 # Rails
 config/database.yml
 
