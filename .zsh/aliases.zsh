@@ -14,6 +14,10 @@ function bkup() {
   cp "$1" "$1.bkup"
 }
 
+function len() {
+  printf '%d\n' ${#1}
+}
+
 # Ruby
 function rinstall_gem() {
   GEMSPEC=$(ls -l | grep \.gemspec | awk '{ print $9; exit }')
