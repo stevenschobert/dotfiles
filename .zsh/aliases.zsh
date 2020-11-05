@@ -18,6 +18,23 @@ function len() {
   printf '%d\n' ${#1}
 }
 
+function json_validate() {
+  node -e "\
+    const path = require('path'); \
+    const fs = require('fs'); \
+    var input = '$1'; \
+    if (path.extname(input) === '.json') { \
+      input = fs.readFileSync(input, 'utf-8'); \
+    } \
+    try { \
+      JSON.parse(input);\
+      process.exit(0); \
+    } catch (err) { \
+      console.error(err.message); \
+      process.exit(1); \
+    }"
+}
+
 # Ruby
 function rinstall_gem() {
   GEMSPEC=$(ls -l | grep \.gemspec | awk '{ print $9; exit }')
