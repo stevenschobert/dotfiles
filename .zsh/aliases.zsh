@@ -29,7 +29,7 @@ function mtime() {
 }
 
 function hash() {
-  echo "require 'SecureRandom'; \$stdout.sync = true; print SecureRandom.hex($1);" | ruby
+  echo "require 'SecureRandom'; \$stdout.sync = true; print SecureRandom.hex($1 / 2);" | ruby
 }
 
 # BBEdit
