@@ -18,10 +18,10 @@ NEKO_VERSION="2.3.0"
 PLATFORMSTR="$(uname -s)"
 
 # Repo setup
-if !(cat "$HOME/.git/info/exclude" | grep -q \*$ 2>/dev/null); then
-  echo "[setup] Excluding all files from git"
-  echo "*" >> "$HOME/.git/info/exclude"
-fi
+# if !(cat "$HOME/.git/info/exclude" | grep -q \*$ 2>/dev/null); then
+#   echo "[setup] Excluding all files from git"
+#   echo "*" >> "$HOME/.git/info/exclude"
+# fi
 
 # Mac-specific setup
 if [[ "$PLATFORMSTR" == "Darwin" ]]; then
