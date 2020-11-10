@@ -1,3 +1,7 @@
+# Dotfiles bare repo
+# (prevent recursion)
+.dotfiles
+
 # OS Cruft
 .DS_Store
 .DS_Store?

@@ -1,3 +1,6 @@
+# Dotfiles management
+alias dfg="/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+
 # File System
 function o() {
   if [[ "$1" != "" ]]; then
