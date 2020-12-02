@@ -17,6 +17,10 @@ function bkup() {
   cp "$1" "$1.bkup"
 }
 
+function uuid() {
+  printf '%s\n' $(uuidgen | awk '{print tolower($0)}')
+}
+
 function len() {
   printf '%d\n' ${#1}
 }
