@@ -45,6 +45,7 @@
   Plugin 'kchmck/vim-coffee-script'               " coffee-script syntax
   Plugin 'elixir-lang/vim-elixir'                 " elixir syntax
   Plugin 'leafgarland/typescript-vim'             " typescript syntax
+  Plugin 'udalov/kotlin-vim'                      " kotlin syntax
 
   " macOS only plugins
   if has("unix")
@@ -62,12 +63,13 @@
 
   "- Appearance -----------------------------------------------------------------------------------
 
-    syntax on                    " turn on syntax highilghting
+    syntax on                    " turn on syntax highlighting
 
-    colorscheme rdark-terminal2  " Color scheme
+    " colorscheme rdark-terminal2  " Color scheme
+    colorscheme peachpuff        " Color scheme
 
-    filetype plugin on           " enable loading plugins for filetypes
-    filetype indent on           " enable loading 'indent files' for filetypes
+    filetype plugin on           " enable loading plugins for file types
+    filetype indent on           " enable loading 'indent files' for file types
 
     set synmaxcol=200            " no syntax highlighting for lines longer than 200 cols
 
@@ -76,7 +78,7 @@
     set number                   " display line numbers
     set visualbell               " use visual bell
 
-    set laststatus=2             " Fix for statusbar toggling
+    set laststatus=2             " Fix for status bar toggling
     set encoding=utf-8           " Fix special character encoding
 
     set t_Co=256                 " 256 color correction
@@ -89,13 +91,13 @@
 
     set scrolloff=3              " start scrolling 3 lines from bottom
     set sidescrolloff=6          " start scrolling 6 lines from right
-    let loaded_match_paren = 1   " highlight matching parens
+    let loaded_match_paren = 1   " highlight matching parentheses
 
     set mouse=a                  " allow mouse usage
 
   "- Wrapping -------------------------------------------------------------------------------------
 
-    set nowrap                   " don't softwrap text
+    set nowrap                   " don't soft wrap text
     set formatoptions-=t         " don't automatically hardwrap text (use 'gq' to reflow text)
     set textwidth=100            " wrap at column 100
     set wrapmargin=0             " don't wrap based on terminal size
@@ -110,9 +112,15 @@
     set softtabstop=2            " use 2 spaces for a <Tab>
     set expandtab
 
+  "- Highlighting ---------------------------------------------------------------------------------
+
+    hi SpellBad cterm=bold ctermfg=white ctermbg=darkred
+    hi Search cterm=bold ctermfg=white ctermbg=brown
+
 "= Utilities ======================================================================================
 
   set noswapfile               " don't create swap files
+  set spell spelllang=en_us    " turn on spell check for US English
 
 "= Keys ===========================================================================================
 
