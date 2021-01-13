@@ -40,6 +40,9 @@ fi
 # groovy
 export ASDF_GROOVY_DISABLE_JAVA_HOME_EXPORT=true
 
+# python
+export ASDF_PYTHON_DEFAULT_PACKAGES_FILE=$HOME/.python/.default-python-packages
+
 if [[ "$PLATFORMSTR" == "Linux" ]]; then
   # Source ssh-agent finder
   . ~/.ssh/find-agent.sh
