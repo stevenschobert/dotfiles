@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# Shell runner for Go commands
+#
+# Run by BBEdit scripts with BB_DOC_PATH set to the document
+
+# Check that document was provided
+if [ -z "$BB_DOC_PATH" ]; then
+	echo "Document missing" >&2
+	exit 1
+fi
+
+cd $(dirname "${BB_DOC_PATH}")
+
+# Verify Go is installed
+gotool=`which go`
+if [ -z "${gotool}" ]; then
+	echo "Go not found" >&2
+	exit -1
+fi
+
+# Set PATH and GOPATH for workspace
+export GOROOT=`go env GOROOT`
+export GOPATH=`go env GOPATH`
+export PATH=${GOROOT}/bin:${GOPATH}/bin:${PATH}
+
+# Run command
+$*
