@@ -9,6 +9,7 @@ DIRS_TO_COPY=(
   "Menu Scripts"
   "Scripts"
   "Setup"
+  "Packages"
   "Text Filters"
 )
 BBEDIT_PATH="$HOME/Library/Application Support/BBEdit"
