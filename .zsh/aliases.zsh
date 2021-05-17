@@ -63,12 +63,19 @@ function hash() {
 # BBEdit
 function e() {
   if [[ "$1" != "" ]]; then
-    TARGET="$1"
+    relative_path="$1"
   else
-    TARGET=.
+    relative_path=.
   fi
-  bbedit $TARGET
-  # subl $TARGET
+  absolute_path=$(realpath $relative_path)
+  project_dir="$HOME/Documents/BBEdit Projects"
+  project_file_match=$(grep --include=project.bbprojectdata -rl "$project_dir" -e "<string>file://$absolute_path/</string>")
+  if [[ "$project_file_match" != "" ]]; then
+    project_file=$(dirname "$project_file_match")
+    bbedit "$project_file"
+  else
+    bbedit $relative_path
+  fi
 }
 
 # Git
