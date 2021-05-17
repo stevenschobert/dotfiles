@@ -1,1 +1,4 @@
 locust
+pg_activity
+psycopg2-binary
+powa-web
