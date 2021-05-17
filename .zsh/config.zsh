@@ -7,6 +7,9 @@ export PATH=$PATH:vendor/bundle/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin
 # Qmake
 export PATH=$PATH:/usr/local/opt/qt@5.5/bin
 
+# Libpq/Postgres Utils
+export PATH=/usr/local/opt/libpq/bin:$PATH
+
 # Heroku Toolbelt
 export PATH=$PATH:/usr/local/heroku/bin
 
