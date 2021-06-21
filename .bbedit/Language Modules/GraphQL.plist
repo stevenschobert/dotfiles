@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BBEditDocumentType</key>
+	<string>CodelessLanguageModule</string>
+	<key>BBLMColorsSyntax</key>
+	<true/>
+	<key>BBLMCommentLineDefault</key>
+	<string>#</string>
+	<key>BBLMKeywordList</key>
+	<array>
+		<string>mutation</string>
+		<string>query</string>
+		<string>schema</string>
+		<string>input</string>
+		<string>union</string>
+		<string>interface</string>
+		<string>scalar</string>
+		<string>enum</string>
+		<string>directive</string>
+		<string>type</string>
+	</array>
+	<key>BBLMLanguageCode</key>
+	<string>GQL!</string>
+	<key>BBLMLanguageDisplayName</key>
+	<string>GraphQL</string>
+	<key>BBLMPreferredFilenameExtension</key>
+	<string>graphql</string>
+	<key>BBLMSuffixMap</key>
+	<array>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.graphql</string>
+		</dict>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.gql</string>
+		</dict>
+	</array>
+	<key>Language Features</key>
+	<dict>
+		<key>Identifier and Keyword Character Class</key>
+		<string>A-Za-z0-9_\?!</string>
+		<key>Open Line Comments</key>
+		<string>#</string>
+	</dict>
+</dict>
+</plist>
