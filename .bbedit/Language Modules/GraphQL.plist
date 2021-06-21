@@ -10,6 +10,7 @@
 	<string>#</string>
 	<key>BBLMKeywordList</key>
 	<array>
+		<string>implements</string>
 		<string>mutation</string>
 		<string>query</string>
 		<string>schema</string>
