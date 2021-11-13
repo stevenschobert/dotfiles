@@ -35,7 +35,7 @@ fi
 . $HOME/.asdf/completions/asdf.bash
 
 # node
-. $HOME/.node/path_shim.sh
+export ASDF_NPM_DEFAULT_PACKAGES_FILE=$HOME/.node/.default-npm-packages
 
 # java
 . ~/.asdf/plugins/java/set-java-home.zsh
