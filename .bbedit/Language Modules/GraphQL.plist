@@ -8,6 +8,8 @@
 	<true/>
 	<key>BBLMCommentLineDefault</key>
 	<string>#</string>
+	<key>BBLMIsCaseSensitive</key>
+	<true></true>
 	<key>BBLMKeywordList</key>
 	<array>
 		<string>implements</string>
@@ -21,6 +23,7 @@
 		<string>enum</string>
 		<string>directive</string>
 		<string>type</string>
+		<string>extend</string>
 	</array>
 	<key>BBLMLanguageCode</key>
 	<string>GQL!</string>
@@ -45,6 +48,10 @@
 		<string>A-Za-z0-9_\?!</string>
 		<key>Open Line Comments</key>
 		<string>#</string>
+		<key>Open Strings 1</key>
+		<string>"</string>
+		<key>Close Strings 1</key>
+		<string>"</string>
 	</dict>
 </dict>
 </plist>
