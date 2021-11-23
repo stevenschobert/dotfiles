@@ -4,24 +4,24 @@ ASDF_DIR="$HOME/.asdf"
 OMZSH_DIR="$HOME/.oh-my-zsh"
 TPM_DIR="$HOME/.tmux/plugins/tpm"
 VUNDLE_DIR="$HOME/.vim/bundle/Vundle.vim"
-RUBY_VERSION="2.6.3"
-NODE_VERSION="8.16.0"
-JAVA_VERSION="adopt-openjdk-8u252-b09.1"
-KOTLIN_VERSION="1.3.72"
-PYTHON_VERSION="3.6.2"
+RUBY_VERSION="3.0.2"
+NODE_VERSION="16.13.0"
+JAVA_VERSION="adoptopenjdk-jre-8.0.252+9.1"
+KOTLIN_VERSION="1.6.0"
+PYTHON_VERSION="3.9.9"
 GROOVY_VERSION="apache-groovy-binary-3.0.4"
-GOLANG_VERSION="1.15.5"
-ERLANG_VERSION="23.0.2"
-HAXE_VERSION="4.1.4"
+GOLANG_VERSION="1.17.3"
+ERLANG_VERSION="24.1.7"
+HAXE_VERSION="4.2.4"
 NEKO_VERSION="2.3.0"
 
 PLATFORMSTR="$(uname -s)"
 
 # Repo setup
-# if !(cat "$HOME/.git/info/exclude" | grep -q \*$ 2>/dev/null); then
-#   echo "[setup] Excluding all files from git"
-#   echo "*" >> "$HOME/.git/info/exclude"
-# fi
+if !(cat "$HOME/.git/info/exclude" | grep -q \*$ 2>/dev/null); then
+  echo "[setup] Excluding all files from git"
+  echo "*" >> "$HOME/.git/info/exclude"
+fi
 
 # Mac-specific setup
 if [[ "$PLATFORMSTR" == "Darwin" ]]; then
@@ -35,7 +35,8 @@ if [[ "$PLATFORMSTR" == "Darwin" ]]; then
   # http://brew.sh
   if !(hash brew 2>/dev/null); then
     echo "[setup] Installing homebrew..."
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    # ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   fi
 
   # Homebrew bundle
@@ -81,7 +82,7 @@ fi
 if !(asdf plugin-list | grep -q nodejs 2>/dev/null); then
   echo "[setup] Installing asdf plugin for nodejs"
   asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-  bash "$ASDF_DIR/plugins/nodejs/bin/import-release-team-keyring"
+  # bash "$ASDF_DIR/plugins/nodejs/bin/import-release-team-keyring"
 fi
 
 # Java version manager plugin
@@ -187,7 +188,7 @@ if !(asdf list haxe | grep -q "$HAXE_VERSION" 2>/dev/null); then
   asdf install haxe "$HAXE_VERSION"
 fi
 
-# Install haxe version
+# Install neko version
 if !(asdf list neko | grep -q "$NEKO_VERSION" 2>/dev/null); then
   echo "[setup] Installing neko $NEKO_VERSION"
   asdf install neko "$NEKO_VERSION"
@@ -245,12 +246,12 @@ if !(cat "$HOME/.tool-versions" | grep -q "neko $NEKO_VERSION" 2>/dev/null); the
 fi
 
 # Ruby gems
-echo "[setup] Installing global gems from $HOME/.ruby/install-global.sh"
-bash "$HOME/.ruby/install-global.sh"
+# echo "[setup] Installing global gems from $HOME/.ruby/install-global.sh"
+# bash "$HOME/.ruby/install-global.sh"
 
 # Nodejs packages
-echo "[setup] Installing global node packages from $HOME/.node/install-global.sh"
-bash "$HOME/.node/install-global.sh"
+# echo "[setup] Installing global node packages from $HOME/.node/install-global.sh"
+# bash "$HOME/.node/install-global.sh"
 
 # Vundle
 # https://github.com/VundleVim/Vundle.vim

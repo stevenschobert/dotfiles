@@ -37,6 +37,9 @@ fi
 # node
 export ASDF_NPM_DEFAULT_PACKAGES_FILE=$HOME/.node/.default-npm-packages
 
+# ruby
+export ASDF_GEM_DEFAULT_PACKAGES_FILE=$HOME/.ruby/.default-gems
+
 # java
 . ~/.asdf/plugins/java/set-java-home.zsh
 
