@@ -1,4 +1,5 @@
+ansible
 locust
 pg_activity
-psycopg2-binary
 powa-web
+psycopg2-binary
