@@ -1,24 +1,36 @@
 {
-    "editor.tabSize": 2,
-    "editor.fontFamily": "'InconsolataGo Nerd Font', 'InconsolataGo NF', Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 16,
-    "editor.fontWeight": "500",
-    "terminal.integrated.fontSize": 16,
-    "terminal.integrated.fontWeight": "500",
+    // Workbench
+    "workbench.colorTheme": "Blackboard",
+
+    // Window
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
-    "[go]": {
-        "editor.tabSize": 4
-    },
+    "window.zoomLevel": 0,
+
+    // Editor
+    "editor.tabSize": 2,
+    "editor.fontFamily": "'MonaLisa Nerd Font', 'MonoLisa', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
     "editor.rulers": [
-        90
+      90
     ],
-    "go.formatTool": "goimports",
+    "editor.renderWhitespace": "selection",
+    "editor.minimap.enabled": false,
+    "workbench.sideBar.location": "right",
+
+    // Terminal
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.cursorBlinking": true,
+
+    // File handling
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
-    "editor.minimap.enabled": false,
+
+    // Go
+    "go.formatTool": "goimports",
     "go.lintTool": "revive",
-    "code-eol.toggleWithWhiteSpace": true,
-    "editor.renderWhitespace": "none",
-    "go.useLanguageServer": false,
-    "terraform.codelens.enabled": false,
+    "[go]": {
+      "editor.tabSize": 4
+    },
+    "workbench.preferredLightColorTheme": "Visual Studio Light"
 }
