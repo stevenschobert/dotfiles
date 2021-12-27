@@ -2,6 +2,9 @@
     // Workbench
     "workbench.colorTheme": "Blackboard",
 
+    // Telemetry
+    "telemetry.telemetryLevel": "off",
+
     // Window
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
     "window.zoomLevel": 0,
@@ -31,6 +34,5 @@
     "go.lintTool": "revive",
     "[go]": {
       "editor.tabSize": 4
-    },
-    "workbench.preferredLightColorTheme": "Visual Studio Light"
+    }
 }
