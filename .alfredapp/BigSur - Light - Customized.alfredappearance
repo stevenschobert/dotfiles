@@ -1,0 +1,64 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 6,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#FFFFFFC4",
+        "font" : "System Light",
+        "color" : "#68717FFF"
+      },
+      "shortcut" : {
+        "size" : 12,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "System",
+        "color" : "#24282CFF"
+      },
+      "backgroundSelected" : "#3B82F6FF",
+      "text" : {
+        "size" : 16,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "System",
+        "color" : "#24282CE5"
+      },
+      "iconPaddingHorizontal" : 8,
+      "roundness" : 5,
+      "paddingVertical" : 8,
+      "iconSize" : 24
+    },
+    "search" : {
+      "backgroundSelected" : "#E0E3E6E4",
+      "paddingHorizontal" : 8,
+      "spacing" : 8,
+      "text" : {
+        "size" : 24,
+        "colorSelected" : "#24282CFF",
+        "font" : "System",
+        "color" : "#24282CFF"
+      },
+      "background" : "#F8F9FA00",
+      "roundness" : 5,
+      "paddingVertical" : 5
+    },
+    "window" : {
+      "color" : "#FFFFFFBF",
+      "paddingHorizontal" : 9,
+      "width" : 500,
+      "borderPadding" : 0,
+      "borderColor" : "#4A4A4A33",
+      "blur" : 34,
+      "roundness" : 10,
+      "paddingVertical" : 8
+    },
+    "credit" : "@_stefanzweifel",
+    "separator" : {
+      "color" : "#000000F3",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#24282CFF",
+      "thickness" : 3
+    },
+    "name" : "BigSur - Light (v2.0)"
+  }
+}
