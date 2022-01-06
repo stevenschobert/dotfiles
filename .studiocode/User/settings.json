@@ -3,6 +3,7 @@
     "workbench.colorTheme": "Blackboard",
     "workbench.settings.editor": "json",
     "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "none",
 
     // Updates
     "update.mode": "start",
@@ -10,6 +11,7 @@
     // Extension
     "extensions.autoUpdate": false,
     "extensions.autoCheckUpdates": true,
+    "extensions.ignoreRecommendations": true,
 
     // Telemetry
     "telemetry.telemetryLevel": "off",
@@ -43,6 +45,5 @@
     "go.lintTool": "revive",
     "[go]": {
       "editor.tabSize": 4
-    },
-    "extensions.ignoreRecommendations": true
+    }
 }
