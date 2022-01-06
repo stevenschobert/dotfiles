@@ -1,7 +1,15 @@
 {
     // Workbench
     "workbench.colorTheme": "Blackboard",
+    "workbench.settings.editor": "json",
     "workbench.sideBar.location": "right",
+
+    // Updates
+    "update.mode": "start",
+
+    // Extension
+    "extensions.autoUpdate": false,
+    "extensions.autoCheckUpdates": true,
 
     // Telemetry
     "telemetry.telemetryLevel": "off",
