@@ -1,6 +1,7 @@
 {
     // Workbench
     "workbench.colorTheme": "Blackboard",
+    "workbench.sideBar.location": "right",
 
     // Telemetry
     "telemetry.telemetryLevel": "off",
@@ -11,7 +12,7 @@
 
     // Editor
     "editor.tabSize": 2,
-    "editor.fontFamily": "'MonaLisa Nerd Font', 'MonoLisa', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "'MonaLisa Nerd Font', 'MonoLisa', monospace",
     "editor.fontLigatures": true,
     "editor.fontSize": 14,
     "editor.rulers": [
@@ -19,11 +20,11 @@
     ],
     "editor.renderWhitespace": "selection",
     "editor.minimap.enabled": false,
-    "workbench.sideBar.location": "right",
 
     // Terminal
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.letterSpacing": 1,
 
     // File handling
     "files.trimTrailingWhitespace": true,
@@ -34,5 +35,6 @@
     "go.lintTool": "revive",
     "[go]": {
       "editor.tabSize": 4
-    }
+    },
+    "extensions.ignoreRecommendations": true
 }
