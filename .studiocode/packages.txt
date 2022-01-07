@@ -1,0 +1,13 @@
+Name: Blackboard Theme
+Id: gerane.theme-blackboard
+Description: Blackboard Theme ported from the Blackboard TextMate Theme
+Version: 0.0.5
+Publisher: gerane
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=gerane.Theme-Blackboard
+
+Name: TODO Highlight
+Id: wayou.vscode-todo-highlight
+Description: highlight TODOs, FIXMEs, and any keywords, annotations...
+Version: 1.0.5
+Publisher: Wayou Liu
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight
