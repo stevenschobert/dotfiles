@@ -11,3 +11,10 @@ Description: highlight TODOs, FIXMEs, and any keywords, annotations...
 Version: 1.0.5
 Publisher: Wayou Liu
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight
+
+Name: Code Spell Checker
+Id: streetsidesoftware.code-spell-checker
+Description: Spelling checker for source code
+Version: 2.0.14
+Publisher: Street Side Software
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
