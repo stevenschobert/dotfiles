@@ -8,6 +8,9 @@
     // Updates
     "update.mode": "start",
 
+    // Diffs
+    "diffEditor.renderSideBySide": false,
+
     // Extension
     "extensions.autoUpdate": false,
     "extensions.autoCheckUpdates": true,
