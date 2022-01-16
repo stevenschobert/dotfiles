@@ -35,7 +35,7 @@
 	<key>com.barebones.bblm.TeX.verbatim</key>
 	<string>hsla(0.56, 0.41, 1.00, 1.00)</string>
 	<key>com.barebones.bblm.code</key>
-	<string>hsla(0.000, 0.000, 0.973, 1.000)</string>
+	<string>hsla(0.668, 0.039, 1.000, 1.000)</string>
 	<key>com.barebones.bblm.comment</key>
 	<string>hsla(0.000, 0.000, 0.682, 1.000)</string>
 	<key>com.barebones.bblm.css.color-spec</key>
