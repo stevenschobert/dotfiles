@@ -14,6 +14,7 @@ cask 'quicklook-json'
 # editor
 brew 'tmux'
 brew 'vim'
+brew 'neovim'
 
 # cli
 brew 'awscli'
