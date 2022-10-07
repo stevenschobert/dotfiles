@@ -21,6 +21,14 @@
   -- open file explorer
   vim.api.nvim_set_keymap("n", "<leader>n", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
 
+-- Appearance ---------------------------------------------------------------------------
+
+  require('kanagawa').setup({
+    undercurl = true,    -- enable undercurls
+    dimInactive = true,  -- dim inactive window
+  })
+  vim.cmd("colorscheme kanagawa")
+
 -- Packer -------------------------------------------------------------------------------
 
   require("plugins")
