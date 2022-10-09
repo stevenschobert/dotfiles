@@ -42,6 +42,10 @@ require('packer').startup(function(use)
     'nvim-treesitter/nvim-treesitter',
     run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   }
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 end)
 
 -- Appearance ---------------------------------------------------------------------------
@@ -49,6 +53,7 @@ end)
 require('kanagawa').setup({
   undercurl = true,    -- enable undercurls
   dimInactive = true,  -- dim inactive window
+  globalStatus = true
 })
 
 require('indent_blankline').setup({
@@ -60,7 +65,8 @@ vim.cmd('colorscheme kanagawa')
 
 -- Editing ------------------------------------------------------------------------------
 
-vim.opt.smartindent = true            -- slightly smarter indentation detection
+vim.opt.autoindent = true
+vim.opt.smartindent = true
 vim.opt.expandtab = true              -- use spaces for <Tab> (hit <C-V><Tab> for hard tab)
 vim.opt.shiftwidth = 2                -- number of spaces to use for indentaion step
 vim.opt.listchars:append('trail:∙')   -- render trailing whitespaces as small middle dot
@@ -80,3 +86,61 @@ require('nvim-tree').setup({
   },
 })
 
+-- lualine ------------------------------------------------------------------------------
+
+local lualine_colors = {
+  blue   = '#7E9CD8',
+  cyan   = '#7AA89F',
+  black  = '#16161D',
+  white  = '#DCD7BA',
+  red    = '#FF5D62',
+  violet = '#957FB8',
+  grey   = '#54546D',
+}
+local lualine_theme = {
+  normal = {
+    a = { fg = lualine_colors.black, bg = lualine_colors.violet },
+    b = { fg = lualine_colors.white, bg = lualine_colors.grey },
+    c = { fg = lualine_colors.black, bg = lualine_colors.black },
+  },
+
+  insert = { a = { fg = lualine_colors.black, bg = lualine_colors.blue } },
+  visual = { a = { fg = lualine_colors.black, bg = lualine_colors.cyan } },
+  replace = { a = { fg = lualine_colors.black, bg = lualine_colors.red } },
+
+  inactive = {
+    a = { fg = lualine_colors.white, bg = lualine_colors.black },
+    b = { fg = lualine_colors.white, bg = lualine_colors.black },
+    c = { fg = lualine_colors.black, bg = lualine_colors.black },
+  },
+}
+
+require('lualine').setup({
+  options = {
+    theme = lualine_theme,
+    component_separators = '|',
+    section_separators = { left = '', right = '' },
+  },
+  sections = {
+    lualine_a = {
+      { 'mode', separator = { left = '' }, right_padding = 2 },
+    },
+    lualine_b = { 'filename', 'branch' },
+    lualine_c = { 'fileformat' },
+    lualine_x = {},
+    lualine_y = { 'filetype', 'progress' },
+    lualine_z = {
+      { 'location', separator = { right = '' }, left_padding = 2 },
+    },
+  },
+  inactive_sections = {
+    lualine_a = { 'filename' },
+    lualine_b = {},
+    lualine_c = {},
+    lualine_x = {},
+    lualine_y = {},
+    lualine_z = { 'location' },
+  },
+  tabline = {},
+  extensions = {},
+})
