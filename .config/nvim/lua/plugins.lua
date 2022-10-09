@@ -4,4 +4,5 @@ return require('packer').startup(function(use)
 
   use "kyazdani42/nvim-tree.lua"
   use "rebelot/kanagawa.nvim"
+  use "lukas-reineke/indent-blankline.nvim"
 end)
