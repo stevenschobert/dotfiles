@@ -36,8 +36,8 @@ vim.cmd('cnoreabbrev es EditSettings')
 require('packer').startup(function(use)
   use 'wbthomason/packer.nvim' -- Packer can manage itself
   use 'kyazdani42/nvim-tree.lua'
-  use 'rebelot/kanagawa.nvim'
   use 'lukas-reineke/indent-blankline.nvim'
+  use 'folke/tokyonight.nvim'
   use {
     'nvim-treesitter/nvim-treesitter',
     run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
@@ -50,10 +50,11 @@ end)
 
 -- Appearance ---------------------------------------------------------------------------
 
-require('kanagawa').setup({
-  undercurl = true,    -- enable undercurls
-  dimInactive = true,  -- dim inactive window
-  globalStatus = true
+vim.opt.number = true -- show line numbers
+
+require("tokyonight").setup({
+  style = "night",
+  dim_inactive = true,
 })
 
 require('indent_blankline').setup({
@@ -61,7 +62,7 @@ require('indent_blankline').setup({
   show_current_context_start = true,
 })
 
-vim.cmd('colorscheme kanagawa')
+vim.cmd('colorscheme tokyonight-night')
 
 -- Editing ------------------------------------------------------------------------------
 
@@ -88,36 +89,9 @@ require('nvim-tree').setup({
 
 -- lualine ------------------------------------------------------------------------------
 
-local lualine_colors = {
-  blue   = '#7E9CD8',
-  cyan   = '#7AA89F',
-  black  = '#16161D',
-  white  = '#DCD7BA',
-  red    = '#FF5D62',
-  violet = '#957FB8',
-  grey   = '#54546D',
-}
-local lualine_theme = {
-  normal = {
-    a = { fg = lualine_colors.black, bg = lualine_colors.violet },
-    b = { fg = lualine_colors.white, bg = lualine_colors.grey },
-    c = { fg = lualine_colors.black, bg = lualine_colors.black },
-  },
-
-  insert = { a = { fg = lualine_colors.black, bg = lualine_colors.blue } },
-  visual = { a = { fg = lualine_colors.black, bg = lualine_colors.cyan } },
-  replace = { a = { fg = lualine_colors.black, bg = lualine_colors.red } },
-
-  inactive = {
-    a = { fg = lualine_colors.white, bg = lualine_colors.black },
-    b = { fg = lualine_colors.white, bg = lualine_colors.black },
-    c = { fg = lualine_colors.black, bg = lualine_colors.black },
-  },
-}
-
 require('lualine').setup({
   options = {
-    theme = lualine_theme,
+    theme = 'tokyonight',
     component_separators = '|',
     section_separators = { left = '', right = '' },
   },
