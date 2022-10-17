@@ -1,15 +1,11 @@
 {
     // Workbench
-    "workbench.colorTheme": "Blackboard",
     "workbench.settings.editor": "json",
-    "workbench.sideBar.location": "right",
     "workbench.startupEditor": "none",
+    "workbench.sideBar.location": "right",
 
     // Updates
     "update.mode": "start",
-
-    // Diffs
-    "diffEditor.renderSideBySide": false,
 
     // Extension
     "extensions.autoUpdate": false,
@@ -21,7 +17,6 @@
 
     // Window
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
-    "window.zoomLevel": 0,
 
     // Editor
     "editor.tabSize": 2,
@@ -34,7 +29,16 @@
     "editor.renderWhitespace": "selection",
     "editor.minimap.enabled": false,
 
+    // Debugger
+    "debug.console.fontFamily": "'MonaLisa Nerd Font', 'MonoLisa', monospace",
+    "debug.console.fontSize": 14,
+    "debug.inlineValues": "on",
+    "debug.openDebug": "openOnSessionStart",
+    "debug.showBreakpointsInOverviewRuler": true,
+    "debug.toolBarLocation": "docked",
+
     // Terminal
+    "terminal.integrated.fontFamily": "'MonaLisa Nerd Font', 'MonoLisa', monospace",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.letterSpacing": 1,

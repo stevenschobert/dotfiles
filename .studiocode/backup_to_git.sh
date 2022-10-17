@@ -2,6 +2,7 @@
 THIS_DIR=$(dirname "$0")
 USER_PATHS_TO_COPY=(
   "settings.json"
+  "keybindings.json"
 )
 STUDIOCODE_LIBRARY_PATH="$HOME/Library/Application Support/Code"
 STUDIOCODE_DOTFOLDER_PATH="$HOME/.vscode"
