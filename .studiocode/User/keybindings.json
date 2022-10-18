@@ -47,5 +47,18 @@
     "key": "shift+cmd+r",
     "command": "workbench.action.debug.restart",
     "when": "inDebugMode"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "actions.find",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "key": "cmd+j",
+    "command": "workbench.action.gotoLine"
+  },
+  {
+    "key": "cmd+d",
+    "command": "workbench.action.quickOpen"
   }
 ]

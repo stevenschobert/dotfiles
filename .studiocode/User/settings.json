@@ -2,7 +2,6 @@
     // Workbench
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "none",
-    "workbench.sideBar.location": "right",
 
     // Updates
     "update.mode": "start",
@@ -36,6 +35,7 @@
     "debug.openDebug": "openOnSessionStart",
     "debug.showBreakpointsInOverviewRuler": true,
     "debug.toolBarLocation": "docked",
+    "debug.console.acceptSuggestionOnEnter": "on",
 
     // Terminal
     "terminal.integrated.fontFamily": "'MonaLisa Nerd Font', 'MonoLisa', monospace",
