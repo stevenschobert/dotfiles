@@ -15,7 +15,7 @@
 
   Plugin 'gmarik/Vundle.vim'                      " package manager
 
-  Plugin 'vim-scripts/rdark-terminal2.vim'        " Color scheme
+  Plugin 'danilo-augusto/vim-afterglow'           " color scheme
 
   Plugin 'tpope/vim-unimpaired'                   " awesome key shortucts
   Plugin 'scrooloose/nerdtree'                    " file/folder explorer
@@ -65,8 +65,8 @@
 
     syntax on                    " turn on syntax highlighting
 
-    " colorscheme rdark-terminal2  " Color scheme
-    colorscheme peachpuff        " Color scheme
+    let g:afterglow_inherit_background=1
+    colorscheme afterglow        " set color scheme
 
     filetype plugin on           " enable loading plugins for file types
     filetype indent on           " enable loading 'indent files' for file types
@@ -211,9 +211,10 @@
 
 "= Vim-Airline ====================================================================================
 
+  let g:airline_theme='afterglow'       " match color scheme
   let g:airline_powerline_fonts = 1     " use powerline fonts
-  let g:airline_left_sep=''             " turn off arrows causing spacing issues
-  let g:airline_right_sep=''            " turn off arrows causing spacing issues
+  "let g:airline_left_sep=''             " turn off arrows causing spacing issues
+  "let g:airline_right_sep=''            " turn off arrows causing spacing issues
 
 "= Vim-Emmet ======================================================================================
 
