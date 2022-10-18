@@ -1,6 +1,7 @@
 #!/bin/sh -e
 
 filepath="$BB_DOC_PATH"
+linenum="$BB_DOC_SELSTART_LINE"
 docdir=$(dirname "$filepath")
 gitdir=$(cd "$docdir" && git rev-parse --show-toplevel)
 
@@ -19,4 +20,10 @@ if [ -d "$project_dir/.vscode" ]; then
   fi
 fi
 
-$SHELL -c "code --goto $filepath:1 $path_to_open" &
+file_to_jump="$filepath"
+
+if [ ! -z "$linenum" ]; then
+  file_to_jump="$file_to_jump:$linenum"
+fi
+
+$SHELL -c "code --goto $file_to_jump $path_to_open" &
