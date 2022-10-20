@@ -17,6 +17,9 @@ Thumbs.db
 # Node
 .npmrc
 
+# VSCode
+.vscode/
+
 # Rails
 config/database.yml
 
