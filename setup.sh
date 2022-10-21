@@ -14,6 +14,7 @@ GOLANG_VERSION="1.17.3"
 ERLANG_VERSION="24.1.7"
 HAXE_VERSION="4.2.4"
 NEKO_VERSION="2.3.0"
+RUST_VERSION="1.64.0"
 
 PLATFORMSTR="$(uname -s)"
 
@@ -134,6 +135,12 @@ if !(asdf plugin-list | grep -q neko 2>/dev/null); then
   asdf haxe neko dylibs link # link neko dylibs
 fi
 
+# Rust version manager plugin
+if !(asdf plugin-list | grep -q rust 2>/dev/null); then
+  echo "[setup] Installing asdf plugin for rust"
+  asdf plugin-add rust https://github.com/asdf-community/asdf-rust.git
+fi
+
 # Install ruby version
 if !(asdf list ruby | grep -q "$RUBY_VERSION" 2>/dev/null); then
   echo "[setup] Installing ruby $RUBY_VERSION"
@@ -194,6 +201,12 @@ if !(asdf list neko | grep -q "$NEKO_VERSION" 2>/dev/null); then
   asdf install neko "$NEKO_VERSION"
 fi
 
+# Install rust version
+if !(asdf list rust | grep -q "$RUST_VERSION" 2>/dev/null); then
+  echo "[setup] Installing rust $RUST_VERSION"
+  asdf install rust "$RUST_VERSION"
+fi
+
 # Set .tool-versions
 if !(cat "$HOME/.tool-versions" | grep -q "ruby $RUBY_VERSION" 2>/dev/null); then
   echo "[setup] Setting ruby $RUBY_VERSION in $HOME/.tool-versions"
@@ -243,6 +256,11 @@ fi
 if !(cat "$HOME/.tool-versions" | grep -q "neko $NEKO_VERSION" 2>/dev/null); then
   echo "[setup] Setting neko $NEKO_VERSION in $HOME/.tool-versions"
   echo "neko $NEKO_VERSION" >> "$HOME/.tool-versions"
+fi
+
+if !(cat "$HOME/.tool-versions" | grep -q "rust $RUST_VERSION" 2>/dev/null); then
+  echo "[setup] Setting rust $RUST_VERSION in $HOME/.tool-versions"
+  echo "rust $RUST_VERSION" >> "$HOME/.tool-versions"
 fi
 
 # Ruby gems
