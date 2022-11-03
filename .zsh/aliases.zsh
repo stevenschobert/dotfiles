@@ -42,6 +42,31 @@ function json_validate() {
     }"
 }
 
+function alphabet_rand() {
+  node -e "\
+    const { randomBytes } = require('crypto'); \
+    function rand(length, alphabet) { \
+      return new Promise((resolve, reject) => { \
+        let result = ''; \
+        randomBytes(length, (err, buff) => { \
+          if (err) { \
+            reject(err); \
+          } else { \
+            const alen = alphabet.length; \
+            for (let i = 0; i < length; i++) { \
+              result += alphabet[buff[i] % alen]; \
+            } \
+            resolve(result); \
+          } \
+        }); \
+      }); \
+    } \
+    rand($1, '$2').then(console.log).catch((err) => { \
+      console.error(err); \
+      process.exit(1); \
+    });"
+}
+
 # Ruby
 function rinstall_gem() {
   GEMSPEC=$(ls -l | grep \.gemspec | awk '{ print $9; exit }')
