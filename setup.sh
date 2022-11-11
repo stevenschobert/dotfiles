@@ -15,6 +15,7 @@ ERLANG_VERSION="24.1.7"
 HAXE_VERSION="4.2.4"
 NEKO_VERSION="2.3.0"
 RUST_VERSION="1.64.0"
+PHP_VERSION="8.1.12"
 
 PLATFORMSTR="$(uname -s)"
 
@@ -141,6 +142,12 @@ if !(asdf plugin-list | grep -q rust 2>/dev/null); then
   asdf plugin-add rust https://github.com/asdf-community/asdf-rust.git
 fi
 
+# Rust version manager plugin
+if !(asdf plugin-list | grep -q php 2>/dev/null); then
+  echo "[setup] Installing asdf plugin for php"
+  asdf plugin-add php https://github.com/asdf-community/asdf-php.git
+fi
+
 # Install ruby version
 if !(asdf list ruby | grep -q "$RUBY_VERSION" 2>/dev/null); then
   echo "[setup] Installing ruby $RUBY_VERSION"
@@ -207,6 +214,12 @@ if !(asdf list rust | grep -q "$RUST_VERSION" 2>/dev/null); then
   asdf install rust "$RUST_VERSION"
 fi
 
+# Install rust version
+if !(asdf list php | grep -q "$PHP_VERSION" 2>/dev/null); then
+  echo "[setup] Installing php $PHP_VERSION"
+  LDFLAGS="-L/usr/local/opt/bison/lib" PATH="/usr/local/opt/bison/bin:$PATH" asdf install php "$PHP_VERSION"
+fi
+
 # Set .tool-versions
 if !(cat "$HOME/.tool-versions" | grep -q "ruby $RUBY_VERSION" 2>/dev/null); then
   echo "[setup] Setting ruby $RUBY_VERSION in $HOME/.tool-versions"
@@ -261,6 +274,11 @@ fi
 if !(cat "$HOME/.tool-versions" | grep -q "rust $RUST_VERSION" 2>/dev/null); then
   echo "[setup] Setting rust $RUST_VERSION in $HOME/.tool-versions"
   echo "rust $RUST_VERSION" >> "$HOME/.tool-versions"
+fi
+
+if !(cat "$HOME/.tool-versions" | grep -q "php $PHP_VERSION" 2>/dev/null); then
+  echo "[setup] Setting php $PHP_VERSION in $HOME/.tool-versions"
+  echo "php $PHP_VERSION" >> "$HOME/.tool-versions"
 fi
 
 # Ruby gems
