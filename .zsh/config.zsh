@@ -19,6 +19,9 @@ fi
 # Heroku Toolbelt
 export PATH=$PATH:/usr/local/heroku/bin
 
+# Cargo
+export PATH=$PATH:$HOME/.cargo/bin
+
 # Editor
 export EDITOR="vim"
 
