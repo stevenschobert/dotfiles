@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BBEditDocumentType</key>
+	<string>CodelessLanguageModule</string>
+	<key>BBLMColorsSyntax</key>
+	<true/>
+	<key>BBLMScansFunctions</key>
+	<true/>
+	<key>BBLMSupportsTextCompletion</key>
+	<true/>
+	<key>BBLMCommentLineDefault</key>
+	<string>//</string>
+	<key>BBLMIsCaseSensitive</key>
+	<true/>
+	<key>BBLMKeywordList</key>
+	<array>
+		<string></string>
+		<string>addrspace</string>
+		<string>align</string>
+		<string>allowzero</string>
+		<string>and</string>
+		<string>anyframe</string>
+		<string>anytype</string>
+		<string>asm</string>
+		<string>async</string>
+		<string>await</string>
+		<string>break</string>
+		<string>catch</string>
+		<string>comptime</string>
+		<string>const</string>
+		<string>continue</string>
+		<string>defer</string>
+		<string>else</string>
+		<string>enum</string>
+		<string>errdefer</string>
+		<string>error</string>
+		<string>export</string>
+		<string>extern</string>
+		<string>fn</string>
+		<string>for</string>
+		<string>if</string>
+		<string>inline</string>
+		<string>linksection</string>
+		<string>noalias</string>
+		<string>nosuspend</string>
+		<string>or</string>
+		<string>orelse</string>
+		<string>packed</string>
+		<string>pub</string>
+		<string>resume</string>
+		<string>return</string>
+		<string>struct</string>
+		<string>suspend</string>
+		<string>switch</string>
+		<string>test</string>
+		<string>threadlocal</string>
+		<string>try</string>
+		<string>union</string>
+		<string>unreachable</string>
+		<string>usingnamespace</string>
+		<string>var</string>
+		<string>volatile</string>
+		<string>while</string>
+	</array>
+	<key>BBLMLanguageCode</key>
+	<string>ZIG!</string>
+	<key>BBLMLanguageDisplayName</key>
+	<string>Zig</string>
+	<key>BBLMPreferredFilenameExtension</key>
+	<string>zig</string>
+	<key>BBLMSuffixMap</key>
+	<array>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.zig</string>
+		</dict>
+	</array>
+	<key>Language Features</key>
+	<dict>
+		<key>Prefix for Functions</key>
+		<string>fn</string>
+		<key>Identifier and Keyword Character Class</key>
+		<string>a-zA-Z0-9_</string>
+		<key>Open Line Comments</key>
+		<string>//</string>
+		<key>Open Strings 1</key>
+		<string>&quot;</string>
+		<key>Close Strings 1</key>
+		<string>&quot;</string>
+		<key>Escape Char in Strings 1</key>
+		<string>\</string>
+		<key>End-of-line Ends Strings 1</key>
+		<true/>
+		<key>Open Parameter Lists</key>
+		<string>(</string>
+		<key>Close Parameter Lists</key>
+		<string>)</string>
+		<key>Open Statement Blocks</key>
+		<string>{</string>
+		<key>Close Statement Blocks</key>
+		<string>}</string>
+	</dict>
+</dict>
+</plist>
