@@ -14,6 +14,43 @@
 	<string>//</string>
 	<key>BBLMIsCaseSensitive</key>
 	<true/>
+	<key>BBLMPredefinedNameList</key>
+	<array>
+		<string>i8</string>
+		<string>u8</string>
+		<string>i16</string>
+		<string>u16</string>
+		<string>i32</string>
+		<string>u32</string>
+		<string>i64</string>
+		<string>u64</string>
+		<string>i128</string>
+		<string>u128</string>
+		<string>isize</string>
+		<string>usize</string>
+		<string>c_short</string>
+		<string>c_ushort</string>
+		<string>c_int</string>
+		<string>c_uint</string>
+		<string>c_long</string>
+		<string>c_ulong</string>
+		<string>c_longlong</string>
+		<string>c_ulonglong</string>
+		<string>c_longdouble</string>
+		<string>f16</string>
+		<string>f32</string>
+		<string>f64</string>
+		<string>f80</string>
+		<string>f128</string>
+		<string>bool</string>
+		<string>anyopaque</string>
+		<string>void</string>
+		<string>noreturn</string>
+		<string>type</string>
+		<string>anyerror</string>
+		<string>comptime_int</string>
+		<string>comptime_float</string>
+	</array>
 	<key>BBLMKeywordList</key>
 	<array>
 		<string></string>
@@ -63,6 +100,10 @@
 		<string>var</string>
 		<string>volatile</string>
 		<string>while</string>
+		<string>true</string>
+		<string>false</string>
+		<string>null</string>
+		<string>undefined</string>
 	</array>
 	<key>BBLMLanguageCode</key>
 	<string>ZIG!</string>
