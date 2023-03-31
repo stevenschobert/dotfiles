@@ -1,5 +1,6 @@
 function fish_prompt --description 'Write out the prompt'
-    set -l last_pipestatus $pipestatus
+    set -l last_status_list $pipestatus
+
     echo -n -s \
       (set_color --bold blue) \
       '#' \
@@ -19,11 +20,17 @@ function fish_prompt --description 'Write out the prompt'
       ' ' \
       (date '+[%H:%M:%S]')
 
-    if test $last_pipestatus != 0
+    set -f last_status_sum 0
+    for last_status_el in $last_status_list
+      set -f last_status_sum (math $last_status_sum + $last_status_el)
+    end
+
+    if test $last_status_sum != 0
+      set -l last_status_joined (string join ',' $last_status_list)
       echo -s \
         ' ' \
         (set_color --bold red) \
-        "[$last_pipestatus]" \
+        "[$last_status_joined]" \
         (set_color normal)
     else
       echo -s ''
