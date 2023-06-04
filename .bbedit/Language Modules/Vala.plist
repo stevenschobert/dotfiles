@@ -78,6 +78,7 @@
 		<string>switch</string>
 		<string>case</string>
 		<string>break</string>
+		<string>continue</string>
 		<string>default</string>
 		<string>namespace</string>
 		<string>using</string>
@@ -87,6 +88,9 @@
 		<string>throw</string>
 		<string>try</string>
 		<string>catch</string>
+		<string>lock</string>
+		<string>unlock</string>
+		<string>with</string>
 	</array>
 	<key>BBLMLanguageCode</key>
 	<string>VALA</string>
