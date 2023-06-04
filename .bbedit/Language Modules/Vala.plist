@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BBEditDocumentType</key>
+	<string>CodelessLanguageModule</string>
+	<key>BBLMColorsSyntax</key>
+	<true/>
+	<key>BBLMScansFunctions</key>
+	<true/>
+	<key>BBLMSupportsTextCompletion</key>
+	<true/>
+	<key>BBLMCommentLineDefault</key>
+	<string>//</string>
+	<key>BBLMIsCaseSensitive</key>
+	<true/>
+	<key>BBLMPredefinedNameList</key>
+	<array>
+		<string>int</string>
+		<string>void</string>
+		<string>unichar</string>
+		<string>bool</string>
+		<string>char</string>
+		<string>uchar</string>
+		<string>int</string>
+		<string>uint</string>
+		<string>long</string>
+		<string>ulong</string>
+		<string>short</string>
+		<string>ushort</string>
+		<string>int8</string>
+		<string>uint8</string>
+		<string>int16</string>
+		<string>uint16</string>
+		<string>int32</string>
+		<string>uint32</string>
+		<string>int64</string>
+		<string>uint64</string>
+		<string>float</string>
+		<string>double</string>
+		<string>string</string>
+		<string>delegate</string>
+		<string>struct</string>
+		<string>enum</string>
+		<string>errordomain</string>
+		<string>va_list</string>
+		<string>sizeof</string>
+	</array>
+	<key>BBLMKeywordList</key>
+	<array>
+		<string>var</string>
+		<string>class</string>
+		<string>public</string>
+		<string>weak</string>
+		<string>private</string>
+		<string>protected</string>
+		<string>internal</string>
+		<string>virtual</string>
+		<string>override</string>
+		<string>get</string>
+		<string>set</string>
+		<string>return</string>
+		<string>new</string>
+		<string>static</string>
+		<string>const</string>
+		<string>true</string>
+		<string>false</string>
+		<string>owned</string>
+		<string>unowned</string>
+		<string>in</string>
+		<string>out</string>
+		<string>ref</string>
+		<string>do</string>
+		<string>foreach</string>
+		<string>while</string>
+		<string>if</string>
+		<string>else</string>
+		<string>switch</string>
+		<string>case</string>
+		<string>break</string>
+		<string>default</string>
+		<string>namespace</string>
+		<string>using</string>
+		<string>this</string>
+		<string>is</string>
+		<string>throws</string>
+		<string>throw</string>
+		<string>try</string>
+		<string>catch</string>
+	</array>
+	<key>BBLMLanguageCode</key>
+	<string>VALA</string>
+	<key>BBLMLanguageDisplayName</key>
+	<string>Vala</string>
+	<key>BBLMPreferredFilenameExtension</key>
+	<string>vala</string>
+	<key>BBLMSuffixMap</key>
+	<array>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.vala</string>
+		</dict>
+	</array>
+	<key>Language Features</key>
+	<dict>
+		<key>Comment Pattern</key>
+		<string>(?x:
+			(?&gt;	//		.*			$				) |
+			(?&gt;	/\*		(?s:.*?)	(?: \*/ | \z )	)
+		)</string>
+		<key>Function Pattern</key>
+		<string>(?x:
+			(?P&lt;function&gt;
+
+				(?P&lt;function_name&gt;
+					(?&gt; _* [A-Za-z] [A-Za-z0-9_]* )
+					(?:
+						(?:
+							(?&gt;
+								(?&gt; \s+ ) | (?P&gt;comment) | (?P&gt;string)
+							)
+						)*
+						::
+						(?:
+							(?&gt;
+								(?&gt; \s+ ) | (?P&gt;comment) | (?P&gt;string)
+							)
+						)*
+						~?	_* [A-Za-z] [A-Za-z0-9_]*
+					)?
+				)
+
+				(?:
+					(?&gt;
+						(?&gt; \s+ ) | (?P&gt;comment) | (?P&gt;string)
+					)
+				)*
+
+				(?P&lt;parens&gt;
+					\(
+						(?:
+							(?&gt;
+								(?&gt; [^&apos;&quot;()]+ ) | (?: / (?![/*]) ) | (?P&gt;comment) | (?P&gt;string) | (?P&gt;parens)
+							)
+						)*
+					\)
+				)
+
+				(?:
+					(?&gt;
+						(?&gt; \s+ ) | (?P&gt;comment) | (?P&gt;string)
+					)
+				)*
+
+				(?:
+					:
+					(?:
+						(?&gt;
+							(?&gt; [^&apos;&quot;{]+ ) | (?: / (?![/*]) ) | (?P&gt;comment) | (?P&gt;string)
+						)
+					)*
+				)?
+
+				(?P&lt;braces&gt;
+					{
+						(?:
+							(?&gt;
+								(?&gt; [^&apos;&quot;{}]+ ) | (?: / (?![/*]) ) | (?P&gt;comment) | (?P&gt;string) | (?P&gt;braces)
+							)
+						)*
+					}
+				)
+			)
+		)</string>
+		<key>Skip Pattern</key>
+		<string>(?x:
+			(?&gt;
+				(?P&gt;comment) | (?P&gt;string)
+			)
+		)</string>
+		<key>String Pattern</key>
+		<string>(?x:
+			(?&gt;	&quot;	(?s: \\. | [^&quot;] )*?		(?: &quot; | $)	)	|
+			(?&gt;	&apos;	(?s: \\. | [^&apos;] )*?		(?: &apos; | $)	)	|
+			(?&gt;	@	(?: &quot; (?s: .*?) &quot; )+ )
+		)</string>
+		<key>Identifier and Keyword Character Class</key>
+		<string>a-zA-Z0-9_</string>
+		<key>Open Parameter Lists</key>
+		<string>(</string>
+		<key>Close Parameter Lists</key>
+		<string>)</string>
+		<key>Open Statement Blocks</key>
+		<string>{</string>
+		<key>Close Statement Blocks</key>
+		<string>}</string>
+	</dict>
+</dict>
+</plist>
