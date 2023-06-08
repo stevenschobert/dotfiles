@@ -1,7 +1,7 @@
 PLATFORMSTR=$(uname -s)
 
 # Path
-export PATH=/usr/local/bin:$PATH
+export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:vendor/bundle/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 
 # Qmake
