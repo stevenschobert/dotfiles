@@ -72,6 +72,7 @@
 		<string>ref</string>
 		<string>do</string>
 		<string>foreach</string>
+		<string>for</string>
 		<string>while</string>
 		<string>if</string>
 		<string>else</string>
