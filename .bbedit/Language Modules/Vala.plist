@@ -18,6 +18,7 @@
 	<array>
 		<string>int</string>
 		<string>void</string>
+		<string>null</string>
 		<string>unichar</string>
 		<string>bool</string>
 		<string>char</string>
