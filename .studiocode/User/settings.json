@@ -3,6 +3,9 @@
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "none",
 
+    // Debug
+    "debug.onTaskErrors": "abort",
+
     // Updates
     "update.mode": "start",
 
@@ -45,12 +48,5 @@
 
     // File handling
     "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewline": true,
-
-    // Go
-    "go.formatTool": "goimports",
-    "go.lintTool": "revive",
-    "[go]": {
-      "editor.tabSize": 4
-    }
+    "files.insertFinalNewline": true
 }
