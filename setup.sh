@@ -6,6 +6,7 @@ TPM_DIR="$HOME/.tmux/plugins/tpm"
 VUNDLE_DIR="$HOME/.vim/bundle/Vundle.vim"
 RUBY_VERSION="3.0.2"
 NODE_VERSION="16.13.0"
+DENO_VERSION="1.35.1"
 JAVA_VERSION="adoptopenjdk-jre-8.0.252+9.1"
 KOTLIN_VERSION="1.6.0"
 PYTHON_VERSION="3.9.9"
@@ -87,6 +88,12 @@ if !(asdf plugin-list | grep -q nodejs 2>/dev/null); then
   # bash "$ASDF_DIR/plugins/nodejs/bin/import-release-team-keyring"
 fi
 
+# Deno version manager plugin
+if !(asdf plugin-list | grep -q deno 2>/dev/null); then
+  echo "[setup] Installing asdf plugin for deno"
+  asdf plugin-add deno https://github.com/asdf-community/asdf-deno.git
+fi
+
 # Java version manager plugin
 if !(asdf plugin-list | grep -q java 2>/dev/null); then
   echo "[setup] Installing asdf plugin for java"
@@ -160,6 +167,12 @@ if !(asdf list nodejs | grep -q "$NODE_VERSION" 2>/dev/null); then
   asdf install nodejs "$NODE_VERSION"
 fi
 
+# Install deno version
+if !(asdf list deno | grep -q "$DENO_VERSION" 2>/dev/null); then
+  echo "[setup] Installing deno $DENO_VERSION"
+  asdf install deno "$DENO_VERSION"
+fi
+
 # Install java version
 if !(asdf list java | grep -q "$JAVA_VERSION" 2>/dev/null); then
   echo "[setup] Installing java $JAVA_VERSION"
@@ -229,6 +242,11 @@ fi
 if !(cat "$HOME/.tool-versions" | grep -q "nodejs $NODE_VERSION" 2>/dev/null); then
   echo "[setup] Setting nodejs $NODE_VERSION in $HOME/.tool-versions"
   echo "nodejs $NODE_VERSION" >> "$HOME/.tool-versions"
+fi
+
+if !(cat "$HOME/.tool-versions" | grep -q "deno $DENO_VERSION" 2>/dev/null); then
+  echo "[setup] Setting deno $DENO_VERSION in $HOME/.tool-versions"
+  echo "deno $DENO_VERSION" >> "$HOME/.tool-versions"
 fi
 
 if !(cat "$HOME/.tool-versions" | grep -q "java $JAVA_VERSION" 2>/dev/null); then
