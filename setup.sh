@@ -316,16 +316,25 @@ fi
 
 # Oh-my-zsh
 # https://github.com/robbyrussell/oh-my-zsh
-if !(test -d "$OMZSH_DIR" 2>/dev/null); then
-  echo "[setup] Installing Oh My Zsh"
-  export ZSH="$OMZSH_DIR"
-  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-fi
+# if !(test -d "$OMZSH_DIR" 2>/dev/null); then
+#   echo "[setup] Installing Oh My Zsh"
+#   export ZSH="$OMZSH_DIR"
+#   sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# fi
 
 # Set default shell
-if [ "$SHELL" != "/bin/zsh" ]; then
-  echo "[setup] setting default shell to zsh"
-  chsh -s /bin/zsh
+# if [ "$SHELL" != "/bin/zsh" ]; then
+#   echo "[setup] setting default shell to zsh"
+#   chsh -s /bin/zsh
+# fi
+
+#  Set default shell in macOS
+if [[ "$PLATFORMSTR" == "Darwin" ]]; then
+  if [ "$SHELL" != "/usr/local/bin/fish" ]; then
+    echo "[setup] setting default shell to fish"
+    echo /usr/local/bin/fish | sudo tee -a /etc/shells
+    chsh -s /usr/local/bin/fish
+  fi
 fi
 
 echo "[setup] All done, have at it!"

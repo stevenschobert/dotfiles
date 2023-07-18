@@ -3,6 +3,9 @@ tap 'heroku/brew'
 tap 'homebrew/bundle'
 tap 'mike-engel/jwt-cli'
 
+# shell
+brew 'fish'
+
 # casks
 cask 'google-cloud-sdk'
 cask 'qlcolorcode'
