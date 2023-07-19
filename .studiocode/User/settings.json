@@ -3,11 +3,11 @@
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "none",
 
-    // Debug
-    "debug.onTaskErrors": "abort",
-
     // Updates
     "update.mode": "start",
+
+    // Git
+    "git.openRepositoryInParentFolders": "never",
 
     // Extension
     "extensions.autoUpdate": false,
