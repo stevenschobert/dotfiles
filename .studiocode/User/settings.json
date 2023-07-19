@@ -48,5 +48,10 @@
 
     // File handling
     "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+
+    // Go
+    "[go]": {
+      "editor.tabSize": 4
+    }
 }
