@@ -40,3 +40,6 @@ set -g fish_pager_color_selected_background --background=$selection
 
 # ASDF language version manager
 source ~/.asdf/asdf.fish
+
+# ASDF golang
+. ~/.asdf/plugins/golang/set-env.fish
