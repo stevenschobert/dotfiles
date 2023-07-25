@@ -46,3 +46,10 @@ Description: Rich Go language support for Visual Studio Code
 Version: 0.39.1
 Publisher: Go Team at Google
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=golang.Go
+
+Name: rust-analyzer
+Id: rust-lang.rust-analyzer
+Description: Rust language support for Visual Studio Code
+Version: 0.3.1599
+Publisher: The Rust Programming Language
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer
