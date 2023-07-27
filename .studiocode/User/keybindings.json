@@ -67,5 +67,10 @@
       ]
     },
     "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "actions.find",
+    "when": "editorFocus || editorIsOpen"
   }
 ]
