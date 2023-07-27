@@ -2,6 +2,11 @@
     // Workbench
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "none",
+    "workbench.editor.showTabs": false,
+    "workbench.editor.labelFormat": "long",
+
+    // Breadcrumbs
+    "breadcrumbs.enabled": false,
 
     // Explorer
     "explorer.openEditors.minVisible": 10,
@@ -23,7 +28,7 @@
     "telemetry.telemetryLevel": "off",
 
     // Window
-    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
+    "window.title": "${rootPath}",
 
     // Editor
     "editor.tabSize": 2,
