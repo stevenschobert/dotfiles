@@ -6,6 +6,7 @@
     // Explorer
     "explorer.openEditors.minVisible": 10,
     "explorer.openEditors.visible": 10,
+    "explorer.autoReveal": "focusNoScroll",
 
     // Updates
     "update.mode": "start",
