@@ -146,7 +146,7 @@ fi
 # Rust version manager plugin
 if !(asdf plugin-list | grep -q rust 2>/dev/null); then
   echo "[setup] Installing asdf plugin for rust"
-  asdf plugin-add rust https://github.com/asdf-community/asdf-rust.git
+  asdf plugin-add rust https://github.com/code-lever/asdf-rust.git
 fi
 
 # Rust version manager plugin
