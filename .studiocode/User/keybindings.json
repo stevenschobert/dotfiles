@@ -59,7 +59,13 @@
   },
   {
     "key": "ctrl+g",
-    "command": "editor.action.nextMatchFindAction",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "actions.findWithSelection",
+        "editor.action.nextMatchFindAction"
+      ]
+    },
     "when": "editorFocus"
   }
 ]
