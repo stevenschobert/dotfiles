@@ -3,6 +3,10 @@
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "none",
 
+    // Explorer
+    "explorer.openEditors.minVisible": 10,
+    "explorer.openEditors.visible": 10,
+
     // Updates
     "update.mode": "start",
 
