@@ -1,4 +1,4 @@
-function bb --wraps=bbedit --description 'alias bb bbedit'
+function e --wraps=bbedit --description 'alias e bbedit'
   set -f rel_path "."
   if test -n "$argv[1]"
     set -f rel_path "$argv[1]"
