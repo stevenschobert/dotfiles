@@ -1,3 +1,11 @@
 set nocompatible
 syntax enable
 filetype plugin on
+
+if has("gui_running")
+  if has("gui_macvim")
+    :set guifont=MonoLisa-Regular:h12
+    :set background=dark
+    :colorscheme retrobox
+  endif
+endif
