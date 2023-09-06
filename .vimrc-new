@@ -1,13 +1,15 @@
 set nocompatible
 syntax enable
+filetype plugin indent on
 
 set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 
 if has("autocmd")
-  filetype plugin indent on
   autocmd FileType cpp setlocal tabstop=4|setlocal shiftwidth=4
   autocmd FileType c setlocal tabstop=4|setlocal shiftwidth=4
   autocmd FileType go setlocal tabstop=4|setlocal shiftwidth=4|setlocal noexpandtab
+
+  autocmd FileType help only "open :help in full window
 endif
 
 if has("gui_running")
