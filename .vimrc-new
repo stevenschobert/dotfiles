@@ -1,11 +1,19 @@
 set nocompatible
 syntax enable
-filetype plugin on
+
+set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+
+if has("autocmd")
+  filetype plugin indent on
+  autocmd FileType cpp setlocal tabstop=4|setlocal shiftwidth=4
+  autocmd FileType c setlocal tabstop=4|setlocal shiftwidth=4
+  autocmd FileType go setlocal tabstop=4|setlocal shiftwidth=4|setlocal noexpandtab
+endif
 
 if has("gui_running")
   if has("gui_macvim")
-    :set guifont=MonoLisa-Regular:h12
-    :set background=dark
-    :colorscheme retrobox
+    set guifont=MonoLisa-Regular:h12
+    set background=dark
+    colorscheme retrobox
   endif
 endif
