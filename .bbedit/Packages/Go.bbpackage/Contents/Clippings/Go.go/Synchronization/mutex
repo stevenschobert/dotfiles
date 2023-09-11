@@ -1,5 +1,0 @@
-#INDENT#var mu sync.Mutex
-
-mu.Lock()
-#INSERTION#
-mu.Unlock()

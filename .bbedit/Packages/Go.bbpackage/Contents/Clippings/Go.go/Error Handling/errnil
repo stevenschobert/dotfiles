@@ -1,3 +1,0 @@
-#INDENT#if err != nil {
-	return err
-}
