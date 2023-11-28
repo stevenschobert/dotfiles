@@ -64,6 +64,7 @@
 		<string>extern</string>
 		<string>default</string>
 		<string>using</string>
+		<string>is</string>
 	</array>
 	<key>BBLMLanguageCode</key>
 	<string>HAXE</string>
