@@ -1,5 +1,4 @@
 # taps
-tap 'heroku/brew'
 tap 'homebrew/bundle'
 tap 'mike-engel/jwt-cli'
 tap 'd12frosted/emacs-plus'
@@ -33,7 +32,6 @@ brew 'fblog'
 brew 'git'
 brew 'git-lfs'
 brew 'gradle'
-brew 'heroku'
 brew 'htop'
 brew 'httpie'
 brew 'httpstat'
