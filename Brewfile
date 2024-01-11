@@ -2,6 +2,7 @@
 tap 'heroku/brew'
 tap 'homebrew/bundle'
 tap 'mike-engel/jwt-cli'
+tap 'd12frosted/emacs-plus'
 
 # shell
 brew 'fish'
@@ -18,6 +19,7 @@ cask 'quicklook-json'
 brew 'tmux'
 brew 'vim'
 brew 'neovim'
+brew 'emacs-plus', args: ['with-savchenkovaleriy-big-sur-icon', 'with-native-comp']
 
 # cli
 brew 'awscli'
