@@ -25,14 +25,16 @@
   Plugin 'scrooloose/nerdcommenter'               " easy comment toggling
   Plugin 'vim-ruby/vim-ruby'                      " better ruby editing
   Plugin 'tpope/vim-endwise'                      " block closing helper
-  Plugin 'bling/vim-airline'                      " status bar
-  Plugin 'bling/vim-bufferline'                   " show buffers in status bar
+  Plugin 'itchyny/lightline.vim'                  " alternative status bar
+  Plugin 'sstallion/vim-cursorline'               " show cursor line in current window
   Plugin 'ap/vim-css-color'                       " show hex colors in files
   Plugin 'mattn/emmet-vim'                        " html key shortcuts
   Plugin 'rizzatti/dash.vim'                      " Dash documentation search
   Plugin 'rking/ag.vim'                           " the_silver_search bindings
   Plugin 'janko-m/vim-test'                       " test runner
   Plugin 'godlygeek/tabular'                      " easy align columns
+  Plugin 'ap/vim-buftabline'                      " show buffers in tabline
+  Plugin 'mhinz/vim-startify'                     " fancy start screen
 
   Plugin 'mustache/vim-mustache-handlebars'       " mustache syntax
   Plugin 'elzr/vim-json'                          " better JSON editing
@@ -65,8 +67,14 @@
 
     syntax on                    " turn on syntax highlighting
 
-    let g:afterglow_inherit_background=1
-    colorscheme afterglow        " set color scheme
+    " color scheme varies depending on MacVim or terminal
+    if has("gui_macvim")
+      colorscheme Spacedust
+    else
+      set t_Co=256               " 256 color correction for non-gui vim
+      let g:afterglow_inherit_background=1
+      colorscheme afterglow
+    endif
 
     filetype plugin on           " enable loading plugins for file types
     filetype indent on           " enable loading 'indent files' for file types
@@ -74,6 +82,7 @@
     set synmaxcol=200            " no syntax highlighting for lines longer than 200 cols
 
     set laststatus=2             " show status bar
+    set noshowmode               " don't show insert mode (since already shown in status line)
 
     set number                   " display line numbers
     set visualbell               " use visual bell
@@ -81,7 +90,10 @@
     set laststatus=2             " Fix for status bar toggling
     set encoding=utf-8           " Fix special character encoding
 
-    set t_Co=256                 " 256 color correction
+    if has("gui_macvim")
+      set guifont=MonoLisa:h14   " set font and size
+      set linespace=0            " set line height
+    endif
 
   "- Interaction ----------------------------------------------------------------------------------
 
@@ -171,7 +183,6 @@
 
   set hlsearch                            " highlight all search matches
   set colorcolumn=100                     " visual indicator at column 100
-  set linespace=5                         " give the code some breathing room
 
   set list listchars=tab:██,trail:∙       " Use "██" for tabs and "∙" for trailing spaces
   set fillchars+=vert:                    " set vertical fillchar to "en space" (it's there, trust
@@ -201,20 +212,19 @@
     \ 'dir':  'node_modules',
     \ }
 
-"= Buffergator ====================================================================================
-
-  let g:buffergator_suppress_keymaps = 1    " turn off default keymaps
-
 "= Vim-Instant-Markdown ===========================================================================
 
   let g:instant_markdown_slow = 1        " dont update as much
 
-"= Vim-Airline ====================================================================================
+"= Vim-Lightline ====================================================================================
 
-  let g:airline_theme='afterglow'       " match color scheme
-  let g:airline_powerline_fonts = 1     " use powerline fonts
-  "let g:airline_left_sep=''             " turn off arrows causing spacing issues
-  "let g:airline_right_sep=''            " turn off arrows causing spacing issues
+  let g:lightline = {
+    \ 'colorscheme': 'selenized_dark',
+    \ 'active': {
+    \   'left': [ [ 'mode', 'paste', ], [ 'readonly' ] ],
+    \   'right': [ [ 'lineinfo' ] ]
+    \ },
+    \ }
 
 "= Vim-Emmet ======================================================================================
 
