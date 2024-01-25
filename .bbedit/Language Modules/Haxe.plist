@@ -19,6 +19,21 @@
 		<string>true</string>
 		<string>false</string>
 		<string>null</string>
+		<string>Bool</string>
+		<string>Float</string>
+		<string>Int</string>
+		<string>String</string>
+		<string>Void</string>
+		<string>Null</string>
+		<string>Dynamic</string>
+		<string>Any</string>
+		<string>Array</string>
+		<string>Vector</string>
+		<string>List</string>
+		<string>GenericStack</string>
+		<string>Map</string>
+		<string>Option</string>
+		<string>EReg</string>
 	</array>
 	<key>BBLMKeywordList</key>
 	<array>
@@ -35,8 +50,6 @@
 		<string>this</string>
 		<string>interface</string>
 		<string>implements</string>
-		<string>static</string>
-		<string>abstract</string>
 		<string>enum</string>
 		<string>switch</string>
 		<string>case</string>
