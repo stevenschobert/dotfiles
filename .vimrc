@@ -15,7 +15,7 @@
 
   Plugin 'gmarik/Vundle.vim'                      " package manager
 
-  Plugin 'danilo-augusto/vim-afterglow'           " color scheme
+  Plugin 'danilo-augusto/vim-afterglow'           " color scheme for term
 
   Plugin 'tpope/vim-unimpaired'                   " awesome key shortucts
   Plugin 'scrooloose/nerdtree'                    " file/folder explorer
@@ -48,13 +48,14 @@
   Plugin 'elixir-lang/vim-elixir'                 " elixir syntax
   Plugin 'leafgarland/typescript-vim'             " typescript syntax
   Plugin 'udalov/kotlin-vim'                      " kotlin syntax
+  Plugin 'jdonaldson/vaxe'                        " haxe language
 
   " macOS only plugins
   if has("unix")
     let s:uname = system("uname -s")
     if s:uname == "Darwin"
-      Plugin 'zerowidth/vim-copy-as-rtf'              " copy out to OSX as RTF
-      Plugin 'suan/vim-instant-markdown'              " preview markdown files
+      Plugin 'zerowidth/vim-copy-as-rtf'          " copy out to OSX as RTF
+      Plugin 'suan/vim-instant-markdown'          " preview markdown files
     endif
   endif
 
@@ -67,14 +68,10 @@
 
     syntax on                    " turn on syntax highlighting
 
-    " color scheme varies depending on MacVim or terminal
-    if has("gui_macvim")
-      colorscheme Spacedust
-    else
-      set t_Co=256               " 256 color correction for non-gui vim
-      let g:afterglow_inherit_background=1
-      colorscheme afterglow
-    endif
+    set t_Co=256                 " 256 color correction for non-gui vim
+
+    let g:afterglow_inherit_background=1
+    colorscheme afterglow
 
     filetype plugin on           " enable loading plugins for file types
     filetype indent on           " enable loading 'indent files' for file types
@@ -101,6 +98,8 @@
     set lazyredraw               " don't redraw while executing macros. async window title update
     set ttyscroll=3              " something about scrolling buffer size
 
+    set hidden                   " don't warn about unsaved changes on buffer switches
+
     set scrolloff=3              " start scrolling 3 lines from bottom
     set sidescrolloff=6          " start scrolling 6 lines from right
     let loaded_match_paren = 1   " highlight matching parentheses
@@ -123,6 +122,9 @@
     set tabstop=2                " display a <Tab> as 2 spaces
     set softtabstop=2            " use 2 spaces for a <Tab>
     set expandtab
+
+    " Per-language overrides
+    autocmd Filetype haxe setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 
   "- Highlighting ---------------------------------------------------------------------------------
 
@@ -219,7 +221,7 @@
 "= Vim-Lightline ====================================================================================
 
   let g:lightline = {
-    \ 'colorscheme': 'selenized_dark',
+    \ 'colorscheme': 'OldHope',
     \ 'active': {
     \   'left': [ [ 'mode', 'paste', ], [ 'readonly' ] ],
     \   'right': [ [ 'lineinfo' ] ]
