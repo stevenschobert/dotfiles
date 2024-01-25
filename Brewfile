@@ -24,6 +24,7 @@ brew 'emacs-plus', args: ['with-savchenkovaleriy-big-sur-icon', 'with-native-com
 brew 'awscli'
 brew 'bat'
 brew 'ccat'
+brew 'chrome-cli'
 brew 'cloc'
 brew 'croc'
 brew 'ctags'
