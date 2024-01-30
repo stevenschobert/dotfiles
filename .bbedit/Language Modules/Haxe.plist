@@ -16,9 +16,6 @@
 	<true/>
 	<key>BBLMPredefinedNameList</key>
 	<array>
-		<string>true</string>
-		<string>false</string>
-		<string>null</string>
 		<string>Bool</string>
 		<string>Float</string>
 		<string>Int</string>
@@ -37,6 +34,9 @@
 	</array>
 	<key>BBLMKeywordList</key>
 	<array>
+		<string>true</string>
+		<string>false</string>
+		<string>null</string>
 		<string>var</string>
 		<string>new</string>
 		<string>class</string>
@@ -79,6 +79,10 @@
 		<string>using</string>
 		<string>is</string>
 		<string>macro</string>
+		<string>get</string>
+		<string>set</string>
+		<string>dynamic</string>
+		<string>never</string>
 	</array>
 	<key>BBLMLanguageCode</key>
 	<string>HAXE</string>
