@@ -78,6 +78,7 @@
 		<string>default</string>
 		<string>using</string>
 		<string>is</string>
+		<string>macro</string>
 	</array>
 	<key>BBLMLanguageCode</key>
 	<string>HAXE</string>
