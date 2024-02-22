@@ -104,6 +104,10 @@
 
     set mouse=a                  " allow mouse usage
 
+    if has("gui_macvim")
+      let macvim_hig_shift_movement = 1 " support shift-text select in macvim
+    endif
+
   "- Wrapping -------------------------------------------------------------------------------------
 
     set nowrap                   " don't soft wrap text
