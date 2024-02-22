@@ -21,7 +21,7 @@
   Plugin 'scrooloose/nerdtree'                    " file/folder explorer
   Plugin 'kien/ctrlp.vim'                         " fuzzy file searching
   Plugin 'terryma/vim-multiple-cursors'           " multiple cursor selection
-  Plugin 'scrooloose/nerdcommenter'               " easy comment toggling
+  Plugin 'tpope/vim-commentary'                   " comment toggling
   Plugin 'vim-ruby/vim-ruby'                      " better ruby editing
   Plugin 'tpope/vim-endwise'                      " block closing helper
   Plugin 'itchyny/lightline.vim'                  " alternative status bar
