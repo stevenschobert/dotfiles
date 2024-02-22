@@ -30,7 +30,6 @@
   Plugin 'mattn/emmet-vim'                        " html key shortcuts
   Plugin 'rizzatti/dash.vim'                      " Dash documentation search
   Plugin 'rking/ag.vim'                           " the_silver_search bindings
-  Plugin 'janko-m/vim-test'                       " test runner
   Plugin 'godlygeek/tabular'                      " easy align columns
   Plugin 'ap/vim-buftabline'                      " show buffers in tabline
   Plugin 'mhinz/vim-startify'                     " fancy start screen
@@ -232,9 +231,4 @@
 
   let g:user_emmet_leader_key='tt'   " remap leader key
   let g:user_emmet_mode='n'          "only enable normal mode functions.
-
-"= Vim-Test =======================================================================================
-
-  let g:test#ruby#rspec#executable = 'bundle exec rspec'
-  let g:test#ruby#rspec#options = '-f d'
 
