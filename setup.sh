@@ -17,6 +17,7 @@ HAXE_VERSION="4.3.3"
 NEKO_VERSION="2.3.0"
 RUST_VERSION="1.64.0"
 PHP_VERSION="8.1.12"
+OCAML_VERSION="5.2.0"
 
 PLATFORMSTR="$(uname -s)"
 
@@ -149,10 +150,16 @@ if !(asdf plugin-list | grep -q rust 2>/dev/null); then
   asdf plugin-add rust https://github.com/code-lever/asdf-rust.git
 fi
 
-# Rust version manager plugin
+# Php version manager plugin
 if !(asdf plugin-list | grep -q php 2>/dev/null); then
   echo "[setup] Installing asdf plugin for php"
   asdf plugin-add php https://github.com/asdf-community/asdf-php.git
+fi
+
+# Ocaml version manager plugin
+if !(asdf plugin-list | grep -q ocaml 2>/dev/null); then
+  echo "[setup] Installing asdf plugin for ocaml"
+  asdf plugin-add ocaml https://github.com/asdf-community/asdf-ocaml.git
 fi
 
 # Install ruby version
@@ -227,10 +234,16 @@ if !(asdf list rust | grep -q "$RUST_VERSION" 2>/dev/null); then
   asdf install rust "$RUST_VERSION"
 fi
 
-# Install rust version
+# Install php version
 if !(asdf list php | grep -q "$PHP_VERSION" 2>/dev/null); then
   echo "[setup] Installing php $PHP_VERSION"
   LDFLAGS="-L/usr/local/opt/bison/lib" PATH="/usr/local/opt/bison/bin:$PATH" asdf install php "$PHP_VERSION"
+fi
+
+# Install ocaml version
+if !(asdf list ocaml | grep -q "$OCAML_VERSION" 2>/dev/null); then
+  echo "[setup] Installing ocaml $OCAML_VERSION"
+  asdf install ocaml "$OCAML_VERSION"
 fi
 
 # Set .tool-versions
@@ -297,6 +310,11 @@ fi
 if !(cat "$HOME/.tool-versions" | grep -q "php $PHP_VERSION" 2>/dev/null); then
   echo "[setup] Setting php $PHP_VERSION in $HOME/.tool-versions"
   echo "php $PHP_VERSION" >> "$HOME/.tool-versions"
+fi
+
+if !(cat "$HOME/.tool-versions" | grep -q "ocaml $OCAML_VERSION" 2>/dev/null); then
+  echo "[setup] Setting ocaml $OCAML_VERSION in $HOME/.tool-versions"
+  echo "ocaml $OCAML_VERSION" >> "$HOME/.tool-versions"
 fi
 
 # Ruby gems
