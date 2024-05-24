@@ -17,6 +17,7 @@ HAXE_VERSION="4.3.3"
 NEKO_VERSION="2.3.0"
 RUST_VERSION="1.64.0"
 PHP_VERSION="8.1.12"
+OPAM_VERSION="2.1.6"
 OCAML_VERSION="5.2.0"
 
 PLATFORMSTR="$(uname -s)"
@@ -156,6 +157,12 @@ if !(asdf plugin-list | grep -q php 2>/dev/null); then
   asdf plugin-add php https://github.com/asdf-community/asdf-php.git
 fi
 
+# Opam version manager plugin
+if !(asdf plugin-list | grep -q opam 2>/dev/null); then
+  echo "[setup] Installing asdf plugin for opam"
+  asdf plugin-add opam https://github.com/asdf-community/asdf-opam.git
+fi
+
 # Ocaml version manager plugin
 if !(asdf plugin-list | grep -q ocaml 2>/dev/null); then
   echo "[setup] Installing asdf plugin for ocaml"
@@ -240,6 +247,12 @@ if !(asdf list php | grep -q "$PHP_VERSION" 2>/dev/null); then
   LDFLAGS="-L/usr/local/opt/bison/lib" PATH="/usr/local/opt/bison/bin:$PATH" asdf install php "$PHP_VERSION"
 fi
 
+# Install opam version
+if !(asdf list opam | grep -q "$OPAM_VERSION" 2>/dev/null); then
+  echo "[setup] Installing ocaml $OPAM_VERSION"
+  asdf install opam "$OPAM_VERSION"
+fi
+
 # Install ocaml version
 if !(asdf list ocaml | grep -q "$OCAML_VERSION" 2>/dev/null); then
   echo "[setup] Installing ocaml $OCAML_VERSION"
@@ -310,6 +323,11 @@ fi
 if !(cat "$HOME/.tool-versions" | grep -q "php $PHP_VERSION" 2>/dev/null); then
   echo "[setup] Setting php $PHP_VERSION in $HOME/.tool-versions"
   echo "php $PHP_VERSION" >> "$HOME/.tool-versions"
+fi
+
+if !(cat "$HOME/.tool-versions" | grep -q "opam $OPAM_VERSION" 2>/dev/null); then
+  echo "[setup] Setting opam $OPAM_VERSION in $HOME/.tool-versions"
+  echo "opam $OPAM_VERSION" >> "$HOME/.tool-versions"
 fi
 
 if !(cat "$HOME/.tool-versions" | grep -q "ocaml $OCAML_VERSION" 2>/dev/null); then
