@@ -43,3 +43,7 @@ source ~/.asdf/asdf.fish
 
 # ASDF golang
 . ~/.asdf/plugins/golang/set-env.fish
+
+# Additional paths
+set -g fish_user_paths /usr/local/sbin
+
