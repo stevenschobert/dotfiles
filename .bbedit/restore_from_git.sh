@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 THIS_DIR=$(dirname "$0")
 DIRS_TO_COPY=(
-  "Attachment Scripts"
   "Clippings"
   "Color Schemes"
   "Custom Keywords"
