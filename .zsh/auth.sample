@@ -1,6 +1,0 @@
-# Sauce Labs
-export SAUCE_USERNAME="username"
-export SAUCE_API_KEY="apikey"
-
-# GitLab
-export GITLAB_PRIVATE_TOKEN="gitlabtoken"

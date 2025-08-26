@@ -1,5 +1,0 @@
-// These settings override both User and Default settings for the Markdown syntax
-{
-  "word_wrap": true,
-  "wrap_width": 90
-}
