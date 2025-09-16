@@ -61,3 +61,8 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 # setup direnv for shell (adds shell directory hooks)
 eval "$(direnv hook zsh)"
+
+# load golang asdf
+if [ -f "${ASDF_DATA_DIR:-$HOME/.asdf}/plugins/golang/set-env.zsh" ]; then
+  . ${ASDF_DATA_DIR:-$HOME/.asdf}/plugins/golang/set-env.zsh
+fi

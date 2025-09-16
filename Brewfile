@@ -10,4 +10,6 @@ brew "cmake"
 brew "gcc"
 brew "make"
 brew "asdf"
+brew "coreutils"
+
 cask "emacs"
