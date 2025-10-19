@@ -14,6 +14,7 @@ git init
 git remote add origin git@github.com:stevenschobert/dotfiles.git
 git fetch
 git checkout -f master
+echo "*" >> "$HOME/.git/info/exclude"
 ```
 
 ## Misc
