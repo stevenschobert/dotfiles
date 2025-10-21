@@ -11,5 +11,6 @@ brew "gcc"
 brew "make"
 brew "asdf"
 brew "coreutils"
+brew "jwt-cli"
 
 cask "emacs"
