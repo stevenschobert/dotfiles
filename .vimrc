@@ -61,3 +61,7 @@
   nmap <Leader>k :wincmd<space>k<CR>
   nmap <Leader>l :wincmd<space>l<CR>
 
+"= Language Overrides ==================================================================
+
+  autocmd FileType c setlocal softtabstop=4 shiftwidth=4 expandtab
+
