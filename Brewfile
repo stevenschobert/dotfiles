@@ -13,4 +13,4 @@ brew "asdf"
 brew "coreutils"
 brew "jwt-cli"
 
-cask "emacs"
+cask "emacs-app"
