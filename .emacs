@@ -1,1 +1,1 @@
-(load-theme 'leuven-dark t)
+(load-theme 'modus-vivendi-tinted t)
