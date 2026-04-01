@@ -26,12 +26,23 @@
   " set termguicolors           " un-comment for blink on iOS
   set t_Co=256                  " set color count to 256
 
+  set guifont=-monospace-:h13   " macvim font
+
   " slate theme tweaks:
   "   - no background (inherit terminal color)
   "   - search highlights are gray/yellow
   " (note: because this is autocmd it needs to come before the :colorscheme call)
-  autocmd ColorScheme slate hi Normal guibg=NONE ctermbg=NONE
-  autocmd ColorScheme slate hi Search ctermbg=DarkGray ctermfg=Yellow
+  if has('gui_running')
+    autocmd ColorScheme slate hi Normal guibg=#111625
+    autocmd ColorScheme slate hi Search guibg=DarkGray guifg=Yellow
+    autocmd ColorScheme slate hi SpellBad guibg=DarkRed guifg=White
+    set transparency=5      " 5% transparent bg
+    set blur=40             " add blur radius to background
+  else
+    autocmd ColorScheme slate hi Normal guibg=NONE ctermbg=NONE
+    autocmd ColorScheme slate hi Search ctermbg=DarkGray ctermfg=Yellow
+    autocmd ColorScheme slate hi SpellBad ctermbg=DarkRed ctermfg=White
+  endif
 
   colorscheme slate             " use slate color scheme
 
