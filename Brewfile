@@ -15,3 +15,4 @@ brew "jwt-cli"
 brew "base64"
 
 cask "emacs-app"
+cask "macvim-app"
