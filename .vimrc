@@ -62,6 +62,8 @@
   " turn of highlighted searches
   nmap <Leader>s :noh<CR>
 
+  " File operations
+  nmap <Leader>d :bd<CR>   " close buffer
 
   " NERDTree
   nmap <Leader>n :NERDTreeToggle<CR>
