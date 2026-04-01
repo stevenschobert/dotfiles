@@ -12,5 +12,6 @@ brew "make"
 brew "asdf"
 brew "coreutils"
 brew "jwt-cli"
+brew "base64"
 
 cask "emacs-app"
