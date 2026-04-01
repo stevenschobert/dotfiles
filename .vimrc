@@ -65,3 +65,17 @@
 
   autocmd FileType c setlocal softtabstop=4 shiftwidth=4 expandtab
 
+"= Plugins =============================================================================
+
+  " to install:
+  "   curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  " see https://github.com/junegunn/vim-plug for details
+  call plug#begin()
+
+  " Plugs go here
+
+  " This is to allow ~/.gvimrc to set additional plugins
+  if !has('gui_running')
+    call plug#end()
+  endif
+
