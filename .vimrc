@@ -1,6 +1,6 @@
 "= Initial setup ======================================================================
 
-  set nocompatible              " don't try to be vi-compatible 
+  set nocompatible              " don't try to be vi-compatible
   filetype on                   " enable file type detection
 
 "= Editing ============================================================================
