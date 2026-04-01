@@ -62,6 +62,10 @@
   " turn of highlighted searches
   nmap <Leader>s :noh<CR>
 
+
+  " NERDTree
+  nmap <Leader>n :NERDTreeToggle<CR>
+
   " Buffer switching
   nmap ]b :bn<CR>
   nmap [b :bp<CR>
@@ -84,6 +88,7 @@
   call plug#begin()
 
   " Plugs go here
+  Plug 'preservim/nerdtree'
 
   " This is to allow ~/.gvimrc to set additional plugins
   if !has('gui_running')
