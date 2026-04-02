@@ -1,3 +1,16 @@
+"= Plugins =============================================================================
+
+  " to install:
+  "   curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  " see https://github.com/junegunn/vim-plug for details
+  call plug#begin()
+
+  " Plugs go here
+  Plug 'sderev/alabaster.vim'
+  Plug 'preservim/nerdtree'
+
+  call plug#end()
+
 "= Initial setup ======================================================================
 
   set nocompatible              " don't try to be vi-compatible
@@ -21,30 +34,31 @@
 
 "= Appearance =========================================================================
 
-  syntax on                     " enable syntax highlighting
-
-  " set termguicolors           " un-comment for blink on iOS
+  syntax enable                 " enable syntax highlighting
   set t_Co=256                  " set color count to 256
-
-  set guifont=-monospace-:h13   " macvim font
 
   " slate theme tweaks:
   "   - no background (inherit terminal color)
   "   - search highlights are gray/yellow
   " (note: because this is autocmd it needs to come before the :colorscheme call)
   if has('gui_running')
+    set termguicolors
+    set guifont=-monospace-:h13       " macvim font
+    set transparency=5                " 5% transparent bg
+    set blur=40                       " add blur radius to background
+
     autocmd ColorScheme slate hi Normal guibg=#111625
     autocmd ColorScheme slate hi Search guibg=DarkGray guifg=Yellow
     autocmd ColorScheme slate hi SpellBad guibg=DarkRed guifg=White
-    set transparency=5      " 5% transparent bg
-    set blur=40             " add blur radius to background
+
+    colorscheme alabaster-bg
   else
     autocmd ColorScheme slate hi Normal guibg=NONE ctermbg=NONE
     autocmd ColorScheme slate hi Search ctermbg=DarkGray ctermfg=Yellow
     autocmd ColorScheme slate hi SpellBad ctermbg=DarkRed ctermfg=White
-  endif
 
-  colorscheme slate             " use slate color scheme
+    colorscheme slate
+  endif
 
   " use "██" for tabs and "∙" for trailing spaces
   set list listchars=tab:██,trail:∙
@@ -81,19 +95,4 @@
 "= Language Overrides ==================================================================
 
   autocmd FileType c setlocal softtabstop=4 shiftwidth=4 expandtab
-
-"= Plugins =============================================================================
-
-  " to install:
-  "   curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  " see https://github.com/junegunn/vim-plug for details
-  call plug#begin()
-
-  " Plugs go here
-  Plug 'preservim/nerdtree'
-
-  " This is to allow ~/.gvimrc to set additional plugins
-  if !has('gui_running')
-    call plug#end()
-  endif
 
