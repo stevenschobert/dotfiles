@@ -66,3 +66,8 @@ eval "$(direnv hook zsh)"
 if [ -f "${ASDF_DATA_DIR:-$HOME/.asdf}/plugins/golang/set-env.zsh" ]; then
   . ${ASDF_DATA_DIR:-$HOME/.asdf}/plugins/golang/set-env.zsh
 fi
+
+# custom path for Haxe (non asdf)
+export HAXE_VERSION="${HAXE_VERSION:-4.3.7}"
+export PATH="$PATH:/usr/local/haxe_${HAXE_VERSION}"
+
