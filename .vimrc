@@ -51,7 +51,17 @@
     autocmd ColorScheme slate hi Search guibg=DarkGray guifg=Yellow
     autocmd ColorScheme slate hi SpellBad guibg=DarkRed guifg=White
 
-    colorscheme alabaster-bg
+    function! UpdateColorscheme()
+      if v:os_appearance == 1  " 1 = dark, 0 = light
+        colorscheme alabaster-dark
+      else
+        colorscheme alabaster
+      endif
+    endfunction
+
+    autocmd OSAppearanceChanged * call UpdateColorscheme()
+
+    call UpdateColorscheme()
   else
     autocmd ColorScheme slate hi Normal guibg=NONE ctermbg=NONE
     autocmd ColorScheme slate hi Search ctermbg=DarkGray ctermfg=Yellow
