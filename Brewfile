@@ -13,6 +13,8 @@ brew "asdf"
 brew "coreutils"
 brew "jwt-cli"
 brew "base64"
+brew "libpq"
+brew "clang-format"
 
 cask "emacs-app"
 cask "macvim-app"
