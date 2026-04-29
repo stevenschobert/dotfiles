@@ -8,6 +8,7 @@
   " Plugs go here
   Plug 'sderev/alabaster.vim'
   Plug 'preservim/nerdtree'
+  Plug 'mg979/vim-visual-multi'
 
   call plug#end()
 
