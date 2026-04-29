@@ -118,3 +118,8 @@
   autocmd FileType go setlocal noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
   autocmd FileType go setlocal listchars=tab:\ \ ,trail:∙
 
+"= NERDTree =============================================================================
+
+  let g:NERDTreeChDirMode = 2       " auto change working directory to match nerdtree root
+  let g:NERDTreeQuitOnOpen = 1    " close file window on open
+
