@@ -100,7 +100,7 @@
 
   " Compiling and fixing
   nmap <Leader>b :silent! setlocal makeprg=sh\ build.sh<CR>:make\|cw<CR><CR>
-  nmap <Leader>r :silent! setlocal makeprg=sh\ run.sh<CR>:make<CR>
+  nmap <Leader>r :! ./run.sh<CR>
   nmap ]t :cnext<CR>
   nmap [t :cprev<CR>
   nmap ]T :cfirst<CR>
