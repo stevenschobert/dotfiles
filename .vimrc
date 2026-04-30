@@ -100,7 +100,7 @@
   nmap [b :bp<CR>
 
   " Compiling and fixing
-  nmap <silent> <Leader>b :silent! setlocal makeprg=sh\ build.sh<CR>:w<CR>:make<CR>:cw<CR>
+  nmap <silent> <Leader>b :silent! setlocal makeprg=sh\ build.sh<CR>:make<CR>:cw<CR>
   nmap <Leader>r :! ./run.sh<CR>
   nmap <Leader>R :exe ':! ./debug.sh "'. expand('%') .':'. line('.') .':'. col('.') .'"'<CR><CR>
   nmap ]t :cnext<CR>
