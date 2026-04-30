@@ -71,3 +71,6 @@ fi
 export HAXE_VERSION="${HAXE_VERSION:-4.3.7}"
 export PATH="$PATH:/usr/local/haxe_${HAXE_VERSION}"
 
+# VSCode shortcut
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
