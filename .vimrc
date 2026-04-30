@@ -44,7 +44,7 @@
   " (note: because this is autocmd it needs to come before the :colorscheme call)
   if has('gui_running')
     set termguicolors
-    set guifont=-monospace-:h13       " macvim font
+    set guifont=Menlo:h13,Monaco:h13,Courier\ New:h13,-monospace-:h13
     set transparency=5                " 5% transparent bg
     set blur=40                       " add blur radius to background
 
@@ -102,6 +102,7 @@
   " Compiling and fixing
   nmap <Leader>b :silent! setlocal makeprg=sh\ build.sh<CR>:make\|cw<CR><CR>
   nmap <Leader>r :! ./run.sh<CR>
+  nmap <Leader>R :exe ':! ./debug.sh "'. expand('%') .':'. line('.') .':'. col('.') .'"'<CR><CR>
   nmap ]t :cnext<CR>
   nmap [t :cprev<CR>
   nmap ]T :cfirst<CR>
