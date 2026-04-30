@@ -2,7 +2,7 @@
     // Workbench
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "none",
-    "workbench.editor.showTabs": false,
+    "workbench.editor.showTabs": "single",
     "workbench.editor.labelFormat": "long",
 
     // Breadcrumbs
@@ -32,9 +32,9 @@
 
     // Editor
     "editor.tabSize": 2,
-    "editor.fontFamily": "'MonaLisa Nerd Font', 'MonoLisa', monospace",
     "editor.fontLigatures": true,
-    "editor.fontSize": 14,
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 13,
     "editor.rulers": [
       90
     ],
