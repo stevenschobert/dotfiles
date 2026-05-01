@@ -9,6 +9,7 @@
   Plug 'sderev/alabaster.vim'
   Plug 'preservim/nerdtree'
   Plug 'mg979/vim-visual-multi'
+  Plug 'ctrlpvim/ctrlp.vim'
 
   call plug#end()
 
@@ -132,6 +133,10 @@
 
 "= NERDTree =============================================================================
 
-  let g:NERDTreeChDirMode = 2       " auto change working directory to match nerdtree root
+  let g:NERDTreeChDirMode = 2     " auto change working directory to match nerdtree root
   let g:NERDTreeQuitOnOpen = 1    " close file window on open
+
+"= Ctrl-P ===============================================================================
+
+  let g:ctrlp_working_path_mode = 0     " no auto-project root detection
 
