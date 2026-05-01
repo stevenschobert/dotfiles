@@ -10,6 +10,7 @@
   Plug 'preservim/nerdtree'
   Plug 'mg979/vim-visual-multi'
   Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'jeetsukumaran/vim-buffergator'
 
   call plug#end()
 
@@ -60,9 +61,7 @@
     "     colorscheme alabaster
     "   endif
     " endfunction
-
     " autocmd OSAppearanceChanged * call UpdateColorscheme()
-
     " call UpdateColorscheme()
 
     colorscheme alabaster-dark
@@ -91,6 +90,7 @@
   nmap <Leader>s :noh<CR>
 
   " File operations
+  nmap <Leader>w :w<CR>    " save buffer
   nmap <Leader>d :bd<CR>   " close buffer
 
   " NERDTree
@@ -101,7 +101,7 @@
   nmap [b :bp<CR>
 
   " Compiling and fixing
-  nmap <silent> <Leader>b :silent! setlocal makeprg=sh\ build.sh<CR>:make<CR>:cw<CR>
+  nmap <silent> <Leader>g :silent! setlocal makeprg=sh\ build.sh<CR>:make<CR>:cw<CR>
   nmap <Leader>r :! ./run.sh<CR>
   nmap <Leader>R :exe ':! ./debug.sh "'. expand('%') .':'. line('.') .':'. col('.') .'"'<CR><CR>
   nmap ]t :cnext<CR>
@@ -117,12 +117,12 @@
 
   " Terminal
   " vim-powered terminal in split window
-  map <Leader>t :term ++close<cr>
-  tmap <Leader>t <c-w>:term ++close<cr>
+  map <Leader>` :term ++close<cr>
+  tmap <Leader>` <c-w>:term ++close<cr>
 
   " vim-powered terminal in new tab
-  map <Leader>T :tab term ++close<cr>
-  tmap <Leader>T <c-w>:tab term ++close<cr>
+  map <Leader>~ :tab term ++close<cr>
+  tmap <Leader>~ <c-w>:tab term ++close<cr>
 
 "= Language Overrides ==================================================================
 
