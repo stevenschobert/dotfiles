@@ -15,6 +15,6 @@ brew "jwt-cli"
 brew "base64"
 brew "libpq"
 brew "clang-format"
+brew "universal-ctags"
 
-cask "emacs-app"
 cask "macvim-app"
