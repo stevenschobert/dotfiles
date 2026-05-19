@@ -12,6 +12,7 @@
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'jeetsukumaran/vim-buffergator'
   Plug 'preservim/tagbar'
+  Plug 'shougo/neocomplcache.vim'
 
   call plug#end()
 
@@ -121,9 +122,20 @@
   map <Leader>` :term ++close<cr>
   tmap <Leader>` <c-w>:term ++close<cr>
 
+  " Tagbar
+  nmap <Leader>y :TagbarOpen fjc<CR>
+
   " vim-powered terminal in new tab
   map <Leader>~ :tab term ++close<cr>
   tmap <Leader>~ <c-w>:tab term ++close<cr>
+
+  " auto-complete
+  inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+  function! s:my_cr_function()
+    " return neocomplcache#smart_close_popup() . "\<CR>"
+    return pumvisible() ? neocomplcache#close_popup() : "\<CR>"
+  endfunction
+  inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 "= Language Overrides ==================================================================
 
@@ -131,6 +143,9 @@
   autocmd FileType cpp setlocal softtabstop=4 shiftwidth=4 expandtab
   autocmd FileType go setlocal noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
   autocmd FileType go setlocal listchars=tab:\ \ ,trail:∙
+
+  " open tagbar automatically
+  autocmd FileType * nested :call tagbar#autoopen(0)
 
 "= NERDTree =============================================================================
 
@@ -140,4 +155,12 @@
 "= Ctrl-P ===============================================================================
 
   let g:ctrlp_working_path_mode = 0     " no auto-project root detection
+
+"= NeoComplCache ========================================================================
+
+  let g:acp_enableAtStartup = 0
+  let g:neocomplcache_enable_at_startup = 1
+  let g:neocomplcache_enable_smart_case = 1
+  let g:neocomplcache_min_syntax_length = 3
+  let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 
