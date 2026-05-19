@@ -11,6 +11,7 @@
   Plug 'mg979/vim-visual-multi'
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'jeetsukumaran/vim-buffergator'
+  Plug 'preservim/tagbar'
 
   call plug#end()
 
