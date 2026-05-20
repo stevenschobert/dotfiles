@@ -37,6 +37,7 @@
   set expandtab                 " insert <Tab> as spaces
   set softtabstop=2             " set 2-space tabs (see option #2 in tabstop setting)
   set shiftwidth=2              " set 2-space tabs (see option #2 in tabstop setting)
+  set visualbell                " use visual bell instead of audible one
 
 "= Appearance =========================================================================
 
