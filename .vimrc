@@ -134,7 +134,6 @@
   " auto-complete
   inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
   function! s:my_cr_function()
-    " return neocomplcache#smart_close_popup() . "\<CR>"
     return pumvisible() ? neocomplcache#close_popup() : "\<CR>"
   endfunction
   inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
@@ -161,6 +160,7 @@
 "= NeoComplCache ========================================================================
 
   let g:acp_enableAtStartup = 0
+  let g:neocomplcache_enable_auto_select = 1
   let g:neocomplcache_enable_at_startup = 1
   let g:neocomplcache_enable_smart_case = 1
   let g:neocomplcache_min_syntax_length = 3
