@@ -10,6 +10,7 @@ export HOMEBREW_NO_ANALYTICS=1
 # eval "$(/usr/local/bin/brew shellenv)"
 if [ -d /opt/homebrew/ ]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
+    export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/opt/homebrew/lib
 elif [ -f /usr/local/bin/brew ]; then
     eval "$(/usr/local/bin/brew shellenv)"
 fi
