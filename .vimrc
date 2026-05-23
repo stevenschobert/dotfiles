@@ -150,6 +150,7 @@
 
   autocmd FileType c setlocal softtabstop=4 shiftwidth=4 expandtab
   autocmd FileType cpp setlocal softtabstop=4 shiftwidth=4 expandtab
+  autocmd FileType haxe setlocal softtabstop=4 shiftwidth=4 expandtab
   autocmd FileType go setlocal noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
   autocmd FileType go setlocal listchars=tab:\ \ ,trail:∙
 
