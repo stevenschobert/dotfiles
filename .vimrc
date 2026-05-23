@@ -101,6 +101,7 @@
   nmap <Leader>n :NERDTreeToggle<CR>
 
   " Buffer switching
+  nmap <Leader>b :BuffergatorToggle<CR>
   nmap ]b :bn<CR>
   nmap [b :bp<CR>
 
@@ -147,6 +148,10 @@
 
   " open tagbar automatically
   autocmd FileType * nested :call tagbar#autoopen(0)
+
+"= Buffergator ==========================================================================
+
+  let g:buffergator_suppress_keymaps = 1    " turn off automatic keybinds
 
 "= NERDTree =============================================================================
 
