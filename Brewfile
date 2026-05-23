@@ -16,5 +16,6 @@ brew "base64"
 brew "libpq"
 brew "clang-format"
 brew "universal-ctags"
+brew "neko"
 
 cask "macvim-app"
