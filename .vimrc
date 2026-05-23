@@ -115,6 +115,7 @@
   " Compiling and fixing
   nmap <silent> <Leader>g :silent! setlocal makeprg=sh\ build.sh<CR>:make<CR>:cw<CR>
   nmap <Leader>r :! ./run.sh<CR>
+  nmap <Leader>t :! ./test.sh<CR>
   nmap <Leader>R :exe ':! ./debug.sh "'. expand('%') .':'. line('.') .':'. col('.') .'"'<CR><CR>
   nmap ]t :cnext<CR>
   nmap [t :cprev<CR>
