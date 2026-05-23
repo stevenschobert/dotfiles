@@ -82,6 +82,13 @@
 
   set cursorline                " highlight the current line
 
+  " Position the (global) quickfix window at the very bottom of the window
+  " (useful for making sure that it appears underneath splits)
+  "
+  " NOTE: Using a check here to make sure that window-specific location-lists
+  " aren't effected, as they use the same `FileType` as quickfix-lists.
+  autocmd FileType qf if (getwininfo(win_getid())[0].loclist != 1) | wincmd J | endif
+
 "= Performance ========================================================================
 
   set synmaxcol=200             " turn off syntax on lines longer than 200 chars
