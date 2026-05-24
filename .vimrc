@@ -53,6 +53,7 @@
     set guifont=Menlo:h13,Monaco:h13,Courier\ New:h13,-monospace-:h13
     set transparency=5                " 5% transparent bg
     set blur=40                       " add blur radius to background
+    set go+=!                         " execute commands in emulated terminal
 
     autocmd ColorScheme slate hi Normal guibg=#111625
     autocmd ColorScheme slate hi Search guibg=DarkGray guifg=Yellow
