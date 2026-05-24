@@ -113,6 +113,9 @@
   nmap ]b :bn<CR>
   nmap [b :bp<CR>
 
+  " Open vimrc
+  nmap \r :e $MYVIMRC<CR>
+
   " Compiling and fixing
   nmap <silent> <Leader>g :silent! setlocal makeprg=sh\ build.sh<CR>:make<CR>:cw<CR>
   nmap <Leader>r :! ./run.sh<CR>
