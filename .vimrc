@@ -13,6 +13,7 @@
   Plug 'jeetsukumaran/vim-buffergator'
   Plug 'preservim/tagbar'
   Plug 'shougo/neocomplcache.vim'
+  Plug 'mileszs/ack.vim'
 
   call plug#end()
 
