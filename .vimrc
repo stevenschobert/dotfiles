@@ -14,6 +14,7 @@
   Plug 'preservim/tagbar'
   Plug 'shougo/neocomplcache.vim'
   Plug 'mileszs/ack.vim'
+  Plug 'tpope/vim-commentary'
 
   call plug#end()
 
