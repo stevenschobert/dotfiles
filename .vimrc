@@ -91,6 +91,8 @@
   " aren't effected, as they use the same `FileType` as quickfix-lists.
   autocmd FileType qf if (getwininfo(win_getid())[0].loclist != 1) | wincmd J | endif
 
+  let &errorformat .= ',%f(%l\,%c):\ error\ %m'
+
 "= Performance ========================================================================
 
   set synmaxcol=200             " turn off syntax on lines longer than 200 chars
