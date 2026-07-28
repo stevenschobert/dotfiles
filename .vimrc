@@ -10,7 +10,7 @@
   Plug 'preservim/nerdtree'
   Plug 'mg979/vim-visual-multi'
   Plug 'ctrlpvim/ctrlp.vim'
-  Plug 'jeetsukumaran/vim-buffergator'
+  Plug 'bling/vim-bufferline'
   Plug 'preservim/tagbar'
   Plug 'shougo/neocomplcache.vim'
   Plug 'mileszs/ack.vim'
