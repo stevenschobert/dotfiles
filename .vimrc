@@ -15,6 +15,7 @@
   Plug 'shougo/neocomplcache.vim'
   Plug 'mileszs/ack.vim'
   Plug 'tpope/vim-commentary'
+  Plug 'mustache/vim-mustache-handlebars'
 
   call plug#end()
 
