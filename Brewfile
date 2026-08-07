@@ -17,5 +17,6 @@ brew "libpq"
 brew "clang-format"
 brew "universal-ctags"
 brew "ack"
+brew "pgbouncer"
 
 cask "macvim-app"
