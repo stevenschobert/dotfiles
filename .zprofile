@@ -30,3 +30,6 @@ export PATH="$PATH:/usr/local/haxe_${HAXE_VERSION}"
 # VSCode shortcut
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
+# Postgres.app
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
+
