@@ -62,6 +62,10 @@
     autocmd ColorScheme slate hi Search guibg=DarkGray guifg=Yellow
     autocmd ColorScheme slate hi SpellBad guibg=DarkRed guifg=White
 
+    autocmd ColorScheme alabaster-dark hi SpellBad guibg=NONE guifg=NONE gui=undercurl guisp=Red
+    autocmd ColorScheme alabaster-dark hi Search guibg=Black guifg=Yellow
+    autocmd ColorScheme alabaster-dark hi Todo guibg=Black guifg=Green
+
     " function! UpdateColorscheme()
     "   if v:os_appearance == 1  " 1 = dark, 0 = light
     "     colorscheme alabaster-dark
@@ -77,6 +81,10 @@
     autocmd ColorScheme slate hi Normal guibg=NONE ctermbg=NONE
     autocmd ColorScheme slate hi Search ctermbg=DarkGray ctermfg=Yellow
     autocmd ColorScheme slate hi SpellBad ctermbg=DarkRed ctermfg=White
+
+    autocmd ColorScheme alabaster-dark hi SpellBad ctermbg=NONE ctermfg=Red
+    autocmd ColorScheme alabaster-dark hi Search ctermbg=Black ctermfg=Yellow
+    autocmd ColorScheme alabaster-dark hi Todo ctermfg=Black ctermfg=Green
 
     colorscheme slate
   endif
