@@ -16,6 +16,7 @@
   Plug 'mileszs/ack.vim'
   Plug 'tpope/vim-commentary'
   Plug 'mustache/vim-mustache-handlebars'
+  Plug 'direnv/direnv.vim'
 
   call plug#end()
 
