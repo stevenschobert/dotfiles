@@ -29,7 +29,7 @@
 
   set encoding=utf-8            " use utf8 for encoding
   set nowrap                    " don't soft wrap text
-  set spell spelllang=en_us     " turn on spell check for US English
+  set spell spelllang=en        " turn on spell check for US English
   set noswapfile                " don't create swap files
   set hlsearch                  " highlight search matches
   set incsearch                 " highlight search matches as typing
