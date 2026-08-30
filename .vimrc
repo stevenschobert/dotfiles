@@ -29,7 +29,7 @@
 
   set encoding=utf-8            " use utf8 for encoding
   set nowrap                    " don't soft wrap text
-  set spell spelllang=en        " turn on spell check for US English
+  set spell spelllang=en_us     " turn on spell check for US English
   set noswapfile                " don't create swap files
   set hlsearch                  " highlight search matches
   set incsearch                 " highlight search matches as typing
@@ -63,6 +63,7 @@
     autocmd ColorScheme slate hi SpellBad guibg=DarkRed guifg=White
 
     autocmd ColorScheme alabaster-dark hi SpellBad guibg=NONE guifg=NONE gui=undercurl guisp=Red
+    autocmd ColorScheme alabaster-dark hi SpellLocal guibg=NONE guifg=NONE gui=undercurl guisp=Cyan
     autocmd ColorScheme alabaster-dark hi Search guibg=Black guifg=Yellow
     autocmd ColorScheme alabaster-dark hi Todo guibg=Black guifg=Green
 
@@ -83,6 +84,7 @@
     autocmd ColorScheme slate hi SpellBad ctermbg=DarkRed ctermfg=White
 
     autocmd ColorScheme alabaster-dark hi SpellBad ctermbg=NONE ctermfg=Red
+    autocmd ColorScheme alabaster-dark hi SpellLocal ctermbg=NONE ctermfg=Cyan
     autocmd ColorScheme alabaster-dark hi Search ctermbg=Black ctermfg=Yellow
     autocmd ColorScheme alabaster-dark hi Todo ctermfg=Black ctermfg=Green
 
