@@ -65,6 +65,7 @@
     autocmd ColorScheme alabaster-dark hi SpellBad guibg=NONE guifg=NONE gui=undercurl guisp=Red
     autocmd ColorScheme alabaster-dark hi SpellLocal guibg=NONE guifg=NONE gui=undercurl guisp=Cyan
     autocmd ColorScheme alabaster-dark hi Search guibg=Black guifg=Yellow
+    autocmd ColorScheme alabaster-dark hi IncSearch guibg=Black guifg=Yellow
     autocmd ColorScheme alabaster-dark hi Todo guibg=Black guifg=Green
 
     " function! UpdateColorscheme()
@@ -86,6 +87,7 @@
     autocmd ColorScheme alabaster-dark hi SpellBad ctermbg=NONE ctermfg=Red
     autocmd ColorScheme alabaster-dark hi SpellLocal ctermbg=NONE ctermfg=Cyan
     autocmd ColorScheme alabaster-dark hi Search ctermbg=Black ctermfg=Yellow
+    autocmd ColorScheme alabaster-dark hi IncSearch ctermbg=Black ctermfg=Yellow
     autocmd ColorScheme alabaster-dark hi Todo ctermfg=Black ctermfg=Green
 
     colorscheme slate
