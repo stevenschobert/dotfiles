@@ -94,6 +94,9 @@
   " use "██" for tabs and "∙" for trailing spaces
   set list listchars=tab:██,trail:∙
 
+  "statusline
+  set statusline=%f\ %h%w%m%r\ %=%(%l,%c%V\ %=\ %P%)\ %y
+
   set cursorline                " highlight the current line
 
   " Position the (global) quickfix window at the very bottom of the window
