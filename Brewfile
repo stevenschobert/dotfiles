@@ -18,5 +18,8 @@ brew "clang-format"
 brew "universal-ctags"
 brew "ack"
 brew "pgbouncer"
+brew "fossil"
+brew "lighttpd"
+brew "railway"
 
 cask "macvim-app"
