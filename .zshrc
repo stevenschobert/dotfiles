@@ -29,6 +29,7 @@ alias gb="git branch"
 alias gco="git checkout"
 alias ggpush='git push origin "$(git_current_branch)"'
 alias gx="gitx"
+alias f="fossil"
 alias l="ls -lah --color"
 alias e="bbedit"
 alias o="open"
