@@ -63,5 +63,8 @@
     // Go
     "[go]": {
       "editor.tabSize": 4
-    }
+    },
+
+    // AI
+    "chat.disableAIFeatures": true
 }
